@@ -1,0 +1,26 @@
+# SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+stages:
+  - validate
+
+validate-locales:
+  stage: validate
+  image: python:3.12-slim
+  script:
+    - python3 scripts/validate.py
+  rules:
+    - changes:
+        - "*.json"
+        - scripts/validate.py
+
+validate-locales-strict:
+  stage: validate
+  image: python:3.12-slim
+  script:
+    - python3 scripts/validate.py --strict
+  rules:
+    - if: $CI_MERGE_REQUEST_ID
+      changes:
+        - "*.json"
+  allow_failure: false
