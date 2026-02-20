@@ -1,36 +1,85 @@
 # SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me>
 # SPDX-License-Identifier: GPL-3.0-or-later
 
+include:
+  - project: 'vauchi/scripts'
+    ref: main
+    file: '/ci-templates/reuse.yml'
+
 stages:
+  - lint
   - validate
+
+# Validate JSON syntax (fast gate — catches malformed files before Python)
+lint:json:
+  stage: lint
+  tags:
+    - self-hosted
+    - node
+  needs: []
+  script:
+    - |
+      ERRORS=0
+      for file in *.json; do
+        if ! jq empty "$file" 2>/dev/null; then
+          echo "ERROR: Invalid JSON in $file"
+          ERRORS=$((ERRORS + 1))
+        fi
+      done
+      if [ $ERRORS -gt 0 ]; then
+        echo "Found $ERRORS invalid JSON file(s)."
+        exit 1
+      fi
+      echo "All JSON files are valid."
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - "*.json"
 
 validate-locales:
   stage: validate
-  image: python:3.12-slim
+  tags:
+    - self-hosted
+    - node
+  needs:
+    - job: lint:json
+      optional: true
   script:
     - python3 scripts/validate.py
   rules:
-    - changes:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
         - "*.json"
         - scripts/validate.py
 
 validate-translations:
   stage: validate
-  image: python:3.12-slim
+  tags:
+    - self-hosted
+    - node
+  needs:
+    - job: lint:json
+      optional: true
   script:
     - python3 scripts/validate-translations.py
   rules:
-    - changes:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
         - "*.json"
         - scripts/validate-translations.py
 
 validate-locales-strict:
   stage: validate
-  image: python:3.12-slim
+  tags:
+    - self-hosted
+    - node
+  needs:
+    - job: lint:json
+      optional: true
   script:
     - python3 scripts/validate.py --strict
   rules:
-    - if: $CI_MERGE_REQUEST_ID
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
       changes:
         - "*.json"
   allow_failure: false
