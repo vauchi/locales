@@ -61,7 +61,9 @@ EXPECTED_TRANSLATIONS = {
 
 def main():
     repo_root = Path(__file__).parent.parent
-    locale_files = sorted(repo_root.glob("*.json"))
+    locale_files = sorted(
+        p for p in repo_root.glob("*.json") if not p.name.endswith(".schema.json")
+    )
     errors = []
 
     if not locale_files:
