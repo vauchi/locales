@@ -3,8 +3,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 """Check JSON Schema backward compatibility between two versions.
 
-Detects breaking changes by comparing the current schema against a baseline.
-Breaking changes:
+Generic breaking-change detector for any JSON Schema file. Detects:
   - Adding a field to "required" array (existing data missing it will fail)
   - Removing a field from "properties" or "patternProperties"
   - Changing a property's "type" (existing data may not match new type)
@@ -15,9 +14,12 @@ Non-breaking (safe) changes:
   - Relaxing constraints (minLength decrease, pattern removal)
   - Adding new enum values
 
+Handles both flat object schemas (locales) and array-of-items schemas (themes).
+
 Usage:
     python3 scripts/check-schema-compat.py <old-schema> <new-schema>
     python3 scripts/check-schema-compat.py --baseline main
+    python3 scripts/check-schema-compat.py --baseline main --schema my.schema.json
 """
 
 import argparse
@@ -127,29 +129,46 @@ def compare_pattern_properties(
     return errors
 
 
+def extract_item_schema(schema: dict) -> dict:
+    """Extract the items schema from an array schema.
+
+    For array schemas (e.g. themes), the interesting properties live
+    under "items". For object schemas (e.g. locales), return as-is.
+    """
+    if schema.get("type") == "array" and "items" in schema:
+        return schema["items"]
+    return schema
+
+
 def check_compat(
     old_schema: dict, new_schema: dict
 ) -> tuple[list[str], list[str]]:
-    """Compare two schemas and return (breaking_changes, warnings)."""
+    """Compare two schemas and return (breaking_changes, warnings).
+
+    Handles both flat object schemas and array-of-items schemas.
+    """
     breaking = []
     warnings = []
 
+    old_effective = extract_item_schema(old_schema)
+    new_effective = extract_item_schema(new_schema)
+
     # Compare required fields
-    old_req = old_schema.get("required", [])
-    new_req = new_schema.get("required", [])
+    old_req = old_effective.get("required", [])
+    new_req = new_effective.get("required", [])
     breaking.extend(compare_required(old_req, new_req))
 
     # Compare properties
-    old_props = old_schema.get("properties", {})
-    new_props = new_schema.get("properties", {})
+    old_props = old_effective.get("properties", {})
+    new_props = new_effective.get("properties", {})
     breaking.extend(compare_properties(old_props, new_props))
 
     # Check additionalProperties
-    breaking.extend(compare_additional_properties(old_schema, new_schema))
+    breaking.extend(compare_additional_properties(old_effective, new_effective))
 
     # Compare patternProperties
-    old_pp = old_schema.get("patternProperties", {})
-    new_pp = new_schema.get("patternProperties", {})
+    old_pp = old_effective.get("patternProperties", {})
+    new_pp = new_effective.get("patternProperties", {})
     breaking.extend(compare_pattern_properties(old_pp, new_pp))
 
     # Check nested objects
@@ -175,6 +194,14 @@ def check_compat(
     return breaking, warnings
 
 
+def auto_detect_schema(repo_root: Path) -> str | None:
+    """Auto-detect the schema file in the repo root."""
+    candidates = list(repo_root.glob("*.schema.json"))
+    if len(candidates) == 1:
+        return candidates[0].name
+    return None
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Check JSON Schema backward compatibility"
@@ -186,10 +213,26 @@ def main() -> int:
         default=None,
         help="Git branch to use as baseline (e.g., 'main')",
     )
+    parser.add_argument(
+        "--schema",
+        default=None,
+        help="Schema filename relative to repo root (auto-detected if omitted)",
+    )
     args = parser.parse_args()
 
     repo_root = Path(__file__).parent.parent
-    schema_rel = "locales.schema.json"
+
+    # Determine schema filename
+    if args.schema:
+        schema_rel = args.schema
+    else:
+        detected = auto_detect_schema(repo_root)
+        if detected:
+            schema_rel = detected
+        else:
+            print("ERROR: Cannot auto-detect schema file. Use --schema <filename>.")
+            return 1
+
     new_schema_path = repo_root / schema_rel
 
     if args.baseline:
