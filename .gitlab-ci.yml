@@ -104,6 +104,7 @@ validate-schema:
         - scripts/validate-schema.py
 
 # Check schema backward compatibility (detects breaking changes vs main)
+# allow_failure: pre-v1.0, new required keys are frequent and intentional
 check-schema-compat:
   stage: contract
   tags:
@@ -115,6 +116,7 @@ check-schema-compat:
   script:
     - git fetch origin main --depth=1
     - python3 scripts/check-schema-compat.py --baseline main
+  allow_failure: true
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
       changes:
