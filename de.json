@@ -593,7 +593,6 @@
   "privacy.cancel_deletion": "Löschung abbrechen",
   "privacy.cancel_failed": "Abbruch fehlgeschlagen: {error}",
   "privacy.consent": "Einwilligung",
-  "privacy.consent_analytics": "Analyse",
   "privacy.consent_contact_sharing": "Kontaktfreigabe",
   "privacy.consent_data_processing": "Datenverarbeitung",
   "privacy.consent_recovery_vouching": "Wiederherstellungs-Bürgschaft",

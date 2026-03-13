@@ -593,7 +593,6 @@
   "privacy.cancel_deletion": "Annuler la suppression",
   "privacy.cancel_failed": "L'annulation a echoue : {error}",
   "privacy.consent": "Consentement",
-  "privacy.consent_analytics": "Analytique",
   "privacy.consent_contact_sharing": "Partage de contacts",
   "privacy.consent_data_processing": "Traitement des données",
   "privacy.consent_recovery_vouching": "Garantie de récupération",
