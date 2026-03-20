@@ -130,8 +130,6 @@
     "card.share",
     "card.title",
     "card.value",
-    "consent.analytics",
-    "consent.analytics_desc",
     "consent.crash_reports",
     "consent.crash_reports_desc",
     "consent.denied",

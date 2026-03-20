@@ -129,8 +129,6 @@
   "card.share": "Partager la carte",
   "card.title": "Ma carte",
   "card.value": "Valeur",
-  "consent.analytics": "Analytique",
-  "consent.analytics_desc": "Aide a ameliorer Vauchi en partageant des donnees d'utilisation anonymes",
   "consent.crash_reports": "Rapports de plantage",
   "consent.crash_reports_desc": "Envoyer automatiquement les rapports de plantage pour aider a corriger les bugs",
   "consent.denied": "Refuse",
