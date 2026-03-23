@@ -40,6 +40,22 @@ lint:json:
       changes:
         - "*.json"
 
+# Verify all strings are NFC-normalized (cross-platform consistency)
+lint:unicode-nfc:
+  stage: lint
+  tags:
+    - self-hosted
+    - node
+  needs: []
+  script:
+    - python3 scripts/check-nfc.py *.json
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - "*.json"
+        - "scripts/check-nfc.py"
+    - if: $CI_COMMIT_BRANCH == "main"
+
 validate-locales:
   stage: validate
   tags:
