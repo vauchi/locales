@@ -57,7 +57,7 @@ lint:unicode-nfc:
         - "scripts/check-nfc.py"
     - if: $CI_COMMIT_BRANCH == "main"
 
-validate-locales:
+validate:locales:
   stage: validate
   tags:
     - self-hosted
@@ -73,7 +73,7 @@ validate-locales:
         - "*.json"
         - scripts/validate.py
 
-validate-translations:
+validate:translations:
   stage: validate
   tags:
     - self-hosted
@@ -89,7 +89,7 @@ validate-translations:
         - "*.json"
         - scripts/validate-translations.py
 
-validate-locales-strict:
+validate:locales-strict:
   stage: validate
   tags:
     - self-hosted
@@ -105,7 +105,7 @@ validate-locales-strict:
         - "*.json"
   allow_failure: false
 
-validate-schema:
+validate:schema:
   stage: validate
   tags:
     - self-hosted
@@ -125,13 +125,13 @@ validate-schema:
 
 # Check schema backward compatibility (detects breaking changes vs main)
 # allow_failure: pre-v1.0, new required keys are frequent and intentional
-check-schema-compat:
+check:schema-compat:
   stage: contract
   tags:
     - self-hosted
     - node
   needs:
-    - job: validate-schema
+    - job: validate:schema
       optional: true
   script:
     - git fetch origin main --depth=1
