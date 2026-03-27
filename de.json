@@ -356,7 +356,7 @@
   "exchange.camera_permission_message": "Bitte gewähren Sie Kamerazugriff, um QR-Codes zu scannen",
   "exchange.camera_permission_title": "Kameraberechtigung erforderlich",
   "exchange.camera_unavailable": "Kamera nicht verfuegbar",
-  "exchange.completing": "Austausch wird abgeschlossen...",
+  "exchange.completing": "Weiter auf das andere Telefon zeigen...",
   "exchange.contact_added": "Hinzugefuegt: {name}",
   "exchange.contact_exchanged": "Kontakt ausgetauscht!",
   "exchange.error_no_data": "Bitte gib die Austauschdaten ein",

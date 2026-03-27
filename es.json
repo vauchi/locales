@@ -356,7 +356,7 @@
   "exchange.camera_permission_message": "Por favor, conceda permiso de cámara para escanear códigos QR",
   "exchange.camera_permission_title": "Permiso de Cámara Requerido",
   "exchange.camera_unavailable": "Camara no disponible",
-  "exchange.completing": "Completando intercambio...",
+  "exchange.completing": "Sigue apuntando al otro telefono...",
   "exchange.contact_added": "Agregado: {name}",
   "exchange.contact_exchanged": "Contacto intercambiado!",
   "exchange.error_no_data": "Por favor, introduce los datos del intercambio",

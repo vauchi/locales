@@ -356,7 +356,7 @@
   "exchange.camera_permission_message": "Please grant camera permission to scan QR codes",
   "exchange.camera_permission_title": "Camera Permission Required",
   "exchange.camera_unavailable": "Camera not available",
-  "exchange.completing": "Completing exchange...",
+  "exchange.completing": "Keep pointing at other phone...",
   "exchange.contact_added": "Added: {name}",
   "exchange.contact_exchanged": "Contact exchanged!",
   "exchange.error_no_data": "Please enter the exchange data",

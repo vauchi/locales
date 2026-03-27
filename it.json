@@ -356,7 +356,7 @@
   "exchange.camera_permission_message": "Conceda il permesso della fotocamera per scansionare i codici QR",
   "exchange.camera_permission_title": "Permesso fotocamera necessario",
   "exchange.camera_unavailable": "Fotocamera non disponibile",
-  "exchange.completing": "Completamento dello scambio...",
+  "exchange.completing": "Continua a puntare verso l'altro telefono...",
   "exchange.contact_added": "Aggiunto: {name}",
   "exchange.contact_exchanged": "Contatto scambiato!",
   "exchange.error_no_data": "Inserisca i dati di scambio",
