@@ -114,7 +114,7 @@ validate:schema:
     - job: lint:json
       optional: true
   script:
-    - pip install jsonschema --quiet 2>/dev/null || true
+    - uv pip install --system --quiet jsonschema 2>/dev/null || pip install jsonschema --quiet 2>/dev/null || true
     - python3 scripts/validate-schema.py
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
