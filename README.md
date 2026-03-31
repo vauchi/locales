@@ -3,7 +3,7 @@
 
 > **Mirror:** This repo is a read-only mirror of [gitlab.com/vauchi/locales](https://gitlab.com/vauchi/locales). Please open issues and merge requests there.
 
-[![Pipeline](https://vauchi.gitlab.io/locales/badges/pipeline.svg)](https://gitlab.com/vauchi/locales/-/pipelines)
+[![Pipeline](https://img.shields.io/endpoint?url=https://vauchi.gitlab.io/locales/badges/pipeline.json&label=pipeline)](https://gitlab.com/vauchi/locales/-/pipelines)
 [![REUSE](https://api.reuse.software/badge/gitlab.com/vauchi/locales)](https://api.reuse.software/info/gitlab.com/vauchi/locales)
 
 # Vauchi Locales
