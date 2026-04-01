@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# typos source code spell checker configuration
+# Non-English locale files contain correct foreign words that the
+# English spell checker flags as typos (e.g. German "Alle", French "Termine")
+
+[files]
+extend-exclude = [
+    "de.json",
+    "fr.json",
+    "es.json",
+    "it.json",
+]
