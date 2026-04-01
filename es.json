@@ -891,6 +891,7 @@
   "sync.info": "Info de sincronizacion",
   "sync.last_sync": "Ultima sincronizacion",
   "sync.message_format": "Sincronizado: {cards_updated} tarjetas actualizadas, {updates_sent} enviadas",
+  "sync.no_changes": "Sin cambios",
   "sync.op_connect": "Conectar al servidor relay",
   "sync.op_process": "Procesar actualizaciones de tarjetas de contacto",
   "sync.op_receive": "Recibir mensajes de intercambio pendientes",

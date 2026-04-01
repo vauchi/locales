@@ -891,6 +891,7 @@
   "sync.info": "Sync Info",
   "sync.last_sync": "Last sync",
   "sync.message_format": "Synced: {cards_updated} cards updated, {updates_sent} sent",
+  "sync.no_changes": "No changes",
   "sync.op_connect": "Connect to relay server",
   "sync.op_process": "Process contact card updates",
   "sync.op_receive": "Receive pending exchange messages",

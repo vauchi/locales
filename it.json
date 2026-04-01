@@ -891,6 +891,7 @@
   "sync.info": "Info sincronizzazione",
   "sync.last_sync": "Ultima sincronizzazione",
   "sync.message_format": "Sincronizzato: {cards_updated} schede aggiornate, {updates_sent} inviate",
+  "sync.no_changes": "Nessuna modifica",
   "sync.op_connect": "Connetti al server relay",
   "sync.op_process": "Elabora aggiornamenti schede di contatto",
   "sync.op_receive": "Ricevi messaggi di scambio in sospeso",
