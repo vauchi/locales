@@ -13,6 +13,7 @@ stages:
   - lint
   - validate
   - contract
+  - trigger
   - deploy
 
 # Validate JSON syntax (fast gate — catches malformed files before Python)
@@ -140,6 +141,28 @@ check:schema-compat:
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
       changes:
+        - locales.schema.json
+
+# ============================================================
+# Trigger Stage — Cross-Project Contract Validation (C4)
+# ============================================================
+
+# When locale files merge to main, trigger core's contract tests
+# to verify core's i18n parser still accepts the new content.
+trigger:core-validate:
+  stage: trigger
+  needs:
+    - job: validate:locales-strict
+      optional: true
+  trigger:
+    project: vauchi/core
+    strategy: depend
+  variables:
+    CONTENT_TRIGGER_REPO: locales
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      changes:
+        - "*.json"
         - locales.schema.json
 
 # ============================================================
