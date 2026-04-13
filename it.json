@@ -163,7 +163,7 @@
   "contacts.error_hide_message": "Impossibile nascondere {name}: {error}",
   "contacts.error_unhide": "Mostrare fallito",
   "contacts.error_unhide_message": "Impossibile mostrare {name}: {error}",
-  "contacts.find_duplicates": "Find Duplicates",
+  "contacts.find_duplicates": "Trova duplicati",
   "contacts.hidden_title": "Contatti nascosti",
   "contacts.hide_visibility": "Nascondi impostazioni di visibilità",
   "contacts.info": "Info contatto",

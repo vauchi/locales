@@ -163,7 +163,7 @@
   "contacts.error_hide_message": "Konnte {name} nicht ausblenden: {error}",
   "contacts.error_unhide": "Einblenden fehlgeschlagen",
   "contacts.error_unhide_message": "Konnte {name} nicht einblenden: {error}",
-  "contacts.find_duplicates": "Find Duplicates",
+  "contacts.find_duplicates": "Duplikate finden",
   "contacts.hidden_title": "Ausgeblendete Kontakte",
   "contacts.hide_visibility": "Sichtbarkeitseinstellungen ausblenden",
   "contacts.info": "Kontaktdaten",

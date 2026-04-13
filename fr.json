@@ -163,7 +163,7 @@
   "contacts.error_hide_message": "Impossible de masquer {name} : {error}",
   "contacts.error_unhide": "Echec de l'affichage",
   "contacts.error_unhide_message": "Impossible d'afficher {name} : {error}",
-  "contacts.find_duplicates": "Find Duplicates",
+  "contacts.find_duplicates": "Trouver les doublons",
   "contacts.hidden_title": "Contacts masques",
   "contacts.hide_visibility": "Masquer les parametres de visibilite",
   "contacts.info": "Coordonnees",
