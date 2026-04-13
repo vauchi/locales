@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "locale": "fr",
-    "name": "Francais",
     "english_name": "French",
-    "is_rtl": false
+    "is_rtl": false,
+    "locale": "fr",
+    "name": "Francais"
   },
   "a11y.high_contrast": "Contraste eleve",
   "a11y.high_contrast_desc": "Augmenter le contraste des couleurs pour une meilleure visibilite",
@@ -154,6 +154,7 @@
   "contacts.demo_badge": "Demo",
   "contacts.demo_label": "Contact de demonstration",
   "contacts.detail": "Details du contact",
+  "contacts.dismiss_duplicate": "Ignorer",
   "contacts.empty": "Pas encore de contacts. Echange des cartes pour ajouter des contacts !",
   "contacts.error_archive": "Échec de l'archivage",
   "contacts.error_delete": "Echec de la suppression",
@@ -169,10 +170,13 @@
   "contacts.manage_visibility": "Gerer ce qu'il voit",
   "contacts.mark_verified": "Marquer comme verifie",
   "contacts.merge_confirm": "Confirm Merge",
+  "contacts.merge_keep_primary": "Garder comme principal",
+  "contacts.merge_similarity": "{percent}% de correspondance",
   "contacts.merge_title": "Merge Contacts",
   "contacts.name": "Nom",
   "contacts.no_archived": "Aucun contact archivé",
   "contacts.no_card_fields": "Tu n'as pas encore ajoute de champs a ta carte.",
+  "contacts.no_duplicates": "Aucun doublon trouvé",
   "contacts.no_fields_shared": "Aucune coordonnee partagee pour l'instant.",
   "contacts.no_info": "Aucune coordonnee partagee",
   "contacts.no_match": "Aucun contact ne correspond a ta recherche.",

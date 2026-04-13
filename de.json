@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "locale": "de",
-    "name": "Deutsch",
     "english_name": "German",
-    "is_rtl": false
+    "is_rtl": false,
+    "locale": "de",
+    "name": "Deutsch"
   },
   "a11y.high_contrast": "Hoher Kontrast",
   "a11y.high_contrast_desc": "Farbkontrast fuer bessere Sichtbarkeit erhoehen",
@@ -154,6 +154,7 @@
   "contacts.demo_badge": "Demo",
   "contacts.demo_label": "Demo-Kontakt",
   "contacts.detail": "Kontaktdetails",
+  "contacts.dismiss_duplicate": "Verwerfen",
   "contacts.empty": "Noch keine Kontakte. Tausche Karten aus, um Kontakte hinzuzufuegen!",
   "contacts.error_archive": "Archivierung fehlgeschlagen",
   "contacts.error_delete": "Loeschen fehlgeschlagen",
@@ -169,10 +170,13 @@
   "contacts.manage_visibility": "Sichtbarkeit verwalten",
   "contacts.mark_verified": "Als verifiziert markieren",
   "contacts.merge_confirm": "Confirm Merge",
+  "contacts.merge_keep_primary": "Als primär behalten",
+  "contacts.merge_similarity": "{percent}% Übereinstimmung",
   "contacts.merge_title": "Merge Contacts",
   "contacts.name": "Name",
   "contacts.no_archived": "Keine archivierten Kontakte",
   "contacts.no_card_fields": "Du hast noch keine Felder zu deiner Karte hinzugefuegt.",
+  "contacts.no_duplicates": "Keine Duplikate gefunden",
   "contacts.no_fields_shared": "Noch keine Kontaktdaten geteilt.",
   "contacts.no_info": "Keine Kontaktdaten geteilt",
   "contacts.no_match": "Keine Kontakte entsprechen deiner Suche.",

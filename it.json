@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "locale": "it",
-    "name": "Italiano",
     "english_name": "Italian",
-    "is_rtl": false
+    "is_rtl": false,
+    "locale": "it",
+    "name": "Italiano"
   },
   "a11y.high_contrast": "Contrasto elevato",
   "a11y.high_contrast_desc": "Aumenta il contrasto dei colori per una migliore visibilità",
@@ -154,6 +154,7 @@
   "contacts.demo_badge": "Demo",
   "contacts.demo_label": "Contatto demo",
   "contacts.detail": "Dettagli contatto",
+  "contacts.dismiss_duplicate": "Ignora",
   "contacts.empty": "Nessun contatto. Scambi le schede per aggiungere contatti!",
   "contacts.error_archive": "Archiviazione non riuscita",
   "contacts.error_delete": "Eliminazione fallita",
@@ -169,10 +170,13 @@
   "contacts.manage_visibility": "Gestisca cosa possono vedere",
   "contacts.mark_verified": "Segna come verificato",
   "contacts.merge_confirm": "Confirm Merge",
+  "contacts.merge_keep_primary": "Mantieni come principale",
+  "contacts.merge_similarity": "{percent}% corrispondenza",
   "contacts.merge_title": "Merge Contacts",
   "contacts.name": "Nome",
   "contacts.no_archived": "Nessun contatto archiviato",
   "contacts.no_card_fields": "Non ha ancora aggiunto campi alla Sua scheda.",
+  "contacts.no_duplicates": "Nessun duplicato trovato",
   "contacts.no_fields_shared": "Nessuna informazione di contatto condivisa.",
   "contacts.no_info": "Nessuna info contatto condivisa",
   "contacts.no_match": "Nessun contatto corrisponde alla ricerca.",

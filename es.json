@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "locale": "es",
-    "name": "Espanol",
     "english_name": "Spanish",
-    "is_rtl": false
+    "is_rtl": false,
+    "locale": "es",
+    "name": "Espanol"
   },
   "a11y.high_contrast": "Alto contraste",
   "a11y.high_contrast_desc": "Aumentar el contraste de colores para mejor visibilidad",
@@ -154,6 +154,7 @@
   "contacts.demo_badge": "Demo",
   "contacts.demo_label": "Contacto de demostracion",
   "contacts.detail": "Detalles del contacto",
+  "contacts.dismiss_duplicate": "Descartar",
   "contacts.empty": "Aun no hay contactos. Intercambia tarjetas para agregar contactos!",
   "contacts.error_archive": "Error al archivar",
   "contacts.error_delete": "Error al eliminar",
@@ -169,10 +170,13 @@
   "contacts.manage_visibility": "Gestionar lo que pueden ver",
   "contacts.mark_verified": "Marcar como verificado",
   "contacts.merge_confirm": "Confirm Merge",
+  "contacts.merge_keep_primary": "Mantener como principal",
+  "contacts.merge_similarity": "{percent}% coincidencia",
   "contacts.merge_title": "Merge Contacts",
   "contacts.name": "Nombre",
   "contacts.no_archived": "No hay contactos archivados",
   "contacts.no_card_fields": "Aun no has agregado campos a tu tarjeta.",
+  "contacts.no_duplicates": "No se encontraron duplicados",
   "contacts.no_fields_shared": "Aun no se han compartido datos de contacto.",
   "contacts.no_info": "No se han compartido datos de contacto",
   "contacts.no_match": "Ningun contacto coincide con tu busqueda.",
