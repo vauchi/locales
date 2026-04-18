@@ -6,8 +6,6 @@
   "type": "object",
   "required": [
     "_meta",
-    "about.what_is_vauchi.body",
-    "about.what_is_vauchi.title",
     "a11y.high_contrast",
     "a11y.high_contrast_desc",
     "a11y.large_touch_targets",
