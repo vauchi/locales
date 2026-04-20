@@ -104,6 +104,7 @@
   "backup.import_instruction": "Paste your backup data and enter the password used to encrypt it.",
   "backup.import_prompt": "Paste your backup data and enter the password used to create it:",
   "backup.import_title": "Import Backup",
+  "backup.import_warning_inline": "Warning: Importing a backup will replace your current identity!",
   "backup.password": "Password",
   "backup.password_instruction": "Enter a strong password to encrypt your backup.",
   "backup.password_prompt": "Enter a password to encrypt your backup (min 8 characters):",

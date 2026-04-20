@@ -104,6 +104,7 @@
   "backup.import_instruction": "Colle tes donnees de sauvegarde et entre le mot de passe utilise pour les chiffrer.",
   "backup.import_prompt": "Colle tes donnees de sauvegarde et entre le mot de passe utilise pour la creer :",
   "backup.import_title": "Importer une sauvegarde",
+  "backup.import_warning_inline": "Attention : l'importation d'une sauvegarde remplacera ton identite actuelle !",
   "backup.password": "Mot de passe",
   "backup.password_instruction": "Entre un mot de passe robuste pour chiffrer ta sauvegarde.",
   "backup.password_prompt": "Entre un mot de passe pour chiffrer ta sauvegarde (8 caracteres minimum) :",

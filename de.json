@@ -104,6 +104,7 @@
   "backup.import_instruction": "Fuege deine Backup-Daten ein und gib das Passwort ein, mit dem sie verschluesselt wurden.",
   "backup.import_prompt": "Fuege deine Backup-Daten ein und gib das Passwort ein, mit dem es erstellt wurde:",
   "backup.import_title": "Backup importieren",
+  "backup.import_warning_inline": "Warnung: Das Importieren eines Backups ersetzt deine aktuelle Identitaet!",
   "backup.password": "Passwort",
   "backup.password_instruction": "Gib ein starkes Passwort ein, um dein Backup zu verschluesseln.",
   "backup.password_prompt": "Gib ein Passwort ein, um dein Backup zu verschluesseln (mind. 8 Zeichen):",

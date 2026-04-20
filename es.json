@@ -104,6 +104,7 @@
   "backup.import_instruction": "Pega los datos de tu copia de seguridad e introduce la contrasena usada para cifrarla.",
   "backup.import_prompt": "Pega los datos de tu copia de seguridad e introduce la contrasena usada para crearla:",
   "backup.import_title": "Importar copia de seguridad",
+  "backup.import_warning_inline": "Advertencia: ¡Importar una copia de seguridad reemplazara tu identidad actual!",
   "backup.password": "Contrasena",
   "backup.password_instruction": "Introduce una contrasena segura para cifrar tu copia de seguridad.",
   "backup.password_prompt": "Introduce una contrasena para cifrar tu copia de seguridad (minimo 8 caracteres):",
