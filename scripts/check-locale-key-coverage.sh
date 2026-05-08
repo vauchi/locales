@@ -163,9 +163,17 @@ extract_keys_rust() {
             -r '$1' 2>/dev/null || true
 }
 extract_keys_swift() {
+    # Two shapes:
+    #   - NSLocalizedString("…", comment: …)  — Apple-native (legacy)
+    #   - <obj>.t("…")                         — vauchi convention via
+    #     `LocalizationService.t(_:)` / `localizationManager.t(…)`,
+    #     which wraps the UniFFI `mobile_get_string` binding.
+    # The `.t(` form is matched with a leading `\.` so an unrelated
+    # bare `t(` (e.g. `t.x()` on a tuple variable) doesn't false-
+    # positive. Kotlin/TS use bare `t(` (different convention).
     _stream_stripped "$1" "$2" \
         | rg -oI --pcre2 \
-            '\bNSLocalizedString\s*\(\s*"([^"]+)"' \
+            '\b(?:NSLocalizedString\s*\(|\.t\s*\()\s*"([^"]+)"' \
             -r '$1' 2>/dev/null || true
 }
 extract_keys_kotlin() {
