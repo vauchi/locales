@@ -1,0 +1,15 @@
+# Allowlist for `check-locale-key-coverage.sh`.
+#
+# Strings that look like i18n keys (matched by the per-language
+# extraction regex) but are intentionally NOT in en.json. Each entry
+# is one full key per line. Lines starting with `#` and blank lines
+# are ignored.
+#
+# Add entries sparingly — every line is "this isn't a typo, trust me."
+# Prefer fixing the source (rename to a non-key shape, move into a
+# constant, gate behind `#[cfg(test)]`) before adding to this list.
+
+# Test sentinel exercising the runtime "Missing: <key>" fallback at
+# core/vauchi-app/src/i18n.rs:134. Lives in i18n.rs's own #[cfg(test)]
+# block (line ~404). Removing this entry would break that test.
+nonexistent
