@@ -237,15 +237,34 @@ ERRORS=0
 # Pass 1 — typo/stale detection. Flag candidates that are NEITHER in
 # en.json NOR in the allowlist. This is the gate the original script
 # claimed to deliver but inverted with `grep -qFx` filter retention.
+#
+# Implementation note: the per-key lookup was originally
+# `echo "$EN_KEYS" | grep -qFx "$key"`, which spawns one
+# echo+grep pipeline per key. Under alpine:3.21 + BusyBox in CI, this
+# pattern was non-deterministically returning false on keys that ARE
+# present (MR linux-gtk!122 saw three different keys flagged across
+# three back-to-back runs of the same code on the same en.json). Read
+# both sets into bash associative arrays once; per-key lookup is then
+# a single in-process hash hit with no subprocess or pipe.
+declare -A EN_SET
+while IFS= read -r k; do
+    [[ -z "$k" ]] && continue
+    EN_SET["$k"]=1
+done <<< "$EN_KEYS"
+
+declare -A ALLOW_SET
+if [[ -n "$ALLOW" ]]; then
+    while IFS= read -r k; do
+        [[ -z "$k" ]] && continue
+        ALLOW_SET["$k"]=1
+    done <<< "$ALLOW"
+fi
+
 TYPOS=""
 while IFS= read -r key; do
     [[ -z "$key" ]] && continue
-    if echo "$EN_KEYS" | grep -qFx "$key"; then
-        continue  # in en.json — valid
-    fi
-    if [[ -n "$ALLOW" ]] && echo "$ALLOW" | grep -qFx "$key"; then
-        continue  # in allowlist — intentional non-i18n string
-    fi
+    [[ -n "${EN_SET[$key]+x}" ]] && continue       # in en.json — valid
+    [[ -n "${ALLOW_SET[$key]+x}" ]] && continue    # in allowlist
     TYPOS+="$key"$'\n'
 done <<< "$REFERENCED_KEYS"
 
