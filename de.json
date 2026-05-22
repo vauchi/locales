@@ -21,6 +21,7 @@
   "a11y.reduce_motion_desc": "Animationen und Uebergaenge minimieren",
   "a11y.search_contacts": "Search contacts",
   "a11y.selected": "Selected",
+  "a11y.settings_icon": "Einstellungen",
   "a11y.step_of": "Step {current} of {total}",
   "a11y.toast_prefix": "Toast: {message}",
   "about.what_is_vauchi.body": "Vauchi ist eine datenschutzorientierte Kontaktkarten-App. Du tauschst Karten persoenlich per QR-Code aus. Deine Daten werden Ende-zu-Ende verschluesselt und nie auf unseren Servern gespeichert. Wenn du deine Karte aktualisierst, erhalten alle deine Kontakte automatisch das Update.",

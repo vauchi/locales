@@ -21,6 +21,7 @@
   "a11y.reduce_motion_desc": "Minimize animations and transitions",
   "a11y.search_contacts": "Search contacts",
   "a11y.selected": "Selected",
+  "a11y.settings_icon": "Settings",
   "a11y.step_of": "Step {current} of {total}",
   "a11y.toast_prefix": "Toast: {message}",
   "about.what_is_vauchi.body": "Vauchi is a privacy-focused contact card app. You exchange cards in person via QR code. Your data is encrypted end-to-end and never stored on our servers. When you update your card, all your contacts receive the update automatically.",

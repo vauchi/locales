@@ -21,6 +21,7 @@
   "a11y.reduce_motion_desc": "Riduci al minimo le animazioni e le transizioni",
   "a11y.search_contacts": "Search contacts",
   "a11y.selected": "Selected",
+  "a11y.settings_icon": "Impostazioni",
   "a11y.step_of": "Step {current} of {total}",
   "a11y.toast_prefix": "Toast: {message}",
   "about.what_is_vauchi.body": "Vauchi e un'app per biglietti da visita orientata alla privacy. Scambi le carte di persona tramite codice QR. I tuoi dati sono crittografati end-to-end e mai memorizzati sui nostri server. Quando aggiorni la tua carta, tutti i tuoi contatti ricevono automaticamente l'aggiornamento.",
