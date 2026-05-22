@@ -788,6 +788,7 @@
   "onboarding.welcome_subtitle": "Tu tarjeta de contacto, tus reglas",
   "onboarding.welcome_title": "Bienvenido a Vauchi",
   "pin.enter": "Enter PIN",
+  "platform.app_menu": "Menú de la aplicación",
   "platform.audio_challenge_emitted": "Desafío de audio enviado",
   "platform.ble_advertising_started": "Anuncio Bluetooth iniciado",
   "platform.ble_disconnected": "Bluetooth desconectado",
