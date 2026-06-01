@@ -484,6 +484,8 @@
   "exchange.mode.qr_description": "Scan each other's QR codes face-to-face",
   "exchange.mode.unavailable": "Not available on this device",
   "exchange.new_contact_added": "Il nuovo contatto e stato aggiunto.",
+  "exchange.nfc.choose_role": "Send or Receive?",
+  "exchange.nfc.choose_role_subtitle": "Choose this device's role for the NFC tap",
   "exchange.no_qr_detected": "Nessun QR rilevato",
   "exchange.paste_instruction": "Incolli i dati di scambio di un altro utente",
   "exchange.paste_placeholder": "Incolli qui i dati di scambio...",
