@@ -776,7 +776,7 @@
   "onboarding.security_e2e_desc": "Seuls toi et tes contacts pouvez lire tes donnees",
   "onboarding.security_encrypted": "Chiffre",
   "onboarding.security_local": "Stocke localement",
-  "onboarding.security_local_desc": "Tes donnees ne quittent jamais ton appareil sans ta permission",
+  "onboarding.security_local_desc": "Tes informations ne sont partagées qu'avec les contacts que tu choisis — tout le reste quitte ton appareil chiffré ou illisible",
   "onboarding.security_subtitle": "Concu pour la securite",
   "onboarding.security_title": "Ta vie privee compte",
   "onboarding.security_you": "Toi",

@@ -776,7 +776,7 @@
   "onboarding.security_e2e_desc": "Nur du und deine Kontakte koennen deine Daten lesen",
   "onboarding.security_encrypted": "Verschluesselt",
   "onboarding.security_local": "Lokal gespeichert",
-  "onboarding.security_local_desc": "Deine Daten verlassen dein Geraet nie ohne deine Erlaubnis",
+  "onboarding.security_local_desc": "Deine Informationen werden nur mit Kontakten geteilt, die du auswählst — alles andere verlässt dein Gerät verschlüsselt oder unlesbar",
   "onboarding.security_subtitle": "Fuer Sicherheit gebaut",
   "onboarding.security_title": "Deine Privatsphaere zaehlt",
   "onboarding.security_you": "Du",

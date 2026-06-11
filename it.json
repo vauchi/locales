@@ -776,7 +776,7 @@
   "onboarding.security_e2e_desc": "Solo Lei e i Suoi contatti possono leggere i Suoi dati",
   "onboarding.security_encrypted": "Crittografato",
   "onboarding.security_local": "Archiviato localmente",
-  "onboarding.security_local_desc": "I Suoi dati non lasciano mai il dispositivo senza il Suo permesso",
+  "onboarding.security_local_desc": "Le Sue informazioni sono condivise solo con i contatti che sceglie — tutto il resto lascia il dispositivo cifrato o illeggibile",
   "onboarding.security_subtitle": "Progettato per la sicurezza",
   "onboarding.security_title": "La Sua privacy è importante",
   "onboarding.security_you": "Lei",
