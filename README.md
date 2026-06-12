@@ -18,13 +18,18 @@ Locale JSON files for [Vauchi](https://vauchi.com) — privacy-focused updatable
 | `de.json` | German | Complete |
 | `fr.json` | French | Complete |
 | `es.json` | Spanish | Complete |
+| `it.json` | Italian | Complete |
+
+CI (`validate:locales-strict`) enforces key parity with `en.json`, so
+every listed locale is complete by construction — the table tracks
+which languages exist, not percentages.
 
 ## Contributing Translations
 
 We welcome community translations! To contribute:
 
 1. Fork this repo
-2. Copy `en.json` to your language code (e.g., `it.json` for Italian)
+2. Copy `en.json` to your language code (e.g., `pt.json` for Portuguese)
 3. Translate all values — keep keys identical
 4. Submit a merge request
 
