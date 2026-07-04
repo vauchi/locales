@@ -589,6 +589,7 @@
   "exchange.usb.connect_subtitle": "Verbinden Sie Ihr Telefon per USB-Kabel",
   "exchange.usb.exchanging_status": "Verbunden. Verschlüsselte Daten werden ausgetauscht...",
   "exchange.usb.exchanging_subtitle": "Kontaktkarten werden ausgetauscht...",
+  "exchange.usb.instructions": "1. Verbinden Sie Ihr Telefon per USB-Kabel\n2. Aktivieren Sie USB-Tethering (Android) oder vertrauen Sie diesem Computer (iOS)\n3. Öffnen Sie Vauchi auf dem Telefon und starten Sie einen Austausch",
   "exchange.usb.title": "USB-Austausch",
   "exchange.verifying": "Austausch wird verifiziert...",
   "exchange.verifying.a11y": "Austausch wird überprüft",

@@ -589,6 +589,7 @@
   "exchange.usb.connect_subtitle": "Connect your phone via USB cable",
   "exchange.usb.exchanging_status": "Connected. Exchanging encrypted data...",
   "exchange.usb.exchanging_subtitle": "Exchanging contact cards...",
+  "exchange.usb.instructions": "1. Connect your phone with a USB cable\n2. Enable USB tethering (Android) or trust this computer (iOS)\n3. Open Vauchi on your phone and start an exchange",
   "exchange.usb.title": "USB Exchange",
   "exchange.verifying": "Verifying exchange...",
   "exchange.verifying.a11y": "Verifying exchange",

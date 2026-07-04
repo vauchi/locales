@@ -590,6 +590,7 @@
     "exchange.usb.connect_subtitle",
     "exchange.usb.exchanging_status",
     "exchange.usb.exchanging_subtitle",
+    "exchange.usb.instructions",
     "exchange.usb.title",
     "exchange.verifying",
     "exchange.verifying.a11y",

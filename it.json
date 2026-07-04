@@ -589,6 +589,7 @@
   "exchange.usb.connect_subtitle": "Collega il telefono con un cavo USB",
   "exchange.usb.exchanging_status": "Connesso. Scambio di dati crittografati...",
   "exchange.usb.exchanging_subtitle": "Scambio delle schede di contatto...",
+  "exchange.usb.instructions": "1. Collega il telefono con un cavo USB\n2. Attiva il tethering USB (Android) o autorizza questo computer (iOS)\n3. Apri Vauchi sul telefono e avvia uno scambio",
   "exchange.usb.title": "Scambio USB",
   "exchange.verifying": "Verifica dello scambio...",
   "exchange.verifying.a11y": "Verifica dello scambio",

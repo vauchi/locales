@@ -589,6 +589,7 @@
   "exchange.usb.connect_subtitle": "Connectez votre téléphone via un câble USB",
   "exchange.usb.exchanging_status": "Connecté. Échange de données chiffrées...",
   "exchange.usb.exchanging_subtitle": "Échange des cartes de contact...",
+  "exchange.usb.instructions": "1. Connectez votre téléphone avec un câble USB\n2. Activez le partage USB (Android) ou faites confiance à cet ordinateur (iOS)\n3. Ouvrez Vauchi sur votre téléphone et démarrez un échange",
   "exchange.usb.title": "Échange USB",
   "exchange.verifying": "Vérification de l'échange...",
   "exchange.verifying.a11y": "Vérification de l'échange",
