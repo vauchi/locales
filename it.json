@@ -1220,6 +1220,7 @@
   "settings.backup_export_hint": "Apre la schermata di esportazione del backup",
   "settings.backup_import_hint": "Apre la schermata di ripristino del backup",
   "settings.backup_reminders": "Promemoria di backup",
+  "settings.backup_reminders_a11y": "Frequenza dei promemoria di backup",
   "settings.backup_reminders_hint": "Tocca per cambiare la frequenza",
   "settings.cert_clear": "Cancella certificato",
   "settings.cert_clear_button": "Cancella",

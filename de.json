@@ -1220,6 +1220,7 @@
   "settings.backup_export_hint": "Öffnet den Bildschirm für den Backup-Export",
   "settings.backup_import_hint": "Öffnet den Bildschirm zur Backup-Wiederherstellung",
   "settings.backup_reminders": "Backup-Erinnerungen",
+  "settings.backup_reminders_a11y": "Häufigkeit der Backup-Erinnerungen",
   "settings.backup_reminders_hint": "Tippen, um die Häufigkeit zu ändern",
   "settings.cert_clear": "Zertifikat löschen",
   "settings.cert_clear_button": "Löschen",

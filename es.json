@@ -1220,6 +1220,7 @@
   "settings.backup_export_hint": "Abre la pantalla de exportación de copia de seguridad",
   "settings.backup_import_hint": "Abre la pantalla de restauración de copia de seguridad",
   "settings.backup_reminders": "Recordatorios de copia de seguridad",
+  "settings.backup_reminders_a11y": "Frecuencia de recordatorios de copia de seguridad",
   "settings.backup_reminders_hint": "Toque para cambiar la frecuencia",
   "settings.cert_clear": "Borrar certificado",
   "settings.cert_clear_button": "Borrar",

@@ -1221,6 +1221,7 @@
     "settings.backup_export_hint",
     "settings.backup_import_hint",
     "settings.backup_reminders",
+    "settings.backup_reminders_a11y",
     "settings.backup_reminders_hint",
     "settings.cert_clear",
     "settings.cert_clear_button",

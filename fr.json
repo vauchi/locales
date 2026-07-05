@@ -1220,6 +1220,7 @@
   "settings.backup_export_hint": "Ouvre l'écran d'exportation de sauvegarde",
   "settings.backup_import_hint": "Ouvre l'écran de restauration de sauvegarde",
   "settings.backup_reminders": "Rappels de sauvegarde",
+  "settings.backup_reminders_a11y": "Fréquence des rappels de sauvegarde",
   "settings.backup_reminders_hint": "Touchez pour changer la fréquence",
   "settings.cert_clear": "Effacer le certificat",
   "settings.cert_clear_button": "Effacer",
