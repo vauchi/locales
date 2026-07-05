@@ -729,6 +729,7 @@
   "exchange.point_camera": "Kamera auf den QR-Code des anderen Geräts richten",
   "exchange.preview.change_groups": "Gruppen ändern",
   "exchange.preview.fields_a11y": "Kontaktfelder",
+  "exchange.preview.name_picker_label": "Anzeigename für diesen Austausch",
   "exchange.preview.start": "Austausch starten",
   "exchange.preview.title": "Sie teilen",
   "exchange.proximity_ready": "Ultraschallverifizierung bereit",

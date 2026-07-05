@@ -730,6 +730,7 @@
     "exchange.point_camera",
     "exchange.preview.change_groups",
     "exchange.preview.fields_a11y",
+    "exchange.preview.name_picker_label",
     "exchange.preview.start",
     "exchange.preview.title",
     "exchange.proximity_ready",

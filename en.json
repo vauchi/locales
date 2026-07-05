@@ -729,6 +729,7 @@
   "exchange.point_camera": "Point camera at other phone's QR",
   "exchange.preview.change_groups": "Change Groups",
   "exchange.preview.fields_a11y": "Contact fields",
+  "exchange.preview.name_picker_label": "Display name for this exchange",
   "exchange.preview.start": "Start Exchange",
   "exchange.preview.title": "You will share",
   "exchange.proximity_ready": "Ultrasonic verification ready",

@@ -729,6 +729,7 @@
   "exchange.point_camera": "Inquadri il QR dell'altro telefono",
   "exchange.preview.change_groups": "Cambia gruppi",
   "exchange.preview.fields_a11y": "Campi del contatto",
+  "exchange.preview.name_picker_label": "Nome visualizzato per questo scambio",
   "exchange.preview.start": "Avvia scambio",
   "exchange.preview.title": "Condividerai",
   "exchange.proximity_ready": "Verifica ultrasonica pronta",
