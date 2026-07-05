@@ -30,6 +30,7 @@
   "a11y.slider_minimum": "Mínimo",
   "a11y.step_of": "Step {current} of {total}",
   "a11y.toast_prefix": "Toast: {message}",
+  "a11y.toggle_label": "Interruptor {name}",
   "about.what_is_vauchi.body": "Vauchi es una aplicación de tarjetas de contacto centrada en la privacidad. Intercambias tarjetas en persona mediante código QR. Tus datos están cifrados de extremo a extremo y nunca se almacenan en nuestros servidores. Cuando actualizas tu tarjeta, todos tus contactos reciben la actualización automáticamente.",
   "about.what_is_vauchi.link_label": "Saber más",
   "about.what_is_vauchi.title": "Qué es Vauchi?",

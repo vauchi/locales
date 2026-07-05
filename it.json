@@ -30,6 +30,7 @@
   "a11y.slider_minimum": "Minimo",
   "a11y.step_of": "Step {current} of {total}",
   "a11y.toast_prefix": "Toast: {message}",
+  "a11y.toggle_label": "Interruttore {name}",
   "about.what_is_vauchi.body": "Vauchi e un'app per biglietti da visita orientata alla privacy. Scambi le carte di persona tramite codice QR. I tuoi dati sono crittografati end-to-end e mai memorizzati sui nostri server. Quando aggiorni la tua carta, tutti i tuoi contatti ricevono automaticamente l'aggiornamento.",
   "about.what_is_vauchi.link_label": "Scopri di più",
   "about.what_is_vauchi.title": "Cos'e Vauchi?",
