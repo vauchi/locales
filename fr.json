@@ -1148,6 +1148,7 @@
   "identity.status_active": "Actif",
   "identity.status_deleting": "Suppression en cours",
   "identity.title": "Identité",
+  "import.file_path_label": "Chemin du fichier :",
   "import.warning.duplicate_uid": "Doublon ignore (UID: {uid})",
   "import.warning.limit_reached": "Limite de contacts atteinte ({max}) ; importations restantes ignorées",
   "import.warning.save_failed": "Contact ignore : {error}",

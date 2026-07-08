@@ -1148,6 +1148,7 @@
   "identity.status_active": "Activa",
   "identity.status_deleting": "Eliminación pendiente",
   "identity.title": "Identidad",
+  "import.file_path_label": "Ruta del archivo:",
   "import.warning.duplicate_uid": "Duplicado omitido (UID: {uid})",
   "import.warning.limit_reached": "Limite de contactos alcanzado ({max}); se omitieron las importaciones restantes",
   "import.warning.save_failed": "Contacto omitido: {error}",

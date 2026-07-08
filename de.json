@@ -1148,6 +1148,7 @@
   "identity.status_active": "Aktiv",
   "identity.status_deleting": "Löschung ausstehend",
   "identity.title": "Identität",
+  "import.file_path_label": "Dateipfad:",
   "import.warning.duplicate_uid": "Duplikat übersprungen (UID: {uid})",
   "import.warning.limit_reached": "Kontaktlimit erreicht ({max}); restliche Importe übersprungen",
   "import.warning.save_failed": "Kontakt übersprungen: {error}",

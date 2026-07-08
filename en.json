@@ -1148,6 +1148,7 @@
   "identity.status_active": "Active",
   "identity.status_deleting": "Pending Deletion",
   "identity.title": "Identity",
+  "import.file_path_label": "File path:",
   "import.warning.duplicate_uid": "Skipped duplicate (UID: {uid})",
   "import.warning.limit_reached": "Contact limit reached ({max}); skipped remaining imports",
   "import.warning.save_failed": "Skipped contact: {error}",

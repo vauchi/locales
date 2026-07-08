@@ -1148,6 +1148,7 @@
   "identity.status_active": "Attiva",
   "identity.status_deleting": "Eliminazione in corso",
   "identity.title": "Identità",
+  "import.file_path_label": "Percorso file:",
   "import.warning.duplicate_uid": "Duplicato ignorato (UID: {uid})",
   "import.warning.limit_reached": "Limite di contatti raggiunto ({max}); importazioni rimanenti ignorate",
   "import.warning.save_failed": "Contatto ignorato: {error}",
