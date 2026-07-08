@@ -1,22 +1,10 @@
 {
-  "_meta": [
-    [
-      "english_name",
-      "English"
-    ],
-    [
-      "is_rtl",
-      false
-    ],
-    [
-      "locale",
-      "en"
-    ],
-    [
-      "name",
-      "English"
-    ]
-  ],
+  "_meta": {
+    "english_name": "English",
+    "is_rtl": false,
+    "locale": "en",
+    "name": "English"
+  },
   "a11y.app_locked": "App locked",
   "a11y.avatar_for": "Avatar for {name}",
   "a11y.display_name": "Display name: {name}",
