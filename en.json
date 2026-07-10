@@ -1156,6 +1156,7 @@
   "group_detail.visibility_for_a11y": "Visibility for {label}",
   "group_detail.visible_fields_label": "Visible Fields",
   "group_detail.visible_to_group_hint": "Visible to this group",
+  "groups_list.first_group_education": "Entries you assign to a group are visible only to its members. Entries outside every group keep their own Visible/Hidden toggle.",
   "groups_list.member_count_plural": "{count} members",
   "groups_list.member_count_singular": "1 member",
   "groups_list.members_subtitle": "Which contacts are in each group",

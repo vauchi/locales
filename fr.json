@@ -1156,6 +1156,7 @@
   "group_detail.visibility_for_a11y": "Visibilité pour {label}",
   "group_detail.visible_fields_label": "Champs visibles",
   "group_detail.visible_to_group_hint": "Visible pour ce groupe",
+  "groups_list.first_group_education": "Les entrées que vous attribuez à un groupe ne sont visibles que par ses membres. Les entrées hors de tout groupe conservent leur propre bascule Visible/Masqué.",
   "groups_list.member_count_plural": "{count} membres",
   "groups_list.member_count_singular": "1 membre",
   "groups_list.members_subtitle": "Quels contacts sont dans chaque groupe",

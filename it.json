@@ -1156,6 +1156,7 @@
   "group_detail.visibility_for_a11y": "Visibilità per {label}",
   "group_detail.visible_fields_label": "Campi visibili",
   "group_detail.visible_to_group_hint": "Visibile a questo gruppo",
+  "groups_list.first_group_education": "Le voci che assegni a un gruppo sono visibili solo ai suoi membri. Le voci fuori da ogni gruppo mantengono il proprio interruttore Visibile/Nascosto.",
   "groups_list.member_count_plural": "{count} membri",
   "groups_list.member_count_singular": "1 membro",
   "groups_list.members_subtitle": "Quali contatti sono in ogni gruppo",

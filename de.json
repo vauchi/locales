@@ -1156,6 +1156,7 @@
   "group_detail.visibility_for_a11y": "Sichtbarkeit für {label}",
   "group_detail.visible_fields_label": "Sichtbare Felder",
   "group_detail.visible_to_group_hint": "Sichtbar für diese Gruppe",
+  "groups_list.first_group_education": "Einträge, die du einer Gruppe zuweist, sehen nur deren Mitglieder. Einträge außerhalb jeder Gruppe behalten ihren eigenen Sichtbar/Verborgen-Schalter.",
   "groups_list.member_count_plural": "{count} Mitglieder",
   "groups_list.member_count_singular": "1 Mitglied",
   "groups_list.members_subtitle": "Welche Kontakte sich in welcher Gruppe befinden",

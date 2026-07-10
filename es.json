@@ -1156,6 +1156,7 @@
   "group_detail.visibility_for_a11y": "Visibilidad para {label}",
   "group_detail.visible_fields_label": "Campos visibles",
   "group_detail.visible_to_group_hint": "Visible para este grupo",
+  "groups_list.first_group_education": "Las entradas que asignas a un grupo solo son visibles para sus miembros. Las entradas fuera de todo grupo conservan su propio interruptor Visible/Oculto.",
   "groups_list.member_count_plural": "{count} miembros",
   "groups_list.member_count_singular": "1 miembro",
   "groups_list.members_subtitle": "Qué contactos están en cada grupo",
