@@ -1424,6 +1424,7 @@
   "my_info_entry_detail.visible_to_count": "Visible to {count} contacts",
   "my_info_entry_detail.visible_to_groups_label": "Visible to groups",
   "nav.activity": "Activity",
+  "nav.back": "Back",
   "nav.backup": "Backup",
   "nav.contacts": "Contacts",
   "nav.devices": "Devices",
