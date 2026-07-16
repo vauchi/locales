@@ -2233,6 +2233,7 @@
   "visibility.load_error": "Errore nel caricamento dei dati di visibilità",
   "visibility.no_contacts": "Nessun contatto ancora. Aggiunga contatti per gestire la visibilità.",
   "visibility.no_fields": "Nessun campo sulla Sua scheda. Aggiunga campi per gestire la visibilità.",
+  "visibility.no_groups": "Nessun gruppo",
   "visibility.show_to_all": "Mostra a tutti",
   "visibility.suggested": "Suggeriti",
   "visibility.title": "Impostazioni di visibilità",

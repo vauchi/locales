@@ -2233,6 +2233,7 @@
   "visibility.load_error": "Error loading visibility data",
   "visibility.no_contacts": "No contacts yet. Add contacts to manage visibility.",
   "visibility.no_fields": "No fields on your card yet. Add fields to manage visibility.",
+  "visibility.no_groups": "No groups",
   "visibility.show_to_all": "Show to all",
   "visibility.suggested": "Suggested",
   "visibility.title": "Visibility Settings",

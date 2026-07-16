@@ -2233,6 +2233,7 @@
   "visibility.load_error": "Fehler beim Laden der Sichtbarkeitsdaten",
   "visibility.no_contacts": "Noch keine Kontakte. Füge Kontakte hinzu, um die Sichtbarkeit zu verwalten.",
   "visibility.no_fields": "Noch keine Felder auf deiner Karte. Füge Felder hinzu, um die Sichtbarkeit zu verwalten.",
+  "visibility.no_groups": "Keine Gruppen",
   "visibility.show_to_all": "Allen zeigen",
   "visibility.suggested": "Vorgeschlagen",
   "visibility.title": "Sichtbarkeitseinstellungen",

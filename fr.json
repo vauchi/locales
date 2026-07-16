@@ -2233,6 +2233,7 @@
   "visibility.load_error": "Erreur lors du chargement des données de visibilité",
   "visibility.no_contacts": "Pas encore de contacts. Ajoute des contacts pour gérer la visibilité.",
   "visibility.no_fields": "Pas encore de champs sur ta carte. Ajoute des champs pour gérer la visibilité.",
+  "visibility.no_groups": "Aucun groupe",
   "visibility.show_to_all": "Montrer a tous",
   "visibility.suggested": "Suggérés",
   "visibility.title": "Paramètres de visibilité",

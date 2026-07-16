@@ -2233,6 +2233,7 @@
   "visibility.load_error": "Error al cargar los datos de visibilidad",
   "visibility.no_contacts": "Aun no hay contactos. Agrega contactos para gestionar la visibilidad.",
   "visibility.no_fields": "Aun no hay campos en tu tarjeta. Agrega campos para gestionar la visibilidad.",
+  "visibility.no_groups": "Sin grupos",
   "visibility.show_to_all": "Mostrar a todos",
   "visibility.suggested": "Sugeridas",
   "visibility.title": "Ajustes de visibilidad",
