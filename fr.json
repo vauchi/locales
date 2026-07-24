@@ -953,7 +953,7 @@
   "exchange.mode_instruction.bump": "Cognez doucement les téléphones ensemble",
   "exchange.mode_instruction.cable": "Connectez les deux avec un câble USB",
   "exchange.mode_instruction.glance": "Montrez votre code ou scannez le leur",
-  "exchange.mode_instruction.hover": "Tenez les téléphones proches l'un de l'autre",
+  "exchange.mode_instruction.hover": "Pointez les caméras vers l'écran de l'autre",
   "exchange.mode_instruction.link": "Envoyez un lien pour vous connecter à distance",
   "exchange.mode_instruction.magic": "Rapprochez les téléphones — la connexion se fait toute seule",
   "exchange.mode_instruction.shake": "Tenez-les ensemble, puis secouez",

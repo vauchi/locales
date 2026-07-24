@@ -953,7 +953,7 @@
   "exchange.mode_instruction.bump": "Gently bump the phones together",
   "exchange.mode_instruction.cable": "Connect both with a USB cable",
   "exchange.mode_instruction.glance": "Show your code or scan theirs",
-  "exchange.mode_instruction.hover": "Hold the phones close together",
+  "exchange.mode_instruction.hover": "Point cameras at each other's screen",
   "exchange.mode_instruction.link": "Send a link to connect remotely",
   "exchange.mode_instruction.magic": "Bring the phones close — it connects itself",
   "exchange.mode_instruction.shake": "Hold together, then shake",
