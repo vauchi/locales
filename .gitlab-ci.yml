@@ -124,6 +124,28 @@ validate:locales-strict:
         - "*.json"
   allow_failure: false
 
+# Quality gates that key parity cannot catch: a string still in English, the
+# wrong form of address, a dropped {placeholder}, or Spanish missing its
+# opening ¿ / ¡. Each guards a defect that previously reached main. Same
+# script the pre-commit hook runs, so local and CI verdicts cannot diverge.
+validate:locale-quality:
+  stage: validate
+  tags:
+    - self-hosted
+    - node
+  needs:
+    - job: lint:json
+      optional: true
+  script:
+    - python3 scripts/check-locale-quality.py .
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - "*.json"
+        - "scripts/check-locale-quality.py"
+    - if: $CI_COMMIT_BRANCH == "main"
+  allow_failure: false
+
 validate:schema:
   stage: validate
   tags:

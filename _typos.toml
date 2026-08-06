@@ -5,6 +5,13 @@
 # typos source code spell checker configuration
 # Non-English locale files contain correct foreign words that the
 # English spell checker flags as typos (e.g. German "Alle", French "Termine")
+#
+# This exclusion is deliberate and should stay. `typos` matches an English
+# misspelling corpus rather than per-language dictionaries, so pointing it at
+# these files yields 1494 findings and no true positives — `ist`→`is`,
+# `contactos`→`contacts`, `sur`→`sure`, `Impossibile`→`Impossible`.
+# Language-aware checking belongs in scripts/check-locale-quality.py and the
+# grammar tooling, not here.
 
 [files]
 extend-exclude = [
@@ -12,4 +19,7 @@ extend-exclude = [
     "fr.json",
     "es.json",
     "it.json",
+    # Quotes German, Spanish, French and Italian register markers verbatim
+    # ("Geben Sie", "Introduzca"), which trip the same English corpus.
+    "scripts/check-locale-quality.py",
 ]
