@@ -1402,6 +1402,8 @@
   "multi_stage.shake_not_confirmed_title": "Das Schütteln konnte nicht bestätigt werden",
   "multi_stage.use_front_camera_button": "Frontkamera verwenden",
   "multi_stage.use_rear_camera_button": "Rückkamera verwenden",
+  "my_info.add_field.groups_not_shared_message": "Dein neuer Eintrag wurde gespeichert, aber {count} der gewählten Gruppen haben ihn nicht erhalten. Öffne die Gruppe, um ihn zu teilen.",
+  "my_info.add_field.groups_not_shared_title": "Gespeichert, aber nicht geteilt",
   "my_info.avatar_a11y_hint": "Tap to edit avatar",
   "my_info.avatar_a11y_label": "Your avatar",
   "my_info.empty_entries": "No entries yet. Add your first entry to share with contacts.\n\nYou can add phone numbers, email addresses, websites, social profiles, and more. Tap \"Add Entry\" to get started.",

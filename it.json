@@ -1402,6 +1402,8 @@
   "multi_stage.shake_not_confirmed_title": "Impossibile confermare la scossa",
   "multi_stage.use_front_camera_button": "Usa fotocamera anteriore",
   "multi_stage.use_rear_camera_button": "Usa fotocamera posteriore",
+  "my_info.add_field.groups_not_shared_message": "Il tuo nuovo dato è stato salvato, ma {count} dei gruppi scelti non l'hanno ricevuto. Apri il gruppo per condividerlo.",
+  "my_info.add_field.groups_not_shared_title": "Salvato, ma non condiviso",
   "my_info.avatar_a11y_hint": "Tap to edit avatar",
   "my_info.avatar_a11y_label": "Your avatar",
   "my_info.empty_entries": "No entries yet. Add your first entry to share with contacts.\n\nYou can add phone numbers, email addresses, websites, social profiles, and more. Tap \"Add Entry\" to get started.",
