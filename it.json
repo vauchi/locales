@@ -37,7 +37,7 @@
   "a11y.toast_prefix": "Toast: {message}",
   "a11y.toggle_label": "Interruttore {name}",
   "about.body": "Vauchi — Privacy-focused updatable contact cards.\n\nVersion 0.5.0\nLicense: GPL-3.0-or-later",
-  "about.what_is_vauchi.body": "Vauchi e un'app per biglietti da visita orientata alla privacy. Scambi le carte di persona tramite codice QR. I tuoi dati sono crittografati end-to-end e mai memorizzati sui nostri server. Quando aggiorni la tua carta, tutti i tuoi contatti ricevono automaticamente l'aggiornamento.",
+  "about.what_is_vauchi.body": "Vauchi è un'app per biglietti da visita orientata alla privacy. Scambi le carte di persona tramite codice QR. I tuoi dati sono crittografati end-to-end e mai memorizzati sui nostri server. Quando aggiorni la tua carta, tutti i tuoi contatti ricevono automaticamente l'aggiornamento.",
   "about.what_is_vauchi.link_label": "Scopri di più",
   "about.what_is_vauchi.title": "Cos'e Vauchi?",
   "action.apply": "Applica",
