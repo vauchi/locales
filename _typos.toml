@@ -19,7 +19,15 @@ extend-exclude = [
     "fr.json",
     "es.json",
     "it.json",
-    # Quotes German, Spanish, French and Italian register markers verbatim
-    # ("Geben Sie", "Introduzca"), which trip the same English corpus.
-    "scripts/check-locale-quality.py",
+    # Leading **/ so the pattern still matches when a caller passes an
+    # absolute path — the pre-push hook does, and a bare relative pattern
+    # silently fails to exclude anything in that case.
+    "**/check-locale-quality.py",
 ]
+
+# The quality checker quotes register markers verbatim in its patterns and
+# docstring. These are correct German and Italian words, not typos.
+[default.extend-words]
+Sie = "Sie"
+sie = "sie"
+Lei = "Lei"
