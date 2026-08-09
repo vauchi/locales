@@ -208,7 +208,10 @@ esac
 # ---- allowlist + en.json key set -----------------------------------------
 
 if [[ -f "$ALLOWLIST_FILE" ]]; then
-    ALLOW=$(grep -v '^\s*#' "$ALLOWLIST_FILE" | grep -v '^\s*$' | sort -u || true)
+    # POSIX classes, not \s: BSD grep treats \s literally, so on macOS a
+    # commented allowlist line would survive and be read as an allowed key.
+    ALLOW=$(grep -v '^[[:space:]]*#' "$ALLOWLIST_FILE" |
+        grep -v '^[[:space:]]*$' | sort -u || true)
 else
     ALLOW=""
 fi
