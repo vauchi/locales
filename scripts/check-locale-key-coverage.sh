@@ -157,9 +157,32 @@ _stream_stripped() {
 }
 
 extract_keys_rust() {
+    # Two shapes, and both must survive rustfmt's line breaking:
+    #
+    #   get_string(locale, "key")            — the free functions
+    #   get_string_with_args(locale, "key", …)
+    #   self.t("key")                        — the dominant convention
+    #
+    # `.t(` was previously matched for Swift only, so 1414 `self.t(` call
+    # sites in vauchi-app were invisible and the gate checked 48 keys out
+    # of 974. A long argument list is also split across lines by rustfmt,
+    # putting the key literal on its own line — line-based matching never
+    # saw those either. That pair is why `hardware.error_title` and four
+    # siblings reached main absent from every locale (2026-08-07).
+    #
+    # `tr` joins the stream so a split call still matches. Keys must look
+    # like `a.b` (dotted, lowercase) so an unrelated `.t("…")` on some
+    # other receiver cannot inject a bogus reference — a false positive
+    # here blocks merges, so the shape is deliberately strict.
+    # The optional leading group skips a first argument such as
+    # `self.render_context.resolved_locale(),` — it must therefore admit
+    # parentheses, since that argument is itself a call. It excludes only
+    # commas and quotes, which bounds it to a single argument and stops it
+    # running past the key it is meant to precede.
     _stream_stripped "$1" "$2" \
+        | tr '\n' ' ' \
         | rg -oI --pcre2 \
-            '\bget_string(?:_with_args)?\s*\([^,]*,\s*"([^"]+)"' \
+            '\b(?:get_string(?:_with_args)?|\.t)\s*\(\s*(?:[^,"]*,\s*)?"([a-z0-9_]+(?:\.[a-z0-9_]+)+)"' \
             -r '$1' 2>/dev/null || true
 }
 extract_keys_swift() {
