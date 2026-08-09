@@ -155,6 +155,7 @@
   "avatar.style_initials": "Iniziali",
   "avatar.style_mandelbrot": "Mandelbrot",
   "avatar.use_button": "Usa",
+  "avatar_editor.update_failed_title": "Aggiornamento avatar non riuscito",
   "backup.auth_biometric_export": "Autenticarsi per esportare il backup della propria identità",
   "backup.auth_biometric_import": "Autenticarsi per importare il backup della propria identità",
   "backup.auth_export_reason": "L'esportazione del backup richiede l'autenticazione con Face ID o Touch ID per proteggere la tua identità.",

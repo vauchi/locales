@@ -155,6 +155,7 @@
   "avatar.style_initials": "Initiales",
   "avatar.style_mandelbrot": "Mandelbrot",
   "avatar.use_button": "Utiliser",
+  "avatar_editor.update_failed_title": "Échec de la mise à jour de l'avatar",
   "backup.auth_biometric_export": "Authentifiez-vous pour exporter votre sauvegarde d'identité",
   "backup.auth_biometric_import": "Authentifiez-vous pour importer votre sauvegarde d'identité",
   "backup.auth_export_reason": "L'exportation de votre sauvegarde nécessite une authentification Face ID ou Touch ID pour protéger votre identité.",

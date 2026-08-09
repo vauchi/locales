@@ -156,6 +156,7 @@
     "avatar.style_initials",
     "avatar.style_mandelbrot",
     "avatar.use_button",
+    "avatar_editor.update_failed_title",
     "backup.auth_biometric_export",
     "backup.auth_biometric_import",
     "backup.auth_export_reason",
