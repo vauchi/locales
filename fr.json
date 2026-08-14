@@ -1348,6 +1348,8 @@
   "link_exchange.retrieving_a11y": "Récupération du contact",
   "link_exchange.retrieving_a11y_hint": "Récupération et déchiffrement de la carte de contact",
   "link_exchange.retrieving_status": "Récupération du contact...",
+  "link_exchange.share_link_a11y": "Lien d'échange",
+  "link_exchange.share_link_a11y_hint": "Partagez-le avec la personne que vous rencontrez",
   "link_exchange.share_link_subtitle": "Envoyez ce lien pour échanger des contacts",
   "link_exchange.share_link_title": "Partager le lien",
   "link_exchange.success_detail": "Vous pouvez trouver le nouveau contact dans votre liste de contacts.",

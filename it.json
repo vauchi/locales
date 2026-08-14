@@ -1348,6 +1348,8 @@
   "link_exchange.retrieving_a11y": "Recupero contatto",
   "link_exchange.retrieving_a11y_hint": "Recupero e decrittazione della scheda contatto",
   "link_exchange.retrieving_status": "Recupero contatto...",
+  "link_exchange.share_link_a11y": "Link di scambio",
+  "link_exchange.share_link_a11y_hint": "Condividilo con la persona che stai incontrando",
   "link_exchange.share_link_subtitle": "Invia questo link per scambiare contatti",
   "link_exchange.share_link_title": "Condividi link",
   "link_exchange.success_detail": "Puoi trovare il nuovo contatto nel tuo elenco contatti.",

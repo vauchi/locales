@@ -1348,6 +1348,8 @@
   "link_exchange.retrieving_a11y": "Retrieving contact",
   "link_exchange.retrieving_a11y_hint": "Fetching and decrypting the contact card",
   "link_exchange.retrieving_status": "Retrieving contact...",
+  "link_exchange.share_link_a11y": "Exchange link",
+  "link_exchange.share_link_a11y_hint": "Share it with the person you are meeting",
   "link_exchange.share_link_subtitle": "Send this link to exchange contacts",
   "link_exchange.share_link_title": "Share Link",
   "link_exchange.success_detail": "You can find the new contact in your contacts list.",

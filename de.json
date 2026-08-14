@@ -1348,6 +1348,8 @@
   "link_exchange.retrieving_a11y": "Kontakt wird abgerufen",
   "link_exchange.retrieving_a11y_hint": "Kontaktkarte wird abgerufen und entschlüsselt",
   "link_exchange.retrieving_status": "Kontakt wird abgerufen...",
+  "link_exchange.share_link_a11y": "Austausch-Link",
+  "link_exchange.share_link_a11y_hint": "Teile ihn mit der Person, die du triffst",
   "link_exchange.share_link_subtitle": "Sende diesen Link, um Kontakte auszutauschen",
   "link_exchange.share_link_title": "Link teilen",
   "link_exchange.success_detail": "Du findest den neuen Kontakt in deiner Kontaktliste.",
