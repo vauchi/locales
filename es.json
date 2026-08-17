@@ -1334,6 +1334,7 @@
   "link_exchange.contact_added_a11y": "Contacto añadido",
   "link_exchange.contact_added_subtitle": "Se ha guardado la tarjeta de contacto de la otra persona.",
   "link_exchange.contact_added_title": "Contacto añadido",
+  "link_exchange.contact_updated_title": "Contacto actualizado",
   "link_exchange.link_failed_a11y": "Enlace fallido",
   "link_exchange.link_failed_subtitle": "No se pudo completar el intercambio de contacto.",
   "link_exchange.link_failed_title": "Enlace fallido",

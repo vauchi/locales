@@ -1334,6 +1334,7 @@
   "link_exchange.contact_added_a11y": "Contact added",
   "link_exchange.contact_added_subtitle": "The other person's contact card has been saved.",
   "link_exchange.contact_added_title": "Contact Added",
+  "link_exchange.contact_updated_title": "Contact Updated",
   "link_exchange.link_failed_a11y": "Link failed",
   "link_exchange.link_failed_subtitle": "The contact exchange could not be completed.",
   "link_exchange.link_failed_title": "Link Failed",
