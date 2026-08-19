@@ -1419,6 +1419,7 @@
   "multi_stage.own_qr_confirming": "Conferma…",
   "multi_stage.own_qr_connecting": "Connessione…",
   "multi_stage.own_qr_show_this": "Mostra questo",
+  "multi_stage.own_qr_transferring_both": "Invio {sent}/{total} · Ricezione {recv}/{peer_total}",
   "multi_stage.own_qr_transferring_ellipsis": "Trasferimento…",
   "multi_stage.own_qr_transferring_progress": "Trasferimento {sent}/{total}",
   "multi_stage.own_qr_verifying": "Verifica…",

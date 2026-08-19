@@ -1419,6 +1419,7 @@
   "multi_stage.own_qr_confirming": "Bestätige…",
   "multi_stage.own_qr_connecting": "Verbinde…",
   "multi_stage.own_qr_show_this": "Zeige dies",
+  "multi_stage.own_qr_transferring_both": "Sende {sent}/{total} · Empfange {recv}/{peer_total}",
   "multi_stage.own_qr_transferring_ellipsis": "Übertrage…",
   "multi_stage.own_qr_transferring_progress": "Übertrage {sent}/{total}",
   "multi_stage.own_qr_verifying": "Überprüfe…",
