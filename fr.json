@@ -1662,7 +1662,7 @@
   "privacy.deletion_scheduled": "Suppression de l'identité programmée. {days} jours restants.",
   "privacy.deletion_scheduled_toast": "Suppression de l'identité planifiée. Vous avez 7 jours pour l'annuler.",
   "privacy.deletion_status": "État de la suppression",
-  "privacy.emergency_wipe_failed": "L'effacement d'urgence a échoué.",
+  "privacy.emergency_wipe_failed": "La suppression d'urgence a échoué.",
   "privacy.error_generic": "Échoué : {error}",
   "privacy.export_data": "Exporter mes données",
   "privacy.export_description": "Téléchargez toutes vos données dans un format portable",
