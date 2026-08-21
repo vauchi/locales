@@ -1666,7 +1666,7 @@
   "privacy.error_generic": "Fallo: {error}",
   "privacy.export_data": "Exportar mis datos",
   "privacy.export_description": "Descarga todos tus datos en un formato portable",
-  "privacy.export_failed": "La exportación fallo: {error}",
+  "privacy.export_failed": "La exportación falló: {error}",
   "privacy.export_failed_read": "La exportación falló: no se pudieron leer los datos.",
   "privacy.export_failed_serialize": "La exportación falló: no se pudieron serializar los datos.",
   "privacy.export_failed_title": "Error de exportación",
