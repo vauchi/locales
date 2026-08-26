@@ -1505,7 +1505,7 @@
   "onboarding.create_identity": "Créer une nouvelle identité",
   "onboarding.device_link_guidance_body": "Pour transférer votre compte vers cet appareil, exportez une sauvegarde depuis votre autre appareil connecté (Réglages → Sauvegarde), puis restaurez-la ici. La liaison d'appareils en direct arrive bientôt.",
   "onboarding.device_link_guidance_title": "Ajouter un autre appareil",
-  "onboarding.done_subtitle": "Voici ce que verront vos contacts",
+  "onboarding.done_subtitle": "Votre carte est prête — choisissez par où commencer",
   "onboarding.done_title": "Que souhaitez-vous faire ?",
   "onboarding.email_a11y": "Champ de l'adresse e-mail",
   "onboarding.email_a11y_hint": "Saisissez votre adresse e-mail",

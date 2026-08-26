@@ -1505,7 +1505,7 @@
   "onboarding.create_identity": "Neue Identität erstellen",
   "onboarding.device_link_guidance_body": "Um dein Konto auf dieses Gerät zu übertragen, exportiere ein Backup auf deinem anderen angemeldeten Gerät (Einstellungen → Backup) und stelle es hier wieder her. Die Live-Geräteverknüpfung folgt in Kürze.",
   "onboarding.device_link_guidance_title": "Weiteres Gerät hinzufügen",
-  "onboarding.done_subtitle": "Das sehen deine Kontakte",
+  "onboarding.done_subtitle": "Deine Karte ist fertig — wähle, wo du beginnst",
   "onboarding.done_title": "Was möchtest du tun?",
   "onboarding.email_a11y": "Eingabefeld für E-Mail-Adresse",
   "onboarding.email_a11y_hint": "Gib deine E-Mail-Adresse ein",

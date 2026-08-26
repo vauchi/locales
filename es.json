@@ -1505,7 +1505,7 @@
   "onboarding.create_identity": "Crear una identidad nueva",
   "onboarding.device_link_guidance_body": "Para mover tu cuenta a este dispositivo, exporta una copia de seguridad en tu otro dispositivo con sesión iniciada (Ajustes → Copia de seguridad) y restáurala aquí. El enlace de dispositivos en vivo llegará pronto.",
   "onboarding.device_link_guidance_title": "Agregar otro dispositivo",
-  "onboarding.done_subtitle": "Esto es lo que verán sus contactos",
+  "onboarding.done_subtitle": "Su tarjeta está lista — elija por dónde empezar",
   "onboarding.done_title": "¿Qué le gustaría hacer?",
   "onboarding.email_a11y": "Campo de la dirección de correo",
   "onboarding.email_a11y_hint": "Introduce su dirección de correo",

@@ -1505,7 +1505,7 @@
   "onboarding.create_identity": "Crea una nuova identità",
   "onboarding.device_link_guidance_body": "Per spostare il tuo account su questo dispositivo, esporta un backup dall'altro dispositivo con cui hai effettuato l'accesso (Impostazioni → Backup), quindi ripristinalo qui. Il collegamento dei dispositivi in tempo reale arriverà presto.",
   "onboarding.device_link_guidance_title": "Aggiungi un altro dispositivo",
-  "onboarding.done_subtitle": "Questo è ciò che vedranno i contatti",
+  "onboarding.done_subtitle": "La tua scheda è pronta — scegli da dove iniziare",
   "onboarding.done_title": "Cosa vorresti fare?",
   "onboarding.email_a11y": "Campo dell'indirizzo email",
   "onboarding.email_a11y_hint": "Inserisci il tuo indirizzo email",
