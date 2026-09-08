@@ -224,6 +224,7 @@
   "backup.warning_replace": "Warnung: Das Importieren einer Sicherung ersetzt deine aktuelle Identität!",
   "backup.wizard.backup_item": "Sicherung",
   "backup.wizard.choose_password": "Wähle ein Sicherungspasswort",
+  "backup.wizard.choose_file": "Sicherungsdatei wählen",
   "backup.wizard.complete_hint": "Dein Sicherungsvorgang wurde erfolgreich abgeschlossen.",
   "backup.wizard.confirm_label": "Bestätige dein Sicherungspasswort",
   "backup.wizard.create": "Sicherung erstellen",

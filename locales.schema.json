@@ -223,6 +223,7 @@
     "backup.title",
     "backup.warning_replace",
     "backup.wizard.backup_item",
+    "backup.wizard.choose_file",
     "backup.wizard.choose_password",
     "backup.wizard.complete_hint",
     "backup.wizard.confirm_label",

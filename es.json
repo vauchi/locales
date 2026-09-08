@@ -224,6 +224,7 @@
   "backup.warning_replace": "¡Advertencia: Importar un respaldo reemplazará su identidad actual!",
   "backup.wizard.backup_item": "Copia de seguridad",
   "backup.wizard.choose_password": "Elige una contraseña para la copia",
+  "backup.wizard.choose_file": "Elegir archivo de copia",
   "backup.wizard.complete_hint": "Su operación de copia de seguridad se completó correctamente.",
   "backup.wizard.confirm_label": "Confirma tu contraseña de la copia",
   "backup.wizard.create": "Crear copia de seguridad",
