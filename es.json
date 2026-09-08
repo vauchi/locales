@@ -252,7 +252,7 @@
   "backup.wizard.restore": "Restaurar copia de seguridad",
   "backup.wizard.restore_failed_title": "Error en la restauración",
   "backup.wizard.restored_title": "Copia restaurada",
-  "backup.wizard.restoring_detail": "Descifrando su copia. Puede tardar unos segundos en dispositivos antiguos.",
+  "backup.wizard.restoring_detail": "Descifrando su copia. Las copias grandes pueden tardar varios minutos en dispositivos antiguos.",
   "backup.wizard.restoring_title": "Restaurando la copia…",
   "backup.wizard.status_a11y": "Estado: {title}",
   "backup.wizard.title": "Copia de seguridad y recuperación",

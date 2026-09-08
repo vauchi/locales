@@ -252,7 +252,7 @@
   "backup.wizard.restore": "Restaurer une sauvegarde",
   "backup.wizard.restore_failed_title": "Échec de la restauration",
   "backup.wizard.restored_title": "Sauvegarde restaurée",
-  "backup.wizard.restoring_detail": "Déchiffrement de votre sauvegarde. Cela peut prendre quelques secondes sur les appareils plus anciens.",
+  "backup.wizard.restoring_detail": "Déchiffrement de votre sauvegarde. Les sauvegardes volumineuses peuvent prendre plusieurs minutes sur les appareils plus anciens.",
   "backup.wizard.restoring_title": "Restauration de la sauvegarde…",
   "backup.wizard.status_a11y": "État : {title}",
   "backup.wizard.title": "Sauvegarde et récupération",

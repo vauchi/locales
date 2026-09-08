@@ -252,7 +252,7 @@
   "backup.wizard.restore": "Sicherung wiederherstellen",
   "backup.wizard.restore_failed_title": "Wiederherstellung fehlgeschlagen",
   "backup.wizard.restored_title": "Sicherung wiederhergestellt",
-  "backup.wizard.restoring_detail": "Deine Sicherung wird entschlüsselt. Auf älteren Geräten kann dies einige Sekunden dauern.",
+  "backup.wizard.restoring_detail": "Deine Sicherung wird entschlüsselt. Große Sicherungen können auf älteren Geräten mehrere Minuten dauern.",
   "backup.wizard.restoring_title": "Sicherung wird wiederhergestellt …",
   "backup.wizard.status_a11y": "Status: {title}",
   "backup.wizard.title": "Sicherung & Wiederherstellung",

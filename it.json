@@ -252,7 +252,7 @@
   "backup.wizard.restore": "Ripristina backup",
   "backup.wizard.restore_failed_title": "Ripristino non riuscito",
   "backup.wizard.restored_title": "Backup ripristinato",
-  "backup.wizard.restoring_detail": "Decrittazione del backup. Sui dispositivi meno recenti può richiedere qualche secondo.",
+  "backup.wizard.restoring_detail": "Decrittazione del backup. I backup di grandi dimensioni possono richiedere diversi minuti sui dispositivi meno recenti.",
   "backup.wizard.restoring_title": "Ripristino del backup…",
   "backup.wizard.status_a11y": "Stato: {title}",
   "backup.wizard.title": "Backup e ripristino",
