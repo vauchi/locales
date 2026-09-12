@@ -41,7 +41,7 @@ UNTRANSLATED_ALLOW = {
 
 # Spelled identically in every target language, so matching English here is
 # the correct translation rather than a missing one.
-UNTRANSLATED_ALLOW_ALL = {"a11y.toast_prefix"}
+UNTRANSLATED_ALLOW_ALL = {"a11y.toast_prefix", "help.about_versions"}
 
 # Namespaces that are developer-facing output, not user-facing copy.
 TECHNICAL = ("cli.", "bluetooth.", "audio.", "app.", "ble.", "nfc.", "diag.")
