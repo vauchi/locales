@@ -15,7 +15,7 @@ import unicodedata
 
 def check_file(path: str) -> int:
     errors = 0
-    with open(path) as f:
+    with open(path, encoding="utf-8") as f:
         data = json.load(f)
     for key, value in data.items():
         if isinstance(value, str) and value != unicodedata.normalize("NFC", value):
@@ -42,4 +42,4 @@ if __name__ == "__main__":
         print(f"\n{total} non-NFC string(s) found.")
         sys.exit(1)
 
-    print("All locale strings are NFC ✓")
+    print("All locale strings are NFC.")
