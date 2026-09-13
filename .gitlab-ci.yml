@@ -177,6 +177,9 @@ validate:schema:
       optional: true
   script:
     - uv pip install --system --quiet jsonschema 2>/dev/null || pip install jsonschema --quiet 2>/dev/null || true
+    # Without jsonschema the script falls back to weaker type checks and
+    # still passes, so a failed install would quietly downgrade this job.
+    - python3 -c "import jsonschema"
     - python3 scripts/validate-schema.py
   rules:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"

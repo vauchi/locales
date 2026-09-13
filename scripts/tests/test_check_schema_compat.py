@@ -9,7 +9,9 @@ change must be reported, and a relaxation must not be.
 """
 
 import json
+import os
 import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -314,6 +316,73 @@ class SchemaAutoDetection(unittest.TestCase):
             (root / "b.schema.json").write_text("{}", encoding="utf-8")
 
             self.assertIsNone(compat.auto_detect_schema(root))
+
+
+class CommandLine(unittest.TestCase):
+    """The gate is invoked as `check-schema-compat.py <old> <new>`."""
+
+    script = str(SCRIPTS_DIR / "check-schema-compat.py")
+
+    def _schemas(self, old: dict, new: dict) -> tuple[str, str]:
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        root = Path(tmp.name)
+        paths = []
+        for name, schema in (("old.json", old), ("new.json", new)):
+            path = root / name
+            path.write_text(
+                json.dumps(schema, ensure_ascii=False), encoding="utf-8"
+            )
+            paths.append(str(path))
+        return paths[0], paths[1]
+
+    def _run(self, old, new, env=None):
+        return subprocess.run(
+            [sys.executable, self.script, *self._schemas(old, new)],
+            capture_output=True,
+            text=True,
+            env=env,
+        )
+
+    def test_a_compatible_pair_exits_zero(self):
+        schema = object_schema({"a": {"type": "string"}}, required=["a"])
+
+        result = self._run(schema, schema)
+
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("Schema is backward compatible.", result.stdout)
+
+    def test_a_breaking_pair_exits_nonzero(self):
+        result = self._run(
+            object_schema(required=[]), object_schema(required=["b"])
+        )
+
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("BREAKING CHANGES DETECTED (1):", result.stdout)
+
+    def test_a_schema_is_read_under_a_non_utf8_locale(self):
+        """CI containers commonly run with LC_ALL=C.
+
+        A schema's descriptions carry prose, so a read without an
+        explicit encoding dies there rather than comparing anything.
+        """
+        described = object_schema(
+            {"a": {"type": "string", "description": "Prénom — the given name"}},
+            required=["a"],
+        )
+        env = {
+            k: v
+            for k, v in os.environ.items()
+            if k not in ("LANG", "LC_CTYPE", "PYTHONUTF8")
+        }
+        env["LC_ALL"] = "C"
+        env["PYTHONUTF8"] = "0"
+        env["PYTHONCOERCECLOCALE"] = "0"
+
+        result = self._run(described, described, env=env)
+
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("Schema is backward compatible.", result.stdout)
 
 
 class BaselineLookup(unittest.TestCase):
