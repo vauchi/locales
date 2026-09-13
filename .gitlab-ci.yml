@@ -76,6 +76,27 @@ lint:unicode-nfc:
         - "scripts/check-nfc.py"
     - if: $CI_COMMIT_BRANCH == "main"
 
+# The validator scripts are this repo's only gates, so a regression in one
+# reads as a green pipeline rather than a failure. Their own tests run first.
+test:scripts:
+  stage: lint
+  tags:
+    - self-hosted
+    - node
+  needs: []
+  script:
+    # Matches validate:schema — with jsonschema the suite covers both
+    # validation paths, without it the jsonschema cases self-skip.
+    - uv pip install --system --quiet jsonschema 2>/dev/null || pip install jsonschema --quiet 2>/dev/null || true
+    - python3 -m unittest discover -s scripts/tests -t scripts/tests -v
+    - bash scripts/tests/check-locale-key-coverage-rust.test.sh
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+      changes:
+        - "scripts/**/*"
+        - "*.json"
+    - if: $CI_COMMIT_BRANCH == "main"
+
 validate:locales:
   stage: validate
   tags:
