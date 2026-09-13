@@ -12,20 +12,11 @@ import sys
 from pathlib import Path
 
 
-def main():
-    repo_root = Path(__file__).parent.parent
-    en_path = repo_root / "en.json"
+def build_schema(english: dict) -> dict:
+    """Derive the locale schema from en.json, the source of truth."""
+    regular_keys = sorted([k for k in english.keys() if k != "_meta"])
 
-    if not en_path.exists():
-        print(f"ERROR: {en_path} not found")
-        sys.exit(1)
-
-    with open(en_path, encoding="utf-8") as f:
-        data = json.load(f)
-
-    regular_keys = sorted([k for k in data.keys() if k != "_meta"])
-
-    schema = {
+    return {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
         "$id": "https://vauchi.app/schemas/locales.schema.json",
         "title": "Locale",
@@ -71,13 +62,32 @@ def main():
         "additionalProperties": False,
     }
 
+
+def render(schema: dict) -> str:
+    return json.dumps(schema, indent=2, ensure_ascii=False) + "\n"
+
+
+def main():
+    repo_root = Path(__file__).parent.parent
+    en_path = repo_root / "en.json"
+
+    if not en_path.exists():
+        print(f"ERROR: {en_path} not found")
+        sys.exit(1)
+
+    with open(en_path, encoding="utf-8") as f:
+        english = json.load(f)
+
+    schema = build_schema(english)
+
     out_path = repo_root / "locales.schema.json"
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(schema, f, indent=2, ensure_ascii=False)
-        f.write("\n")
+        f.write(render(schema))
 
     print(f"Schema written to {out_path}")
-    print(f"  Required keys: {len(regular_keys)} translation keys + _meta")
+    print(
+        f"  Required keys: {len(schema['required']) - 1} translation keys + _meta"
+    )
 
 
 if __name__ == "__main__":
