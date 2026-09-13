@@ -23,6 +23,11 @@ extend-exclude = [
     # absolute path — the pre-push hook does, and a bare relative pattern
     # silently fails to exclude anything in that case.
     "**/check-locale-quality.py",
+    # Its tests carry German, Spanish, French and Italian fixtures for the
+    # same reason the checker carries register markers: the assertions are
+    # about those exact strings, so rewording them to satisfy an English
+    # corpus would destroy what they pin.
+    "**/tests/test_check_locale_quality.py",
 ]
 
 # The quality checker quotes register markers verbatim in its patterns and
