@@ -59,19 +59,18 @@ EXPECTED_TRANSLATIONS = {
 }
 
 
-def main():
-    repo_root = Path(__file__).parent.parent
-    locale_files = sorted(
-        p for p in repo_root.glob("*.json") if not p.name.endswith(".schema.json")
+def locale_paths(root: Path) -> list[Path]:
+    return sorted(
+        p for p in root.glob("*.json") if not p.name.endswith(".schema.json")
     )
-    errors = []
 
-    if not locale_files:
-        print("ERROR: No locale JSON files found")
-        sys.exit(1)
 
-    locales = {}
-    for path in locale_files:
+def load_locales(root: Path) -> tuple[dict[str, dict], list[str]]:
+    """Read every locale file under `root`, collecting unreadable ones."""
+    locales: dict[str, dict] = {}
+    errors: list[str] = []
+
+    for path in locale_paths(root):
         code = path.stem
         try:
             with open(path, encoding="utf-8") as f:
@@ -79,9 +78,12 @@ def main():
         except json.JSONDecodeError as e:
             errors.append(f"{code}.json: Invalid JSON — {e}")
 
-    print(f"Validating translations for {len(locales)} locales...\n")
+    return locales, errors
 
-    # Check _meta.locale matches filename
+
+def check_meta_locale(locales: dict[str, dict]) -> list[str]:
+    """The locale code inside a file must match the file it lives in."""
+    errors = []
     for code, data in locales.items():
         meta = data.get("_meta", {})
         if isinstance(meta, dict):
@@ -90,8 +92,12 @@ def main():
                 errors.append(
                     f"{code}.json: _meta.locale is '{meta_locale}', expected '{code}'"
                 )
+    return errors
 
-    # Check critical keys exist in all locales
+
+def check_critical_keys(locales: dict[str, dict]) -> tuple[list[str], list[str]]:
+    """Returns (errors, summaries) for the keys the English fallback needs."""
+    errors, summaries = [], []
     for code, data in locales.items():
         missing = [k for k in CRITICAL_KEYS if k not in data]
         if missing:
@@ -101,9 +107,15 @@ def main():
                 + ("..." if len(missing) > 5 else "")
             )
         else:
-            print(f"  {code}.json: All {len(CRITICAL_KEYS)} critical keys present")
+            summaries.append(
+                f"  {code}.json: All {len(CRITICAL_KEYS)} critical keys present"
+            )
+    return errors, summaries
 
-    # Smoke-test known translations
+
+def check_expected_translations(locales: dict[str, dict]) -> list[str]:
+    """Smoke-test known translations against accidental overwrites."""
+    errors = []
     for code, expected in EXPECTED_TRANSLATIONS.items():
         if code not in locales:
             errors.append(f"{code}.json: Expected locale file not found")
@@ -117,6 +129,33 @@ def main():
                     f"{code}.json: '{key}' = '{value}' — "
                     f"expected to contain '{substring}'"
                 )
+    return errors
+
+
+def check_translations(locales: dict[str, dict]) -> tuple[list[str], list[str]]:
+    """Run every translation gate. Returns (errors, summaries)."""
+    errors = check_meta_locale(locales)
+    critical_errors, summaries = check_critical_keys(locales)
+    errors.extend(critical_errors)
+    errors.extend(check_expected_translations(locales))
+    return errors, summaries
+
+
+def main():
+    repo_root = Path(__file__).parent.parent
+
+    if not locale_paths(repo_root):
+        print("ERROR: No locale JSON files found")
+        sys.exit(1)
+
+    locales, errors = load_locales(repo_root)
+
+    print(f"Validating translations for {len(locales)} locales...\n")
+
+    check_errors, summaries = check_translations(locales)
+    for line in summaries:
+        print(line)
+    errors.extend(check_errors)
 
     print()
     if errors:
