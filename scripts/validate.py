@@ -14,41 +14,51 @@ def load_locale(path: Path) -> dict:
         return json.load(f)
 
 
-def main():
-    strict = "--strict" in sys.argv
-    repo_root = Path(__file__).parent.parent
-    locale_files = sorted(
-        p for p in repo_root.glob("*.json") if not p.name.endswith(".schema.json")
+def locale_paths(root: Path) -> list[Path]:
+    return sorted(
+        p for p in root.glob("*.json") if not p.name.endswith(".schema.json")
     )
 
-    if not locale_files:
-        print("ERROR: No locale JSON files found")
-        sys.exit(1)
 
-    # Load all locales
-    locales = {}
-    errors = []
+def load_locales(root: Path) -> tuple[dict[str, dict], list[str], list[str]]:
+    """Read every locale file under `root`.
 
-    for path in locale_files:
+    Returns the parsed locales, the errors from unparsable files, and the
+    per-file summary lines.
+    """
+    locales: dict[str, dict] = {}
+    errors: list[str] = []
+    summaries: list[str] = []
+
+    for path in locale_paths(root):
         code = path.stem
         try:
             data = load_locale(path)
             locales[code] = data
-            print(f"  {code}.json: {len(data)} keys — OK")
+            summaries.append(f"  {code}.json: {len(data)} keys — OK")
         except json.JSONDecodeError as e:
             errors.append(f"{code}.json: Invalid JSON — {e}")
 
-    if not locales:
-        print("ERROR: No valid locale files")
-        sys.exit(1)
+    return locales, errors, summaries
 
-    # Check for empty values
+
+def check_locales(
+    locales: dict[str, dict], strict: bool
+) -> tuple[list[str], list[str]]:
+    """Check parity, empty values and key ordering.
+
+    Returns (errors, warnings). Outside strict mode a parity or ordering
+    finding is a warning; an empty value or a missing en.json is always an
+    error.
+    """
+    errors: list[str] = []
+    warnings: list[str] = []
+
     for code, data in locales.items():
         for key, value in data.items():
             if isinstance(value, str) and value.strip() == "":
                 errors.append(f"{code}.json: Empty value for key '{key}'")
 
-    # Check key parity against English (source of truth)
     if "en" not in locales:
         errors.append("en.json missing — English is the source of truth")
     else:
@@ -71,16 +81,15 @@ def main():
                     if len(missing) > 10:
                         errors.append(f"  ... and {len(missing) - 10} more")
                 else:
-                    print(f"  WARNING: {msg}")
+                    warnings.append(msg)
 
             if extra:
                 msg = f"{code}.json: {len(extra)} extra keys not in en.json"
                 if strict:
                     errors.append(msg)
                 else:
-                    print(f"  WARNING: {msg}")
+                    warnings.append(msg)
 
-    # Check JSON is sorted
     for code, data in locales.items():
         keys = list(data.keys())
         if keys != sorted(keys):
@@ -88,7 +97,32 @@ def main():
             if strict:
                 errors.append(msg)
             else:
-                print(f"  WARNING: {msg}")
+                warnings.append(msg)
+
+    return errors, warnings
+
+
+def main():
+    strict = "--strict" in sys.argv
+    repo_root = Path(__file__).parent.parent
+
+    if not locale_paths(repo_root):
+        print("ERROR: No locale JSON files found")
+        sys.exit(1)
+
+    locales, errors, summaries = load_locales(repo_root)
+    for line in summaries:
+        print(line)
+
+    if not locales:
+        print("ERROR: No valid locale files")
+        sys.exit(1)
+
+    check_errors, warnings = check_locales(locales, strict)
+    errors.extend(check_errors)
+
+    for warning in warnings:
+        print(f"  WARNING: {warning}")
 
     if errors:
         print(f"\n{'ERRORS' if strict else 'FAILURES'}:")
