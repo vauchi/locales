@@ -113,7 +113,25 @@ RS
 )
 expect_quiet "non-key .t() argument ignored" "NotAKey" "$src"
 
-# ── 6. the live tree passes ───────────────────────────────────────────
+# ── 6. the system bash runs the gate ──────────────────────────────────
+# On macOS /bin/bash is 3.2, and a CI shell runner there resolves `bash`
+# to it. Anything bash-4-only in the gate aborts it before it can report.
+if [ -x /bin/bash ]; then
+    src=$(mksrc <<'RS'
+fn title(&self) -> String { self.t("zzz.system_bash_missing") }
+RS
+)
+    out=$(/bin/bash "$GATE" "$src" "$LOCALES" '*.rs' 2>&1 || true)
+    if printf '%s' "$out" | grep -q -- "- zzz.system_bash_missing"; then
+        printf '  PASS gate reports under /bin/bash\n'; pass=$((pass + 1))
+    else
+        printf '  FAIL gate did not report under /bin/bash\n' >&2
+        printf '%s\n' "$out" | tail -4 | sed 's/^/      /' >&2
+        fail=$((fail + 1))
+    fi
+fi
+
+# ── 7. the live tree passes ───────────────────────────────────────────
 # Guards against an extractor so eager it blocks what already ships.
 ws="$(cd "$LOCALES/.." && pwd)"
 if [ -d "$ws/core/vauchi-app/src" ]; then
