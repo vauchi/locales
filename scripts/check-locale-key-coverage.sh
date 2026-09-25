@@ -269,30 +269,17 @@ ERRORS=0
 # echo+grep pipeline per key. Under alpine:3.21 + BusyBox in CI, this
 # pattern was non-deterministically returning false on keys that ARE
 # present (MR linux-gtk!122 saw three different keys flagged across
-# three back-to-back runs of the same code on the same en.json). Read
-# both sets into bash associative arrays once; per-key lookup is then
-# a single in-process hash hit with no subprocess or pipe.
-declare -A EN_SET
-while IFS= read -r k; do
-    [[ -z "$k" ]] && continue
-    EN_SET["$k"]=1
-done <<< "$EN_KEYS"
-
-declare -A ALLOW_SET
-if [[ -n "$ALLOW" ]]; then
-    while IFS= read -r k; do
-        [[ -z "$k" ]] && continue
-        ALLOW_SET["$k"]=1
-    done <<< "$ALLOW"
-fi
-
-TYPOS=""
-while IFS= read -r key; do
-    [[ -z "$key" ]] && continue
-    [[ -n "${EN_SET[$key]+x}" ]] && continue       # in en.json — valid
-    [[ -n "${ALLOW_SET[$key]+x}" ]] && continue    # in allowlist
-    TYPOS+="$key"$'\n'
-done <<< "$REFERENCED_KEYS"
+# three back-to-back runs of the same code on the same en.json). The set
+# difference is one grep over the whole reference list with the known
+# keys as a pattern file: no per-key subprocess, no `-q` early exit, and
+# no bash-4 associative arrays, which macOS's /bin/bash 3.2 rejects.
+# Blank lines are stripped from the pattern file because an empty
+# pattern matches every line and would hide every typo.
+KNOWN_KEYS_FILE=$(mktemp)
+trap 'rm -f "$KNOWN_KEYS_FILE"' EXIT
+printf '%s\n%s\n' "$EN_KEYS" "$ALLOW" | grep -v '^$' > "$KNOWN_KEYS_FILE" || true
+TYPOS=$(printf '%s\n' "$REFERENCED_KEYS" | grep -v '^$' |
+    grep -vxF -f "$KNOWN_KEYS_FILE" || true)
 
 if [[ -n "$TYPOS" ]]; then
     TYPO_COUNT=$(echo -n "$TYPOS" | grep -c . || true)
