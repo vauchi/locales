@@ -34,6 +34,22 @@ stages:
   - trigger
   - deploy
 
+# The validators need jsonschema. It goes into a job-local venv because
+# the macOS shell runner's Homebrew Python is externally managed (PEP 668)
+# and refuses a system-wide pip install, and the old `2>/dev/null || true`
+# install chain hid that refusal.
+.jsonschema-venv:
+  before_script:
+    - |
+      if command -v uv >/dev/null 2>&1; then
+        uv venv --quiet .venv
+        uv pip install --quiet --python .venv/bin/python jsonschema
+      else
+        python3 -m venv .venv
+        .venv/bin/python -m pip install --quiet jsonschema
+      fi
+    - export PATH="$CI_PROJECT_DIR/.venv/bin:$PATH"
+
 # Validate JSON syntax (fast gate — catches malformed files before Python)
 lint:json:
   stage: lint
@@ -79,15 +95,13 @@ lint:unicode-nfc:
 # The validator scripts are this repo's only gates, so a regression in one
 # reads as a green pipeline rather than a failure. Their own tests run first.
 test:scripts:
+  extends: .jsonschema-venv
   stage: lint
   tags:
     - self-hosted
     - node
   needs: []
   script:
-    # Matches validate:schema — with jsonschema the suite covers both
-    # validation paths, without it the jsonschema cases self-skip.
-    - uv pip install --system --quiet jsonschema 2>/dev/null || pip install jsonschema --quiet 2>/dev/null || true
     - python3 -m unittest discover -s scripts/tests -t scripts/tests -v
     - bash scripts/tests/check-locale-key-coverage-rust.test.sh
   rules:
@@ -168,6 +182,7 @@ validate:locale-quality:
   allow_failure: false
 
 validate:schema:
+  extends: .jsonschema-venv
   stage: validate
   tags:
     - self-hosted
@@ -176,7 +191,6 @@ validate:schema:
     - job: lint:json
       optional: true
   script:
-    - uv pip install --system --quiet jsonschema 2>/dev/null || pip install jsonschema --quiet 2>/dev/null || true
     # Without jsonschema the script falls back to weaker type checks and
     # still passes, so a failed install would quietly downgrade this job.
     - python3 -c "import jsonschema"
