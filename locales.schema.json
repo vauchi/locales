@@ -1498,6 +1498,7 @@
     "my_info.preview_as_button",
     "my_info.shared_summary",
     "my_info.shared_summary_one",
+    "my_info.view_mode_label",
     "my_info.visibility_everyone",
     "my_info_entry_detail.delete_field_a11y",
     "my_info_entry_detail.delete_field_hint",
