@@ -145,5 +145,39 @@ if [ -d "$ws/core/vauchi-app/src" ]; then
     fi
 fi
 
+# ── 8. a ripgrep without PCRE2 fails loudly ──────────────────────────
+# Every extraction regex needs `rg --pcre2`. A build without it made each
+# search come back empty, so the gate saw no call sites at all and the
+# failures above were all it could say (locales!164 on the allyson runner,
+# 2026-09-25). The gate must name the missing capability instead.
+real_rg=$(command -v rg || true)
+if [ -n "$real_rg" ]; then
+    fake=$(mktemp -d)
+    cat >"$fake/rg" <<SH
+#!/bin/sh
+for arg in "\$@"; do
+    case "\$arg" in
+        --pcre2-version) echo "PCRE2 is not available in this build of ripgrep."; exit 1 ;;
+        --pcre2) echo "PCRE2 is not available in this build of ripgrep." >&2; exit 2 ;;
+    esac
+done
+exec "$real_rg" "\$@"
+SH
+    chmod +x "$fake/rg"
+    src=$(mksrc <<'RS'
+fn title(&self) -> String { self.t("zzz.no_pcre2_missing") }
+RS
+)
+    status=0
+    out=$(PATH="$fake:$PATH" bash "$GATE" "$src" "$LOCALES" '*.rs' 2>&1) || status=$?
+    if [ "$status" -ne 0 ] && printf '%s' "$out" | grep -q "PCRE2"; then
+        printf '  PASS a ripgrep without PCRE2 fails loudly\n'; pass=$((pass + 1))
+    else
+        printf '  FAIL a ripgrep without PCRE2 did not fail loudly (exit %s)\n' "$status" >&2
+        printf '%s\n' "$out" | tail -4 | sed 's/^/      /' >&2
+        fail=$((fail + 1))
+    fi
+fi
+
 printf '\n%d passed, %d failed\n' "$pass" "$fail"
 [ "$fail" -eq 0 ]
