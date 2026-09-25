@@ -87,6 +87,23 @@ if [[ -z "$SOURCE_DIR" ]]; then
     echo "ERROR: <source-dir> required. See --help." >&2
     exit 2
 fi
+
+# ---- tool preflight -------------------------------------------------------
+# Every extraction below runs `rg --pcre2`, and its errors cannot surface:
+# a missing rg or a build without PCRE2 makes each search come back empty,
+# the gate sees no call sites, and it passes. Fail on the cause instead.
+if ! command -v rg >/dev/null 2>&1; then
+    echo "ERROR: rg (ripgrep) not found on PATH; the gate cannot search." >&2
+    exit 2
+fi
+if ! rg --pcre2-version >/dev/null 2>&1; then
+    echo "ERROR: $(rg --version 2>/dev/null | head -n 1) lacks PCRE2; the gate's patterns need 'rg --pcre2'." >&2
+    exit 2
+fi
+if ! command -v jq >/dev/null 2>&1; then
+    echo "ERROR: jq not found on PATH; the gate cannot read the locale catalogue." >&2
+    exit 2
+fi
 if [[ ! -d "$SOURCE_DIR" ]]; then
     echo "ERROR: source dir not found: $SOURCE_DIR" >&2
     exit 1
