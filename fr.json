@@ -1497,6 +1497,7 @@
   "my_info.preview_as_button": "Preview as...",
   "my_info.shared_summary": "Partagé avec {count} contacts",
   "my_info.shared_summary_one": "Partagé avec 1 contact",
+  "my_info.view_mode_label": "Affichage",
   "my_info.visibility_everyone": "Tout le monde",
   "my_info_entry_detail.delete_field_a11y": "Supprimer {label}",
   "my_info_entry_detail.delete_field_hint": "Supprime cette entrée de votre carte de contact. Les contacts qui l'ont déjà conservent leur copie jusqu'à leur prochaine synchronisation.",
