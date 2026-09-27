@@ -321,6 +321,8 @@
     "cli.cmd.diag.animated_qr.input",
     "cli.cmd.diag.animated_qr.payload",
     "cli.cmd.diag.animated_qr.title",
+    "cli.cmd.diag.ohttp_probe.failed",
+    "cli.cmd.diag.ohttp_probe.ok",
     "cli.cmd.diag.trace.summary",
     "cli.cmd.diag.trace.total_events",
     "cli.cmd.exchange.after_complete",
