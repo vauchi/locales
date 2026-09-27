@@ -1557,6 +1557,8 @@
     "onboarding.error_display_name_required",
     "onboarding.error_name_required",
     "onboarding.exchange_cards",
+    "onboarding.fields_not_saved_message",
+    "onboarding.fields_not_saved_title",
     "onboarding.groups_add",
     "onboarding.groups_custom_a11y",
     "onboarding.groups_custom_a11y_hint",

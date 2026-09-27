@@ -1556,6 +1556,8 @@
   "onboarding.error_display_name_required": "Introduce un nombre para mostrar",
   "onboarding.error_name_required": "Introduce su nombre.",
   "onboarding.exchange_cards": "Intercambiar tarjetas",
+  "onboarding.fields_not_saved_message": "No se pudieron guardar {count} de los datos que introdujiste. Vuelve a añadirlos desde Mi información.",
+  "onboarding.fields_not_saved_title": "Algunos datos no se guardaron",
   "onboarding.groups_add": "Añadir grupo",
   "onboarding.groups_custom_a11y": "Campo del nombre del grupo personalizado",
   "onboarding.groups_custom_a11y_hint": "Introduce un nombre para un grupo de contactos personalizado",

@@ -1556,6 +1556,8 @@
   "onboarding.error_display_name_required": "Bitte gib einen Anzeigenamen ein",
   "onboarding.error_name_required": "Bitte gib deinen Namen ein.",
   "onboarding.exchange_cards": "Karten austauschen",
+  "onboarding.fields_not_saved_message": "{count} deiner Angaben konnten nicht gespeichert werden. Füge sie unter „Meine Infos“ erneut hinzu.",
+  "onboarding.fields_not_saved_title": "Einige Angaben wurden nicht gespeichert",
   "onboarding.groups_add": "Gruppe hinzufügen",
   "onboarding.groups_custom_a11y": "Eingabefeld für eigenen Gruppennamen",
   "onboarding.groups_custom_a11y_hint": "Gib einen Namen für eine eigene Kontaktgruppe ein",

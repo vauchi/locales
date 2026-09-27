@@ -1556,6 +1556,8 @@
   "onboarding.error_display_name_required": "Veuillez saisir un nom d'affichage",
   "onboarding.error_name_required": "Veuillez saisir votre nom.",
   "onboarding.exchange_cards": "Échanger des cartes",
+  "onboarding.fields_not_saved_message": "{count} des informations saisies n'ont pas pu être enregistrées. Ajoute-les à nouveau depuis Mes infos.",
+  "onboarding.fields_not_saved_title": "Certaines informations n'ont pas été enregistrées",
   "onboarding.groups_add": "Ajouter le groupe",
   "onboarding.groups_custom_a11y": "Champ du nom de groupe personnalisé",
   "onboarding.groups_custom_a11y_hint": "Saisissez un nom pour un groupe de contacts personnalisé",

@@ -1556,6 +1556,8 @@
   "onboarding.error_display_name_required": "Inserisci un nome visualizzato",
   "onboarding.error_name_required": "Inserisci il tuo nome.",
   "onboarding.exchange_cards": "Scambia schede",
+  "onboarding.fields_not_saved_message": "Non è stato possibile salvare {count} dei dati inseriti. Aggiungili di nuovo da Le mie info.",
+  "onboarding.fields_not_saved_title": "Alcuni dati non sono stati salvati",
   "onboarding.groups_add": "Aggiungi gruppo",
   "onboarding.groups_custom_a11y": "Campo del nome del gruppo personalizzato",
   "onboarding.groups_custom_a11y_hint": "Inserisci un nome per un gruppo di contatti personalizzato",
