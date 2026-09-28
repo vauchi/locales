@@ -1447,6 +1447,7 @@
   "lock_screen.unlock_button": "Déverrouiller",
   "lock_screen.unlock_face_button": "Déverrouiller avec Face ID",
   "lock_screen.unlock_fingerprint_button": "Déverrouiller avec l'empreinte digitale",
+  "lock_screen.wrong_password": "Mot de passe incorrect.",
   "menu.exchange_card": "Échanger la carte de contact",
   "menu.file": "File",
   "menu.import_contacts": "Importer des contacts…",

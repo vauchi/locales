@@ -1447,6 +1447,7 @@
   "lock_screen.unlock_button": "Entsperren",
   "lock_screen.unlock_face_button": "Mit Face ID entsperren",
   "lock_screen.unlock_fingerprint_button": "Mit Fingerabdruck entsperren",
+  "lock_screen.wrong_password": "Falsches Passwort.",
   "menu.exchange_card": "Kontaktkarte austauschen",
   "menu.file": "File",
   "menu.import_contacts": "Kontakte importieren …",

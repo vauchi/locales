@@ -1448,6 +1448,7 @@
     "lock_screen.unlock_button",
     "lock_screen.unlock_face_button",
     "lock_screen.unlock_fingerprint_button",
+    "lock_screen.wrong_password",
     "menu.exchange_card",
     "menu.file",
     "menu.import_contacts",

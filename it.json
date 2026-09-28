@@ -1447,6 +1447,7 @@
   "lock_screen.unlock_button": "Sblocca",
   "lock_screen.unlock_face_button": "Sblocca con Face ID",
   "lock_screen.unlock_fingerprint_button": "Sblocca con l'impronta digitale",
+  "lock_screen.wrong_password": "Password errata.",
   "menu.exchange_card": "Scambia la scheda di contatto",
   "menu.file": "File",
   "menu.import_contacts": "Importa contatti…",

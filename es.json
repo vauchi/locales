@@ -1447,6 +1447,7 @@
   "lock_screen.unlock_button": "Desbloquear",
   "lock_screen.unlock_face_button": "Desbloquear con Face ID",
   "lock_screen.unlock_fingerprint_button": "Desbloquear con huella digital",
+  "lock_screen.wrong_password": "Contraseña incorrecta.",
   "menu.exchange_card": "Intercambiar tarjeta de contacto",
   "menu.file": "File",
   "menu.import_contacts": "Importar contactos…",
