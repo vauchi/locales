@@ -37,6 +37,7 @@ UNTRANSLATED_ALLOW = {
         "contacts.count",
         "tags_list.member_count_plural",
         "groups_list.contact_count_plural",
+        "group_detail.contacts_label",
     },
 }
 
