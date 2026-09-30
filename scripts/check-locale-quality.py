@@ -36,6 +36,7 @@ UNTRANSLATED_ALLOW = {
         "privacy.delete.contacts_title",
         "contacts.count",
         "tags_list.member_count_plural",
+        "groups_list.contact_count_plural",
     },
 }
 
