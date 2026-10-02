@@ -1614,7 +1614,7 @@
   "onboarding.backup_password_subtitle": "Le mot de passe défini lors de l'exportation de la sauvegarde.",
   "onboarding.backup_password_title": "Saisir le mot de passe de sauvegarde",
   "onboarding.create_identity": "Créer une nouvelle identité",
-  "onboarding.device_link_guidance_body": "Pour transférer votre compte vers cet appareil, exportez une sauvegarde depuis votre autre appareil connecté (Réglages → Sauvegarde), puis restaurez-la ici. La liaison d'appareils en direct arrive bientôt.",
+  "onboarding.device_link_guidance_body": "Pour transférer votre compte vers cet appareil, exportez une sauvegarde depuis votre autre appareil connecté (Paramètres → Sauvegarde), puis restaurez-la ici. La liaison d'appareils en direct arrive bientôt.",
   "onboarding.device_link_guidance_title": "Ajouter un autre appareil",
   "onboarding.done_subtitle": "Votre carte est prête — choisissez par où commencer",
   "onboarding.done_title": "Que souhaitez-vous faire ?",
