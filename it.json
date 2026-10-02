@@ -1565,7 +1565,7 @@
   "my_info.shared_summary": "{count} contatti possono vedere questa scheda",
   "my_info.shared_summary_one": "1 contatto può vedere questa scheda",
   "my_info.view_mode_label": "Vista",
-  "my_info.visibility_everyone": "Tutti",
+  "my_info.visibility_everyone": "Tutti i contatti",
   "my_info_entry_detail.confirm_deletion_a11y": "Conferma l’eliminazione di questa voce",
   "my_info_entry_detail.confirm_deletion_hint": "Rimuove la voce dalla tua scheda. Puoi annullare subito dopo.",
   "my_info_entry_detail.delete_confirm_warning": "Eliminare {label}? I contatti che vedono questa voce la perderanno alla prossima sincronizzazione.",

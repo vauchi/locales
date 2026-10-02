@@ -1565,7 +1565,7 @@
   "my_info.shared_summary": "{count} Kontakte können diese Karte sehen",
   "my_info.shared_summary_one": "1 Kontakt kann diese Karte sehen",
   "my_info.view_mode_label": "Ansicht",
-  "my_info.visibility_everyone": "Alle",
+  "my_info.visibility_everyone": "Alle Kontakte",
   "my_info_entry_detail.confirm_deletion_a11y": "Löschen des Eintrags bestätigen",
   "my_info_entry_detail.confirm_deletion_hint": "Entfernt den Eintrag von deiner Karte. Du kannst es direkt danach rückgängig machen.",
   "my_info_entry_detail.delete_confirm_warning": "{label} löschen? Kontakte, die den Eintrag sehen, verlieren ihn bei der nächsten Synchronisierung.",

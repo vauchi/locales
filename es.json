@@ -1565,7 +1565,7 @@
   "my_info.shared_summary": "{count} contactos pueden ver esta tarjeta",
   "my_info.shared_summary_one": "1 contacto puede ver esta tarjeta",
   "my_info.view_mode_label": "Vista",
-  "my_info.visibility_everyone": "Todos",
+  "my_info.visibility_everyone": "Todos los contactos",
   "my_info_entry_detail.confirm_deletion_a11y": "Confirmar la eliminación de esta entrada",
   "my_info_entry_detail.confirm_deletion_hint": "Quita la entrada de tu tarjeta. Puedes deshacerlo justo después.",
   "my_info_entry_detail.delete_confirm_warning": "¿Eliminar {label}? Los contactos que ven esta entrada la perderán en su próxima sincronización.",

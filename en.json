@@ -1565,7 +1565,7 @@
   "my_info.shared_summary": "{count} contacts can see this card",
   "my_info.shared_summary_one": "1 contact can see this card",
   "my_info.view_mode_label": "View",
-  "my_info.visibility_everyone": "Everyone",
+  "my_info.visibility_everyone": "All contacts",
   "my_info_entry_detail.confirm_deletion_a11y": "Confirm deleting this entry",
   "my_info_entry_detail.confirm_deletion_hint": "Removes the entry from your card. You can undo it right after.",
   "my_info_entry_detail.delete_confirm_warning": "Delete {label}? Contacts who can see it lose it on their next sync.",
