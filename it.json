@@ -961,7 +961,7 @@
   "error.validation": "Verifica i dati inseriti",
   "exchange.adding_contact": "Aggiunta contatto in corso...",
   "exchange.assign.groups_label": "Gruppi",
-  "exchange.assign.subtitle": "Scegli in quali gruppi inserire il nuovo contatto",
+  "exchange.assign.subtitle": "I gruppi decidono che cosa questo nuovo contatto può vedere della tua scheda",
   "exchange.assign.title": "Assegna ai gruppi",
   "exchange.assign.toggle_hint": "Attiva per assegnare il nuovo contatto a questo gruppo.",
   "exchange.ble.exchanging_default_title": "Scambio in corso...",

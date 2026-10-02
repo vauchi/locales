@@ -961,7 +961,7 @@
   "error.validation": "Bitte überprüfe deine Eingabe",
   "exchange.adding_contact": "Kontakt wird hinzugefügt...",
   "exchange.assign.groups_label": "Gruppen",
-  "exchange.assign.subtitle": "Wähle, zu welchen Gruppen der neue Kontakt gehört",
+  "exchange.assign.subtitle": "Gruppen legen fest, was dieser neue Kontakt von deiner Karte sieht",
   "exchange.assign.title": "Gruppen zuweisen",
   "exchange.assign.toggle_hint": "Umschalten, um den neuen Kontakt dieser Gruppe zuzuweisen.",
   "exchange.ble.exchanging_default_title": "Austausch läuft...",

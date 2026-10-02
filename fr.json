@@ -961,7 +961,7 @@
   "error.validation": "Vérifiez votre saisie",
   "exchange.adding_contact": "Ajout du contact...",
   "exchange.assign.groups_label": "Groupes",
-  "exchange.assign.subtitle": "Choisissez les groupes du nouveau contact",
+  "exchange.assign.subtitle": "Les groupes déterminent ce que ce nouveau contact peut voir de votre carte",
   "exchange.assign.title": "Attribuer à des groupes",
   "exchange.assign.toggle_hint": "Basculez pour attribuer le nouveau contact à ce groupe.",
   "exchange.ble.exchanging_default_title": "Échange...",

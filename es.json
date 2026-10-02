@@ -961,7 +961,7 @@
   "error.validation": "Por favor, revisa tu entrada",
   "exchange.adding_contact": "Agregando contacto...",
   "exchange.assign.groups_label": "Grupos",
-  "exchange.assign.subtitle": "Elige en qué grupos estará el nuevo contacto",
+  "exchange.assign.subtitle": "Los grupos deciden qué puede ver este nuevo contacto de tu tarjeta",
   "exchange.assign.title": "Asignar a grupos",
   "exchange.assign.toggle_hint": "Alterne para asignar el nuevo contacto a este grupo.",
   "exchange.ble.exchanging_default_title": "Intercambiando...",
