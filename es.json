@@ -1496,7 +1496,7 @@
   "lock_screen.enter_password_error": "Ingrese su contraseña",
   "lock_screen.lock_glyph_a11y": "Bloqueado",
   "lock_screen.password_entry_a11y": "Entrada de contraseña",
-  "lock_screen.password_hint": "Ingrese su contraseña para desbloquear",
+  "lock_screen.password_hint": "Introduce tu contraseña para desbloquear",
   "lock_screen.title": "Ingrese la contraseña",
   "lock_screen.unlock_biometric_button": "Desbloquear con biometría",
   "lock_screen.unlock_button": "Desbloquear",
