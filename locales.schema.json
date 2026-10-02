@@ -2123,6 +2123,7 @@
     "settings.backup_export_hint",
     "settings.backup_import_hint",
     "settings.backup_last_hint",
+    "settings.backup_none_hint",
     "settings.backup_reminders",
     "settings.backup_reminders_a11y",
     "settings.backup_reminders_hint",
