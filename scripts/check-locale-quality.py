@@ -29,8 +29,8 @@ from pathlib import Path
 
 # Keys whose English is genuinely reused verbatim, not a missing translation.
 UNTRANSLATED_ALLOW = {
-    # "Contacts"/"contacts" and "Toast" are spelled identically in these
-    # languages, so matching English is the correct translation.
+    # "Contacts"/"contacts" is spelled identically in French, so matching
+    # English is the correct translation.
     "fr": {
         "labels.detail.contacts_count",
         "privacy.delete.contacts_title",
@@ -43,7 +43,7 @@ UNTRANSLATED_ALLOW = {
 
 # Spelled identically in every target language, so matching English here is
 # the correct translation rather than a missing one.
-UNTRANSLATED_ALLOW_ALL = {"a11y.toast_prefix", "help.about_versions"}
+UNTRANSLATED_ALLOW_ALL = {"help.about_versions"}
 
 # Namespaces that are developer-facing output, not user-facing copy.
 TECHNICAL = ("cli.", "bluetooth.", "audio.", "app.", "ble.", "nfc.", "diag.")
