@@ -812,6 +812,7 @@
   "devices.link.confirm_code_match": "Vergewissere dich, dass dieser Code auf deinem neuen Gerät übereinstimmt",
   "devices.link.confirm_device": "Gerät: {name}",
   "devices.link.confirm_device_near": "Bestätige, dass sich das neue Gerät in deiner Nähe befindet",
+  "devices.link.confirm_password_hint": "Gib dein Passwort ein, um ein neues Gerät zu verknüpfen.",
   "devices.link.confirm_title": "Geräteverknüpfung bestätigen",
   "devices.link.copy_data": "Verknüpfungsdaten kopieren",
   "devices.link.could_not_complete": "Die Geräteverknüpfung konnte nicht abgeschlossen werden.",

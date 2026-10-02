@@ -813,6 +813,7 @@
     "devices.link.confirm_code_match",
     "devices.link.confirm_device",
     "devices.link.confirm_device_near",
+    "devices.link.confirm_password_hint",
     "devices.link.confirm_title",
     "devices.link.copy_data",
     "devices.link.could_not_complete",

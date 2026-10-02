@@ -812,6 +812,7 @@
   "devices.link.confirm_code_match": "Vérifiez que ce code correspond sur votre nouvel appareil",
   "devices.link.confirm_device": "Appareil : {name}",
   "devices.link.confirm_device_near": "Confirmez que le nouvel appareil est à proximité",
+  "devices.link.confirm_password_hint": "Saisissez votre mot de passe pour lier un nouvel appareil.",
   "devices.link.confirm_title": "Confirmer la liaison de l'appareil",
   "devices.link.copy_data": "Copier les données de liaison",
   "devices.link.could_not_complete": "La liaison de l'appareil n'a pas pu être terminée.",

@@ -812,6 +812,7 @@
   "devices.link.confirm_code_match": "Verifica que este código coincide en tu nuevo dispositivo",
   "devices.link.confirm_device": "Dispositivo: {name}",
   "devices.link.confirm_device_near": "Confirma que el nuevo dispositivo está cerca de ti",
+  "devices.link.confirm_password_hint": "Introduce tu contraseña para vincular un dispositivo nuevo.",
   "devices.link.confirm_title": "Confirmar vinculación de dispositivo",
   "devices.link.copy_data": "Copiar datos de vinculación",
   "devices.link.could_not_complete": "No se pudo completar la vinculación del dispositivo.",
