@@ -620,6 +620,8 @@
   "content.up_to_date": "Le contenu est à jour",
   "content.up_to_date_badge": "À jour",
   "content.updates_available": "Mises à jour disponibles : {types}",
+  "context_bar.info": "Info",
+  "context_bar.info_a11y": "À propos de cet écran",
   "decoy_contacts.add_button": "Ajouter un leurre",
   "decoy_contacts.empty_state": "Aucun contact leurre pour le moment. Ajoutez ci-dessous quelques noms d'aspect réaliste.",
   "decoy_contacts.explanation": "Faux contacts affichés lorsque votre code PIN de contrainte est saisi. Sans eux, le mode contrainte affiche une liste de contacts vide — ce qui est suspect et compromet le déni plausible.",

@@ -620,6 +620,8 @@
   "content.up_to_date": "Inhalte sind aktuell",
   "content.up_to_date_badge": "Aktuell",
   "content.updates_available": "Updates verfügbar: {types}",
+  "context_bar.info": "Info",
+  "context_bar.info_a11y": "Über diesen Bildschirm",
   "decoy_contacts.add_button": "Tarnkontakt hinzufügen",
   "decoy_contacts.empty_state": "Noch keine Tarnkontakte. Füge unten ein paar realistisch aussehende Namen hinzu.",
   "decoy_contacts.explanation": "Gefälschte Kontakte, die angezeigt werden, wenn deine Zwangs-PIN eingegeben wird. Ohne sie zeigt der Zwangsmodus eine leere Kontaktliste — was verdächtig ist und die plausible Abstreitbarkeit untergräbt.",

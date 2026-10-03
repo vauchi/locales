@@ -620,6 +620,8 @@
   "content.up_to_date": "Content is up to date",
   "content.up_to_date_badge": "Up to date",
   "content.updates_available": "Updates available: {types}",
+  "context_bar.info": "Info",
+  "context_bar.info_a11y": "About this screen",
   "decoy_contacts.add_button": "Add Decoy",
   "decoy_contacts.empty_state": "No decoy contacts yet. Add a few realistic-looking names below.",
   "decoy_contacts.explanation": "Fake contacts shown when your duress PIN is entered. Without them, duress mode shows an empty contact list — which is suspicious and defeats plausible deniability.",

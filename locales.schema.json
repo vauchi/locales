@@ -621,6 +621,8 @@
     "content.up_to_date",
     "content.up_to_date_badge",
     "content.updates_available",
+    "context_bar.info",
+    "context_bar.info_a11y",
     "decoy_contacts.add_button",
     "decoy_contacts.empty_state",
     "decoy_contacts.explanation",

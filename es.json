@@ -620,6 +620,8 @@
   "content.up_to_date": "El contenido está actualizado",
   "content.up_to_date_badge": "Actualizado",
   "content.updates_available": "Actualizaciones disponibles: {types}",
+  "context_bar.info": "Info",
+  "context_bar.info_a11y": "Sobre esta pantalla",
   "decoy_contacts.add_button": "Agregar señuelo",
   "decoy_contacts.empty_state": "Aún no hay contactos señuelo. Agregue abajo algunos nombres de aspecto realista.",
   "decoy_contacts.explanation": "Contactos falsos que se muestran cuando se ingresa su PIN de coacción. Sin ellos, el modo de coacción muestra una lista de contactos vacía, lo cual es sospechoso y compromete la negabilidad plausible.",

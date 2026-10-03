@@ -620,6 +620,8 @@
   "content.up_to_date": "I contenuti sono aggiornati",
   "content.up_to_date_badge": "Aggiornato",
   "content.updates_available": "Aggiornamenti disponibili: {types}",
+  "context_bar.info": "Info",
+  "context_bar.info_a11y": "Su questa schermata",
   "decoy_contacts.add_button": "Aggiungi esca",
   "decoy_contacts.empty_state": "Ancora nessun contatto esca. Aggiungi qui sotto alcuni nomi dall'aspetto realistico.",
   "decoy_contacts.explanation": "Contatti falsi mostrati quando viene inserito il PIN di coercizione. Senza di essi, la modalità di coercizione mostra un elenco contatti vuoto, il che è sospetto e compromette la negabilità plausibile.",
