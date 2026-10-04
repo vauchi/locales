@@ -2113,7 +2113,7 @@
     "screen_info.activity_log",
     "screen_info.change_password",
     "screen_info.contact_detail",
-    "screen_info.contact_list",
+    "screen_info.contacts",
     "screen_info.decoy_contacts",
     "screen_info.device_management",
     "screen_info.duplicate_detection",
