@@ -571,6 +571,7 @@
     "contacts.search_active",
     "contacts.search_hint",
     "contacts.search_placeholder",
+    "contacts.show_range",
     "contacts.shown",
     "contacts.status",
     "contacts.their_fingerprint",

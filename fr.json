@@ -570,6 +570,7 @@
   "contacts.search_active": "Recherche (tapez pour chercher, Échap pour quitter)",
   "contacts.search_hint": "Recherche (/ pour chercher)",
   "contacts.search_placeholder": "Appuyez sur / pour chercher...",
+  "contacts.show_range": "Afficher les contacts {from} à {to}",
   "contacts.shown": "Contacts ({count} affiches)",
   "contacts.status": "Statut",
   "contacts.their_fingerprint": "Son empreinte",

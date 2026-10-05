@@ -570,6 +570,7 @@
   "contacts.search_active": "Suche (tippen zum Suchen, Esc zum Beenden)",
   "contacts.search_hint": "Suche (/ zum Suchen)",
   "contacts.search_placeholder": "/ drücken zum Suchen...",
+  "contacts.show_range": "Kontakte {from}–{to} anzeigen",
   "contacts.shown": "Kontakte ({count} angezeigt)",
   "contacts.status": "Status",
   "contacts.their_fingerprint": "Fingerabdruck des Kontakts",
