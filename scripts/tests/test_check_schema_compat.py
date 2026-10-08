@@ -30,7 +30,9 @@ def object_schema(properties=None, required=None, **extra) -> dict:
 
 
 class NewlyRequiredFields(unittest.TestCase):
-    def test_adding_a_required_field_is_breaking(self):
+    # `required` is the catalogue's key list: a new string arrives in it
+    # with its value, and consumers vendor the whole catalogue (#560).
+    def test_a_key_added_to_required_is_reported_not_failed(self):
         breaking, warnings = compat.check_compat(
             object_schema({"a": {"type": "string"}}, required=["a"]),
             object_schema(
@@ -38,34 +40,33 @@ class NewlyRequiredFields(unittest.TestCase):
             ),
         )
 
-        self.assertEqual(
-            breaking,
-            [
-                "BREAKING: Field 'b' added to required "
-                "(existing data may lack it)"
-            ],
-        )
-        self.assertEqual(warnings, [])
+        self.assertEqual(breaking, [])
+        self.assertEqual(warnings, ["INFO: Key 'b' added"])
 
-    def test_dropping_a_required_field_is_a_relaxation_not_a_break(self):
+    def test_a_key_dropped_from_required_is_breaking(self):
         breaking, warnings = compat.check_compat(
             object_schema({"a": {"type": "string"}}, required=["a"]),
             object_schema({"a": {"type": "string"}}, required=[]),
         )
 
-        self.assertEqual(breaking, [])
         self.assertEqual(
-            warnings, ["INFO: Field 'a' no longer required (relaxation)"]
+            breaking,
+            [
+                "BREAKING: Key 'a' no longer required "
+                "(removed or renamed; consumers may still use it)"
+            ],
         )
+        self.assertEqual(warnings, [])
 
-    def test_several_added_required_fields_are_reported_in_sorted_order(self):
-        breaking, _ = compat.check_compat(
+    def test_several_added_keys_are_reported_in_sorted_order(self):
+        breaking, warnings = compat.check_compat(
             object_schema(required=[]),
             object_schema(required=["zeta", "alpha"]),
         )
 
+        self.assertEqual(breaking, [])
         self.assertEqual(
-            [line.split("'")[1] for line in breaking], ["alpha", "zeta"]
+            [line.split("'")[1] for line in warnings], ["alpha", "zeta"]
         )
 
 
@@ -119,7 +120,7 @@ class PropertyChanges(unittest.TestCase):
 
         self.assertEqual(breaking, ["BREAKING: Property '_meta.locale' removed"])
 
-    def test_a_nested_required_addition_is_breaking(self):
+    def test_a_nested_required_addition_is_reported_not_failed(self):
         old_meta = {
             "type": "object",
             "properties": {"locale": {"type": "string"}},
@@ -131,18 +132,13 @@ class PropertyChanges(unittest.TestCase):
             "required": ["locale"],
         }
 
-        breaking, _ = compat.check_compat(
+        breaking, warnings = compat.check_compat(
             object_schema({"_meta": old_meta}),
             object_schema({"_meta": new_meta}),
         )
 
-        self.assertEqual(
-            breaking,
-            [
-                "BREAKING: Field 'locale' added to required "
-                "(existing data may lack it)"
-            ],
-        )
+        self.assertEqual(breaking, [])
+        self.assertEqual(warnings, ["INFO: Key 'locale' added"])
 
 
 class AdditionalProperties(unittest.TestCase):
@@ -244,20 +240,14 @@ class ArrayOfItemsSchemas(unittest.TestCase):
         }
         new = {
             "type": "array",
-            "items": object_schema(
-                {"id": {"type": "string"}, "mode": {"type": "string"}},
-                required=["id", "mode"],
-            ),
+            "items": object_schema({"id": {"type": "integer"}}, required=["id"]),
         }
 
         breaking, _ = compat.check_compat(old, new)
 
         self.assertEqual(
             breaking,
-            [
-                "BREAKING: Field 'mode' added to required "
-                "(existing data may lack it)"
-            ],
+            ["BREAKING: Property 'id' type changed: string -> integer"],
         )
 
     def test_extract_item_schema_unwraps_only_arrays_with_items(self):
@@ -354,7 +344,7 @@ class CommandLine(unittest.TestCase):
 
     def test_a_breaking_pair_exits_nonzero(self):
         result = self._run(
-            object_schema(required=[]), object_schema(required=["b"])
+            object_schema(required=["b"]), object_schema(required=[])
         )
 
         self.assertEqual(result.returncode, 1)
