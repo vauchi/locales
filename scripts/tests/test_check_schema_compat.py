@@ -308,6 +308,56 @@ class SchemaAutoDetection(unittest.TestCase):
             self.assertIsNone(compat.auto_detect_schema(root))
 
 
+class DeclaredRemovals(unittest.TestCase):
+    """A removal stays breaking unless the MR declares it (private#560).
+
+    schema-removed-keys.txt lists `key  # why no consumer uses it`; the
+    gate blocks, so a deliberate removal needs a way through that shows
+    up in the MR diff.
+    """
+
+    def test_a_declared_removal_is_reported_not_failed(self):
+        breaking, warnings = compat.check_compat(
+            object_schema(required=["gone", "kept"]),
+            object_schema(required=["kept"]),
+            declared_removals={"gone": "the settings screen dropped it in core#1700"},
+        )
+
+        self.assertEqual(breaking, [])
+        self.assertEqual(
+            warnings,
+            ["INFO: Key 'gone' removed (declared: the settings screen dropped it in core#1700)"],
+        )
+
+    def test_an_undeclared_removal_still_breaks_beside_a_declared_one(self):
+        breaking, _ = compat.check_compat(
+            object_schema(required=["a", "b"]),
+            object_schema(required=[]),
+            declared_removals={"a": "unused since core#1"},
+        )
+
+        self.assertEqual(
+            breaking,
+            [
+                "BREAKING: Key 'b' no longer required "
+                "(removed or renamed; consumers may still use it)"
+            ],
+        )
+
+    def test_the_file_maps_each_key_to_its_reason(self):
+        parsed = compat.parse_removed_keys(
+            "# header comment\n\nold.key   # unused since core#1\nother  #  renamed to new.other \n"
+        )
+
+        self.assertEqual(
+            parsed, {"old.key": "unused since core#1", "other": "renamed to new.other"}
+        )
+
+    def test_a_line_without_a_reason_is_refused(self):
+        with self.assertRaisesRegex(ValueError, "old.key"):
+            compat.parse_removed_keys("old.key\n")
+
+
 class CommandLine(unittest.TestCase):
     """The gate is invoked as `check-schema-compat.py <old> <new>`."""
 
@@ -349,6 +399,34 @@ class CommandLine(unittest.TestCase):
 
         self.assertEqual(result.returncode, 1)
         self.assertIn("BREAKING CHANGES DETECTED (1):", result.stdout)
+
+    def test_a_declared_removal_exits_zero(self):
+        old, new = self._schemas(object_schema(required=["b"]), object_schema(required=[]))
+        declared = Path(old).parent / "removed.txt"
+        declared.write_text("b  # unused since core#1\n", encoding="utf-8")
+
+        result = subprocess.run(
+            [sys.executable, self.script, "--removed-keys", str(declared), old, new],
+            capture_output=True,
+            text=True,
+        )
+
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("INFO: Key 'b' removed (declared: unused since core#1)", result.stdout)
+
+    def test_a_reasonless_declaration_fails_the_gate(self):
+        old, new = self._schemas(object_schema(required=["b"]), object_schema(required=[]))
+        declared = Path(old).parent / "removed.txt"
+        declared.write_text("b\n", encoding="utf-8")
+
+        result = subprocess.run(
+            [sys.executable, self.script, "--removed-keys", str(declared), old, new],
+            capture_output=True,
+            text=True,
+        )
+
+        self.assertEqual(result.returncode, 1)
+        self.assertIn("needs a reason", result.stdout + result.stderr)
 
     def test_a_schema_is_read_under_a_non_utf8_locale(self):
         """CI containers commonly run with LC_ALL=C.
