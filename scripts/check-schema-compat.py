@@ -52,10 +52,42 @@ def get_baseline_schema(branch: str, schema_path: str) -> dict | None:
         return None
 
 
-def compare_required(old_req: list, new_req: list) -> list[str]:
-    """Report keys added to (INFO) and dropped from (BREAKING) required."""
+def parse_removed_keys(text: str) -> dict[str, str]:
+    """Parse schema-removed-keys.txt: `key  # why no consumer uses it`.
+
+    The reason is required: the declaration is what a reviewer reads
+    instead of a red pipeline, so it has to say why the removal is safe.
+    """
+    declared = {}
+    for number, raw in enumerate(text.splitlines(), start=1):
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        key, _, reason = line.partition("#")
+        key, reason = key.strip(), reason.strip()
+        if not reason:
+            raise ValueError(
+                f"line {number}: '{key}' needs a reason (`{key}  # why no consumer uses it`)"
+            )
+        declared[key] = reason
+    return declared
+
+
+def compare_required(
+    old_req: list, new_req: list, declared_removals: dict[str, str] | None = None
+) -> list[str]:
+    """Report keys added to (INFO) and dropped from (BREAKING) required.
+
+    A dropped key declared in schema-removed-keys.txt is INFO instead.
+    """
+    declared_removals = declared_removals or {}
     findings = []
     for field in sorted(set(old_req) - set(new_req)):
+        if field in declared_removals:
+            findings.append(
+                f"INFO: Key '{field}' removed (declared: {declared_removals[field]})"
+            )
+            continue
         findings.append(
             f"BREAKING: Key '{field}' no longer required "
             "(removed or renamed; consumers may still use it)"
@@ -147,7 +179,7 @@ def extract_item_schema(schema: dict) -> dict:
 
 
 def check_compat(
-    old_schema: dict, new_schema: dict
+    old_schema: dict, new_schema: dict, declared_removals: dict[str, str] | None = None
 ) -> tuple[list[str], list[str]]:
     """Compare two schemas and return (breaking_changes, warnings).
 
@@ -164,7 +196,7 @@ def check_compat(
     old_props = old_effective.get("properties", {})
     new_props = new_effective.get("properties", {})
     # compare_required reports INFO lines too, at top level and nested.
-    for line in compare_required(old_req, new_req) + compare_properties(
+    for line in compare_required(old_req, new_req, declared_removals) + compare_properties(
         old_props, new_props
     ):
         (warnings if line.startswith("INFO:") else breaking).append(line)
@@ -215,6 +247,11 @@ def main() -> int:
         help="Git branch to use as baseline (e.g., 'main')",
     )
     parser.add_argument(
+        "--removed-keys",
+        default=None,
+        help="Declared key removals (default: <repo>/schema-removed-keys.txt if present)",
+    )
+    parser.add_argument(
         "--schema",
         default=None,
         help="Schema filename relative to repo root (auto-detected if omitted)",
@@ -253,7 +290,18 @@ def main() -> int:
         parser.error("Provide either --baseline or two schema paths")
         return 1
 
-    breaking, warnings = check_compat(old_schema, new_schema)
+    removed_path = (
+        Path(args.removed_keys) if args.removed_keys else repo_root / "schema-removed-keys.txt"
+    )
+    declared = {}
+    if removed_path.is_file():
+        try:
+            declared = parse_removed_keys(removed_path.read_text(encoding="utf-8"))
+        except ValueError as err:
+            print(f"ERROR: {removed_path.name}: {err}")
+            return 1
+
+    breaking, warnings = check_compat(old_schema, new_schema, declared)
 
     for w in warnings:
         print(f"  {w}")
@@ -264,7 +312,9 @@ def main() -> int:
             print(f"  {b}")
         print("\nThese changes will break existing content consumers.")
         print(
-            "If intentional, update min_app_version in manifest and coordinate with core."
+            "If a key removal is intentional, add `key  # why no consumer uses it` to"
+            " schema-removed-keys.txt in this MR. Otherwise update min_app_version in"
+            " the manifest and coordinate with core."
         )
         return 1
 

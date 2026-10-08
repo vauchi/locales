@@ -56,8 +56,11 @@ When a translation key is no longer needed:
    `desktop/`, `ios/`, `android/`).
 2. Remove the key from all locale files.
 3. Remove the key from the `required` array in `locales.schema.json`.
-4. `check-schema-compat` fails this as breaking. State in the MR why no
-   consumer uses the key any more.
+4. `check-schema-compat` fails this as breaking unless the MR declares
+   it: add `the.key  # why no consumer uses it` to
+   `schema-removed-keys.txt`. The reason is required. An entry only
+   matters in the MR that drops the key, so the file can be emptied
+   afterwards.
 
 ### 3. Renaming a Locale Key
 

@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me>
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# Locale keys this MR removes on purpose (SCHEMA_RULES.md, rule 2).
+# check:schema-compat fails a key dropped from `required` unless it is
+# declared here, one per line, with the reason no consumer uses it:
+#
+#   settings.legacy_title  # the screen was removed in core#1700
+#
+# An entry matters only in the MR that drops the key; clear the list freely.
