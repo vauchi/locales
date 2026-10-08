@@ -3,13 +3,17 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 """Check JSON Schema backward compatibility between two versions.
 
-Generic breaking-change detector for any JSON Schema file. Detects:
-  - Adding a field to "required" array (existing data missing it will fail)
+Breaking-change detector for the locale catalogue schema. Detects:
+  - Dropping a key from "required" (the key was removed or renamed, and
+    consumers may still use it)
   - Removing a field from "properties" or "patternProperties"
   - Changing a property's "type" (existing data may not match new type)
   - Adding additionalProperties=false when it was previously true/absent
 
 Non-breaking (safe) changes:
+  - Adding a key to "required": `required` is the catalogue's key list, a
+    new string arrives with its value, and consumers vendor the whole
+    catalogue (vauchi/private#560)
   - Adding optional properties
   - Relaxing constraints (minLength decrease, pattern removal)
   - Adding new enum values
@@ -49,14 +53,16 @@ def get_baseline_schema(branch: str, schema_path: str) -> dict | None:
 
 
 def compare_required(old_req: list, new_req: list) -> list[str]:
-    """Detect newly required fields."""
-    errors = []
-    added = set(new_req) - set(old_req)
-    for field in sorted(added):
-        errors.append(
-            f"BREAKING: Field '{field}' added to required (existing data may lack it)"
+    """Report keys added to (INFO) and dropped from (BREAKING) required."""
+    findings = []
+    for field in sorted(set(old_req) - set(new_req)):
+        findings.append(
+            f"BREAKING: Key '{field}' no longer required "
+            "(removed or renamed; consumers may still use it)"
         )
-    return errors
+    for field in sorted(set(new_req) - set(old_req)):
+        findings.append(f"INFO: Key '{field}' added")
+    return findings
 
 
 def compare_properties(
@@ -153,15 +159,15 @@ def check_compat(
     old_effective = extract_item_schema(old_schema)
     new_effective = extract_item_schema(new_schema)
 
-    # Compare required fields
     old_req = old_effective.get("required", [])
     new_req = new_effective.get("required", [])
-    breaking.extend(compare_required(old_req, new_req))
-
-    # Compare properties
     old_props = old_effective.get("properties", {})
     new_props = new_effective.get("properties", {})
-    breaking.extend(compare_properties(old_props, new_props))
+    # compare_required reports INFO lines too, at top level and nested.
+    for line in compare_required(old_req, new_req) + compare_properties(
+        old_props, new_props
+    ):
+        (warnings if line.startswith("INFO:") else breaking).append(line)
 
     # Check additionalProperties
     breaking.extend(compare_additional_properties(old_effective, new_effective))
@@ -185,11 +191,6 @@ def check_compat(
     new_required = set(new_req)
     for field in sorted(new_optional - new_required):
         warnings.append(f"INFO: New optional property '{field}' added")
-
-    # Removed from required (relaxation — non-breaking)
-    removed_req = set(old_req) - set(new_req)
-    for field in sorted(removed_req):
-        warnings.append(f"INFO: Field '{field}' no longer required (relaxation)")
 
     return breaking, warnings
 

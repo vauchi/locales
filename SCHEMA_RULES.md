@@ -69,7 +69,7 @@ Changes to the `_meta` object affect every locale file. Follow the same breaking
 | Job | What It Checks |
 |-----|---------------|
 | `validate-schema` | All `*.json` files pass `locales.schema.json` validation |
-| `check-schema-compat` | No breaking changes vs `main` branch schema |
+| `check-schema-compat` | No breaking changes vs `main` branch schema: a dropped key, removed property or type change fails; a new key is info |
 | `validate-locales-strict` | Key parity, sorted keys, no empty values |
 | `validate-translations` | Critical keys present, smoke-test known translations |
 
