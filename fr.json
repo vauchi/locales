@@ -2373,6 +2373,8 @@
   "storage_lock.locked_title": "Déverrouiller Vauchi",
   "storage_lock.start_over": "Recommencer",
   "storage_lock.try_again": "Réessayer",
+  "storage_lock.unavailable_body": "Le stockage des clés de votre appareil n'a pas répondu. Vos données sont en sécurité ; réessayez dans un instant.",
+  "storage_lock.unavailable_title": "Vauchi n'accède pas à ses clés",
   "storage_lock.unlock": "Déverrouiller",
   "storage_lock.unreadable_body": "Vauchi ne peut pas ouvrir vos données avec les clés de cet appareil. Si elles n'étaient que brièvement indisponibles, réessayez. Rien n'a été supprimé.",
   "storage_lock.unreadable_title": "Vos données ne peuvent pas être lues",

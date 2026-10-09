@@ -2373,6 +2373,8 @@
   "storage_lock.locked_title": "Desbloquear Vauchi",
   "storage_lock.start_over": "Empezar de nuevo",
   "storage_lock.try_again": "Reintentar",
+  "storage_lock.unavailable_body": "El almacén de claves de tu dispositivo no respondió. Tus datos están a salvo; inténtalo de nuevo en un momento.",
+  "storage_lock.unavailable_title": "Vauchi no puede acceder a sus claves",
   "storage_lock.unlock": "Desbloquear",
   "storage_lock.unreadable_body": "Vauchi no puede abrir tus datos con las claves de este dispositivo. Si solo no estaban disponibles por un momento, inténtalo de nuevo. No se ha eliminado nada.",
   "storage_lock.unreadable_title": "No se pueden leer tus datos",

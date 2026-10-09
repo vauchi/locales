@@ -2373,6 +2373,8 @@
   "storage_lock.locked_title": "Sblocca Vauchi",
   "storage_lock.start_over": "Ricomincia",
   "storage_lock.try_again": "Riprova",
+  "storage_lock.unavailable_body": "L’archivio delle chiavi del dispositivo non ha risposto. I tuoi dati sono al sicuro; riprova tra un momento.",
+  "storage_lock.unavailable_title": "Vauchi non riesce a raggiungere le sue chiavi",
   "storage_lock.unlock": "Sblocca",
   "storage_lock.unreadable_body": "Vauchi non riesce ad aprire i tuoi dati con le chiavi di questo dispositivo. Se erano solo temporaneamente non disponibili, riprova. Non è stato eliminato nulla.",
   "storage_lock.unreadable_title": "I tuoi dati non possono essere letti",
