@@ -133,8 +133,14 @@ fi
 
 # ── 7. the live tree passes ───────────────────────────────────────────
 # Guards against an extractor so eager it blocks what already ships.
+# Workspace only: on a shell runner the sibling core/ is whatever an earlier
+# job left in the builds dir, not core main — locales!203 failed on a stale
+# core branch that still read a key core main had dropped (private#655).
+# Core's own lint:locale-key-coverage checks core's real source in CI.
 ws="$(cd "$LOCALES/.." && pwd)"
-if [ -d "$ws/core/vauchi-app/src" ]; then
+if [ -n "${GITLAB_CI:-}" ]; then
+    printf '  SKIP live vauchi-app source (CI: sibling core/ is not core main)\n'
+elif [ -d "$ws/core/vauchi-app/src" ]; then
     live_out=$(run_gate "$ws/core/vauchi-app/src")
     if printf '%s' "$live_out" | grep -q "^OK:"; then
         printf '  PASS live vauchi-app source passes\n'; pass=$((pass + 1))
