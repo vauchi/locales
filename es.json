@@ -2188,7 +2188,6 @@
   "settings.contact_added_a11y": "Interruptor de nuevo contacto añadido",
   "settings.contact_added_hint": "Si está activado, envía una notificación cuando se añade un nuevo contacto",
   "settings.current": "Actual",
-  "settings.danger_zone": "Zona de peligro",
   "settings.data_export": "Exportar mis datos",
   "settings.data_export_description": "Descarga todos tus datos en un formato portable",
   "settings.debug_mode": "Modo depuración",

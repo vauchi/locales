@@ -2188,7 +2188,6 @@
   "settings.contact_added_a11y": "Bascule nouveau contact ajouté",
   "settings.contact_added_hint": "Si activé, envoie une notification lors de l'ajout d'un nouveau contact",
   "settings.current": "Actuel",
-  "settings.danger_zone": "Zone dangereuse",
   "settings.data_export": "Exporter mes données",
   "settings.data_export_description": "Téléchargez toutes vos données dans un format portable",
   "settings.debug_mode": "Mode débogage",

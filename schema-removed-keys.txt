@@ -8,8 +8,4 @@
 #   settings.legacy_title  # the screen was removed in core#1700
 #
 # An entry matters only in the MR that drops the key; clear the list freely.
-settings.privacy_notifications_group  # no consumer reads it since the Settings restructure (private#655)
-shred.panic_detail  # Panic Shred left the privacy overview in core!1836; no consumer reads it (private#655)
-shred.panic_panel_title  # Panic Shred left the privacy overview in core!1836; no consumer reads it (private#655)
-shred.panic_subtitle  # Panic Shred left the privacy overview in core!1836; no consumer reads it (private#655)
-shred.panic_title  # Panic Shred left the privacy overview in core!1836; no consumer reads it (private#655)
+settings.danger_zone  # renamed to settings.erase_data; core reads the new key since core!1842 (private#655)
