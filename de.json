@@ -650,6 +650,7 @@
   "deep_link.title": "Austauschanfrage",
   "deep_link_consent.accept_button": "Austausch akzeptieren",
   "deep_link_consent.banner_text": "Jemand hat einen Austauschlink mit dir geteilt. Akzeptiere ihn nur, wenn du der Quelle vertraust.",
+  "deep_link_consent.banner_text_named": "Dieser Link gibt an, von {name} zu sein. Namen in Links werden nicht geprüft: Akzeptiere ihn nur, wenn du der Quelle vertraust.",
   "deep_link_consent.decline_button": "Ablehnen",
   "deep_link_consent.title": "Austauschanfrage",
   "delivery.attempt_of": "Versuch {current} von {max}",

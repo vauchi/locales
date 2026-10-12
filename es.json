@@ -650,6 +650,7 @@
   "deep_link.title": "Solicitud de intercambio",
   "deep_link_consent.accept_button": "Aceptar intercambio",
   "deep_link_consent.banner_text": "Alguien compartió un enlace de intercambio contigo. Acéptalo solo si confías en la fuente.",
+  "deep_link_consent.banner_text_named": "Este enlace dice venir de {name}. Los nombres en los enlaces no se comprueban: acepta solo si confías en su origen.",
   "deep_link_consent.decline_button": "Rechazar",
   "deep_link_consent.title": "Solicitud de intercambio",
   "delivery.attempt_of": "Intento {current} de {max}",

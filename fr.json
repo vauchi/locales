@@ -650,6 +650,7 @@
   "deep_link.title": "Demande d'échange",
   "deep_link_consent.accept_button": "Accepter l'échange",
   "deep_link_consent.banner_text": "Quelqu'un a partagé un lien d'échange avec vous. Acceptez-le uniquement si vous faites confiance à la source.",
+  "deep_link_consent.banner_text_named": "Ce lien indique venir de {name}. Les noms dans les liens ne sont pas vérifiés : n'acceptez que si vous faites confiance à sa provenance.",
   "deep_link_consent.decline_button": "Refuser",
   "deep_link_consent.title": "Demande d'échange",
   "delivery.attempt_of": "Tentative {current} sur {max}",
