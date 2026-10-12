@@ -1835,7 +1835,7 @@
   "qr.failed_to_generate": "Impossibile generare il codice QR",
   "qr.paste_from_clipboard": "Incolla dagli appunti",
   "qr.paste_instead": "Oppure incolla i dati QR",
-  "qr.paste_placeholder": "Incolla i dati QR (wb://…)",
+  "qr.paste_placeholder": "Incolla i dati QR o il link",
   "qr.point_camera": "Punta la fotocamera verso il codice QR",
   "qr.scan": "Scansiona codice QR",
   "qr.scan_button": "Scansiona codice QR",

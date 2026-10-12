@@ -1835,7 +1835,7 @@
   "qr.failed_to_generate": "QR-Code konnte nicht erstellt werden",
   "qr.paste_from_clipboard": "Aus Zwischenablage einfügen",
   "qr.paste_instead": "Oder stattdessen QR-Daten einfügen",
-  "qr.paste_placeholder": "QR-Daten einfügen (wb://…)",
+  "qr.paste_placeholder": "QR-Daten oder Link einfügen",
   "qr.point_camera": "Richte die Kamera auf den QR-Code",
   "qr.scan": "QR-Code scannen",
   "qr.scan_button": "QR-Code scannen",
