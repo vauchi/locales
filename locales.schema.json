@@ -1412,6 +1412,8 @@
     "info.visibility_meaning.body",
     "info.visibility_meaning.title",
     "labels.acquaintances",
+    "labels.business",
+    "labels.coworkers",
     "labels.create",
     "labels.custom",
     "labels.delete",

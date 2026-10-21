@@ -1411,6 +1411,8 @@
   "info.visibility_meaning.body": "Sichtbarkeit steuert, welche Kontakte jedes deiner Felder sehen können. Standardmäßig ist ein neues Feld verborgen, bis du festlegst, wer es sieht. Mit Gruppen zeigst du es manchen Kontakten und anderen nicht.",
   "info.visibility_meaning.title": "Sichtbarkeit",
   "labels.acquaintances": "Bekannte",
+  "labels.business": "Geschäftlich",
+  "labels.coworkers": "Arbeitskollegen",
   "labels.create": "Label erstellen",
   "labels.custom": "Benutzerdefinierte Labels",
   "labels.delete": "Label löschen",

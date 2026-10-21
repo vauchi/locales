@@ -1411,6 +1411,8 @@
   "info.visibility_meaning.body": "La visibilité contrôle quels contacts peuvent voir chacun de vos champs. Par défaut, un nouveau champ est masqué jusqu'à ce que vous choisissiez qui le voit. Utilisez les groupes pour le montrer à certains contacts et pas à d'autres.",
   "info.visibility_meaning.title": "Visibilité",
   "labels.acquaintances": "Connaissances",
+  "labels.business": "Affaires",
+  "labels.coworkers": "Collègues",
   "labels.create": "Créer un label",
   "labels.custom": "Labels personnalises",
   "labels.delete": "Supprimer le label",

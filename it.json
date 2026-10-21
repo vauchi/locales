@@ -1411,6 +1411,8 @@
   "info.visibility_meaning.body": "La visibilità controlla quali contatti possono vedere ciascuno dei tuoi campi. Per impostazione predefinita, un nuovo campo è nascosto finché non scegli chi lo vede. Usa i gruppi per mostrarlo ad alcuni contatti e non ad altri.",
   "info.visibility_meaning.title": "Visibilità",
   "labels.acquaintances": "Conoscenti",
+  "labels.business": "Affari",
+  "labels.coworkers": "Colleghi",
   "labels.create": "Crea etichetta",
   "labels.custom": "Etichette personalizzate",
   "labels.delete": "Elimina etichetta",
