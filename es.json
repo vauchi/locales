@@ -413,6 +413,7 @@
   "contact_detail.field_action.open_in_openstreetmap": "Abrir en OpenStreetMap",
   "contact_detail.field_action.open_in_organic_maps": "Abrir en Organic Maps",
   "contact_detail.field_action.open_profile": "Abrir perfil",
+  "contact_detail.field_action.open_profile_on": "Abrir en {host}",
   "contact_detail.field_action.open_website": "Abrir sitio web",
   "contact_detail.field_action.send_email": "Enviar correo",
   "contact_detail.field_action.show_on_map": "Ver en el mapa",

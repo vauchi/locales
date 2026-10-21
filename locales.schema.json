@@ -414,6 +414,7 @@
     "contact_detail.field_action.open_in_openstreetmap",
     "contact_detail.field_action.open_in_organic_maps",
     "contact_detail.field_action.open_profile",
+    "contact_detail.field_action.open_profile_on",
     "contact_detail.field_action.open_website",
     "contact_detail.field_action.send_email",
     "contact_detail.field_action.show_on_map",
