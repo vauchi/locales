@@ -31,18 +31,22 @@ def build_schema(english: dict) -> dict:
                 "properties": {
                     "locale": {
                         "type": "string",
-                        "pattern": "^[a-z]{2}(-[A-Z]{2})?$",
-                        "description": "BCP-47 locale code (e.g. en, de, fr-CH)",
+                        "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$",
+                        "description": "BCP-47 locale code (e.g. en, fil, fr-CH). Core offers a file only when this equals its file name (vauchi/private#733 D2)",
                     },
                     "name": {
                         "type": "string",
                         "minLength": 1,
-                        "description": "Locale name in its own language",
+                        "maxLength": 64,
+                        "pattern": "^[^\\u0000-\\u001F\\u007F-\\u009F]+$",
+                        "description": "Locale name in its own language; Core shows at most 64 characters without control characters",
                     },
                     "english_name": {
                         "type": "string",
                         "minLength": 1,
-                        "description": "Locale name in English",
+                        "maxLength": 64,
+                        "pattern": "^[^\\u0000-\\u001F\\u007F-\\u009F]+$",
+                        "description": "Locale name in English; Core shows at most 64 characters without control characters",
                     },
                     "is_rtl": {
                         "type": "boolean",
