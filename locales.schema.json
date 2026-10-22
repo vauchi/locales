@@ -2229,6 +2229,8 @@
     "settings.contact_added_hint",
     "settings.content_updates",
     "settings.content_updates_hint",
+    "settings.content_updates_in_background",
+    "settings.content_updates_in_background_hint",
     "settings.content_updates_off",
     "settings.content_updates_on",
     "settings.content_updates_wifi_only",

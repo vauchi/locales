@@ -2228,6 +2228,8 @@
   "settings.contact_added_hint": "Si activé, envoie une notification lors de l'ajout d'un nouveau contact",
   "settings.content_updates": "Mises à jour du contenu",
   "settings.content_updates_hint": "Télécharger de nouvelles langues, de nouveaux thèmes et réseaux sociaux",
+  "settings.content_updates_in_background": "Aussi en arrière-plan",
+  "settings.content_updates_in_background_hint": "Mettre à jour quand l'app n'est pas ouverte à l'écran",
   "settings.content_updates_off": "Désactivées",
   "settings.content_updates_on": "Activées",
   "settings.content_updates_wifi_only": "Wi-Fi uniquement",

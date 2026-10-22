@@ -2228,6 +2228,8 @@
   "settings.contact_added_hint": "Wenn aktiviert, wird eine Benachrichtigung gesendet, wenn ein neuer Kontakt hinzugefügt wird",
   "settings.content_updates": "Inhaltsaktualisierungen",
   "settings.content_updates_hint": "Neue Sprachen, Designs und soziale Netzwerke herunterladen",
+  "settings.content_updates_in_background": "Auch im Hintergrund",
+  "settings.content_updates_in_background_hint": "Aktualisieren, während die App nicht auf dem Bildschirm geöffnet ist",
   "settings.content_updates_off": "Aus",
   "settings.content_updates_on": "Ein",
   "settings.content_updates_wifi_only": "Nur WLAN",
