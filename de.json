@@ -314,6 +314,7 @@
   "change_password.new_password_label_change": "Neues Passwort",
   "change_password.new_password_placeholder_change": "Wähle ein neues Passwort",
   "change_password.new_password_placeholder_setup": "Wähle ein Passwort",
+  "change_password.presence_prompt": "Bestätige, dass du es bist, um ein App-Passwort festzulegen",
   "change_password.subtitle_setup": "Schütze die App mit einem Passwort.",
   "change_password.title_change": "Passwort ändern",
   "change_password.title_setup": "Passwort festlegen",
