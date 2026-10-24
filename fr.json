@@ -1982,6 +1982,8 @@
   "recovery.old_fingerprint_label": "Empreinte de l'ancienne identité :",
   "recovery.old_id": "Ancien ID : {id}",
   "recovery.old_id_label": "Ancien ID",
+  "recovery.claimed_contact_label": "Se présente comme",
+  "recovery.claim_not_a_contact": "Cette demande de récupération concerne quelqu'un qui ne fait pas partie de vos contacts. Vous ne pouvez recommander qu'un contact.",
   "recovery.old_identity": "Ancienne identité :",
   "recovery.old_public_key": "Ancienne clé publique (hex)",
   "recovery.paste_claim_instruction": "Collez les données de demande de récupération de votre contact :",

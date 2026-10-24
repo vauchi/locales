@@ -1982,6 +1982,8 @@
   "recovery.old_fingerprint_label": "Old identity fingerprint:",
   "recovery.old_id": "Old ID: {id}",
   "recovery.old_id_label": "Old ID",
+  "recovery.claimed_contact_label": "Claims to be",
+  "recovery.claim_not_a_contact": "This claim is for someone who is not one of your contacts. You can only vouch for a contact.",
   "recovery.old_identity": "Old Identity:",
   "recovery.old_public_key": "Old Public Key (hex)",
   "recovery.paste_claim_instruction": "Paste the recovery claim data from your contact:",
