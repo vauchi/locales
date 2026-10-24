@@ -314,6 +314,8 @@
   "change_password.new_password_label_change": "Nouveau mot de passe",
   "change_password.new_password_placeholder_change": "Choisissez un nouveau mot de passe",
   "change_password.new_password_placeholder_setup": "Choisissez un mot de passe",
+  "change_password.presence_lost": "Les empreintes ou le visage enregistrés sur cet appareil ont changé depuis la dernière vérification de Vauchi : impossible de confirmer que c'est vous. Pour définir un mot de passe d'app, restaurez une sauvegarde ou associez cet appareil depuis un autre de vos appareils.",
+  "change_password.presence_lost_title": "Impossible de confirmer que c'est vous ici",
   "change_password.presence_prompt": "Confirmez votre identité pour définir un mot de passe de l'application",
   "change_password.subtitle_setup": "Protégez l'application avec un mot de passe.",
   "change_password.title_change": "Changer le mot de passe",

@@ -315,6 +315,8 @@
     "change_password.new_password_label_change",
     "change_password.new_password_placeholder_change",
     "change_password.new_password_placeholder_setup",
+    "change_password.presence_lost",
+    "change_password.presence_lost_title",
     "change_password.presence_prompt",
     "change_password.subtitle_setup",
     "change_password.title_change",

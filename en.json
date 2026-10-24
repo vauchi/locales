@@ -314,6 +314,8 @@
   "change_password.new_password_label_change": "New Password",
   "change_password.new_password_placeholder_change": "Choose a new password",
   "change_password.new_password_placeholder_setup": "Choose a password",
+  "change_password.presence_lost": "The fingerprints or face on this device changed since Vauchi last checked, so it can't confirm it's you. To set an app password, restore a backup or link this device from another of your devices.",
+  "change_password.presence_lost_title": "Can't confirm it's you here",
   "change_password.presence_prompt": "Confirm it's you to set an app password",
   "change_password.subtitle_setup": "Protect the app with a password.",
   "change_password.title_change": "Change Password",

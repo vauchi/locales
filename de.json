@@ -314,6 +314,8 @@
   "change_password.new_password_label_change": "Neues Passwort",
   "change_password.new_password_placeholder_change": "Wähle ein neues Passwort",
   "change_password.new_password_placeholder_setup": "Wähle ein Passwort",
+  "change_password.presence_lost": "Die Fingerabdrücke oder das Gesicht auf diesem Gerät haben sich seit der letzten Prüfung durch Vauchi geändert, daher lässt sich nicht bestätigen, dass du es bist. Um ein App-Passwort festzulegen, stelle ein Backup wieder her oder verknüpfe dieses Gerät von einem deiner anderen Geräte aus.",
+  "change_password.presence_lost_title": "Hier lässt sich nicht bestätigen, dass du es bist",
   "change_password.presence_prompt": "Bestätige, dass du es bist, um ein App-Passwort festzulegen",
   "change_password.subtitle_setup": "Schütze die App mit einem Passwort.",
   "change_password.title_change": "Passwort ändern",
