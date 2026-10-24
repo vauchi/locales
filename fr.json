@@ -36,7 +36,7 @@
   "a11y.step_of": "Étape {current} sur {total}",
   "a11y.toast_prefix": "Notification : {message}",
   "a11y.toggle_label": "Bascule {name}",
-  "about.body": "Vauchi — Cartes de contact actualisables, axées sur la confidentialité.\n\nVersion 0.5.0\nLicence : GPL-3.0-or-later",
+  "about.body": "Vauchi — Cartes de contact actualisables, axées sur la confidentialité.\n\nVersion 0.5.0\nLicence : AGPL-3.0-or-later (core), GPL-3.0-or-later (app)",
   "about.what_is_vauchi.body": "Vauchi est une application de cartes de contact axée sur la confidentialité. Vous échangez des cartes en personne via un code QR. Vos données sont chiffrées de bout en bout et jamais stockées sur nos serveurs. Lorsque vous mettez à jour votre carte, tous vos contacts reçoivent automatiquement la mise à jour.",
   "about.what_is_vauchi.link_label": "En savoir plus",
   "about.what_is_vauchi.title": "Qu'est-ce que Vauchi ?",
