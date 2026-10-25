@@ -2552,6 +2552,7 @@
   "validation.password_mismatch": "Las contraseñas no coinciden",
   "validation.relay_anchor_format": "Un ancla tiene 64 caracteres hexadecimales",
   "validation.relay_anchor_required": "Un relay personalizado necesita su ancla OHTTP",
+  "validation.relay_ohttp_route_missing": "Este relay necesita un relay OHTTP aparte, que Vauchi aún no puede configurar",
   "validation.required": "Este campo es obligatorio",
   "validation.too_long": "Debe tener como máximo {max} caracteres",
   "validation.too_short": "Debe tener al menos {min} caracteres",

@@ -2552,6 +2552,7 @@
   "validation.password_mismatch": "Les mots de passe ne correspondent pas",
   "validation.relay_anchor_format": "Une ancre compte 64 caractères hexadécimaux",
   "validation.relay_anchor_required": "Un relais personnalisé a besoin de son ancre OHTTP",
+  "validation.relay_ohttp_route_missing": "Ce relais a besoin d'un relais OHTTP distinct, que Vauchi ne peut pas encore configurer",
   "validation.required": "Ce champ est obligatoire",
   "validation.too_long": "Doit contenir au plus {max} caractères",
   "validation.too_short": "Doit contenir au moins {min} caractères",

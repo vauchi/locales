@@ -2552,6 +2552,7 @@
   "validation.password_mismatch": "Le password non corrispondono",
   "validation.relay_anchor_format": "Un'ancora è composta da 64 caratteri esadecimali",
   "validation.relay_anchor_required": "Un relay personalizzato richiede la sua ancora OHTTP",
+  "validation.relay_ohttp_route_missing": "Questo relay richiede un relay OHTTP separato, che Vauchi non può ancora impostare",
   "validation.required": "Questo campo è obbligatorio",
   "validation.too_long": "Deve contenere al massimo {max} caratteri",
   "validation.too_short": "Deve contenere almeno {min} caratteri",

@@ -2552,6 +2552,7 @@
   "validation.password_mismatch": "Passwörter stimmen nicht überein",
   "validation.relay_anchor_format": "Ein Anker besteht aus 64 Hexadezimalzeichen",
   "validation.relay_anchor_required": "Ein eigenes Relay braucht seinen OHTTP-Anker",
+  "validation.relay_ohttp_route_missing": "Dieses Relay braucht ein separates OHTTP-Relay, das Vauchi noch nicht einstellen kann",
   "validation.required": "Dieses Feld ist erforderlich",
   "validation.too_long": "Darf maximal {max} Zeichen lang sein",
   "validation.too_short": "Muss mindestens {min} Zeichen lang sein",
