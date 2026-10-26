@@ -1980,7 +1980,6 @@
   "recovery.not_enough_trusted": "No hay suficientes contactos de confianza",
   "recovery.not_in_contacts_warning": "Esta clave NO está en tus contactos. ¡Verifica en persona!",
   "recovery.note": "Nota: La recuperación requiere verificación mutua en persona.",
-  "recovery.old_fingerprint_label": "Huella de identidad antigua:",
   "recovery.old_id": "ID Anterior: {id}",
   "recovery.old_id_label": "ID antiguo",
   "recovery.old_identity": "Identidad anterior:",
