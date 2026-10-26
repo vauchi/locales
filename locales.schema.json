@@ -1981,6 +1981,7 @@
     "recovery.not_enough_trusted",
     "recovery.not_in_contacts_warning",
     "recovery.note",
+    "recovery.old_fingerprint_label",
     "recovery.old_id",
     "recovery.old_id_label",
     "recovery.old_identity",

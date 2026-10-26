@@ -1980,6 +1980,7 @@
   "recovery.not_enough_trusted": "Nicht genügend vertrauenswürdige Kontakte",
   "recovery.not_in_contacts_warning": "Dieser Schlüssel ist NICHT in deinen Kontakten. Verifiziere persönlich!",
   "recovery.note": "Hinweis: Wiederherstellung erfordert gegenseitige persönliche Verifikation.",
+  "recovery.old_fingerprint_label": "Fingerabdruck der alten Identität:",
   "recovery.old_id": "Alte ID: {id}",
   "recovery.old_id_label": "Alte ID",
   "recovery.old_identity": "Alte Identität:",

@@ -1980,6 +1980,7 @@
   "recovery.not_enough_trusted": "Contatti fidati insufficienti",
   "recovery.not_in_contacts_warning": "Questa chiave NON è nei tuoi contatti. Verifica di persona!",
   "recovery.note": "Nota: il recupero richiede una verifica reciproca di persona.",
+  "recovery.old_fingerprint_label": "Impronta della vecchia identità:",
   "recovery.old_id": "Vecchio ID: {id}",
   "recovery.old_id_label": "Vecchio ID",
   "recovery.old_identity": "Vecchia identità:",
