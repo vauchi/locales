@@ -1941,6 +1941,8 @@
   "recovery.give_voucher_detail": "Gib diese Bürgschaft an deinen Kontakt weiter.",
   "recovery.give_voucher_instruction": "Gib dies der Person, die wiederherstellt:",
   "recovery.give_voucher_to_contact": "Gib diesen Voucher an deinen Kontakt:",
+  "recovery.guardian_groups_explained": "Vertrauenspersonen können in Gruppen eingeteilt werden. Aus jeder Gruppe muss eine Person bei der Wiederherstellung helfen, sodass keine Gruppe es allein kann. Eine Gruppe mit zwei oder mehr Mitgliedern hat eine Reserve: Ist eine Person nicht erreichbar, kann eine andere einspringen.",
+  "recovery.guardians_ideally_strangers": "Wenn alle Vertrauenspersonen gebraucht werden, ist es am sichersten, wenn sie sich nicht kennen: Dann kann kein Freundeskreis deine Identität ohne dich wiederherstellen.",
   "recovery.guardians_not_told": "Vauchi sagt ihnen nicht, dass du ihnen vertraust, und am sichersten ist es, wenn du es auch nicht tust. Nur wenn du alle Geräte verlierst, erreichst du sie selbst, einzeln, per Telefon oder persönlich und nie in einer gemeinsamen Gruppe, und bittest jede Person, für dich zu bürgen.",
   "recovery.help_contact_recover": "Kontakt bei Wiederherstellung helfen",
   "recovery.help_contact_recover_description": "Wenn ein Kontakt sein Gerät verloren hat, kannst du für dessen Identität bürgen.",

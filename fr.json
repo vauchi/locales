@@ -1941,6 +1941,8 @@
   "recovery.give_voucher_detail": "Donnez cette caution à votre contact.",
   "recovery.give_voucher_instruction": "Donnez ceci à la personne en récupération :",
   "recovery.give_voucher_to_contact": "Donnez cette recommandation à votre contact :",
+  "recovery.guardian_groups_explained": "Les personnes de confiance peuvent être réparties en groupes. Une personne de chaque groupe doit vous aider à récupérer votre identité, ainsi aucun groupe ne peut le faire seul. Un groupe de deux membres ou plus a une réserve : si l'un est injoignable, un autre peut prendre le relais.",
+  "recovery.guardians_ideally_strangers": "Quand toutes les personnes de confiance sont nécessaires, le plus sûr est qu'elles ne se connaissent pas : ainsi aucun cercle d'amis ne peut récupérer votre identité sans vous.",
   "recovery.guardians_not_told": "Vauchi ne leur dit pas que vous leur faites confiance, et le plus sûr est de ne pas le leur dire non plus. Seulement si vous perdez tous vos appareils, contactez-les vous-même, un par un, par téléphone ou en personne et jamais dans un groupe commun, et demandez à chacun de se porter garant de vous.",
   "recovery.help_contact_recover": "Aider un contact à récupérer",
   "recovery.help_contact_recover_description": "Si un contact a perdu son appareil, vous pouvez attester de son identité.",

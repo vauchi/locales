@@ -1941,6 +1941,8 @@
   "recovery.give_voucher_detail": "Dai questa testimonianza al tuo contatto.",
   "recovery.give_voucher_instruction": "Consegna questo alla persona in fase di recupero:",
   "recovery.give_voucher_to_contact": "Consegna questa garanzia al tuo contatto:",
+  "recovery.guardian_groups_explained": "Le persone di fiducia possono essere organizzate in gruppi. Una persona di ogni gruppo deve aiutarti a recuperare la tua identità, così nessun gruppo può farlo da solo. Un gruppo con due o più membri ha una riserva: se una persona non è raggiungibile, un'altra può intervenire.",
+  "recovery.guardians_ideally_strangers": "Quando servono tutte le persone di fiducia, la cosa più sicura è che non si conoscano tra loro: così nessuna cerchia di amici può recuperare la tua identità senza di te.",
   "recovery.guardians_not_told": "Vauchi non dice loro che ti fidi di loro, ed è più sicuro che non lo faccia neanche tu. Solo se perdi tutti i dispositivi, contattali tu, uno alla volta, per telefono o di persona e mai in un gruppo comune, e chiedi a ciascuno di garantire per te.",
   "recovery.help_contact_recover": "Aiuta un contatto a recuperare",
   "recovery.help_contact_recover_description": "Se un contatto ha perso il dispositivo, può garantire per la sua identità.",

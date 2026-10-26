@@ -1941,6 +1941,8 @@
   "recovery.give_voucher_detail": "Entrega este aval a tu contacto.",
   "recovery.give_voucher_instruction": "Entrega esto a la persona que está recuperando:",
   "recovery.give_voucher_to_contact": "Entrega este aval a tu contacto:",
+  "recovery.guardian_groups_explained": "Las personas de confianza pueden organizarse en grupos. Una persona de cada grupo debe ayudarte a recuperar tu identidad, así ningún grupo puede hacerlo solo. Un grupo con dos o más miembros tiene reserva: si no se puede contactar a uno, otro puede ayudar.",
+  "recovery.guardians_ideally_strangers": "Cuando se necesita a todas las personas de confianza, lo más seguro es que no se conozcan entre sí: así ningún círculo de amistades puede recuperar tu identidad sin ti.",
   "recovery.guardians_not_told": "Vauchi no les dice que confías en ellos, y lo más seguro es que tú tampoco lo hagas. Solo si pierdes todos tus dispositivos, contáctalos tú, uno por uno, por teléfono o en persona y nunca en un grupo común, y pide a cada uno que te avale.",
   "recovery.help_contact_recover": "Ayudar a un Contacto a Recuperarse",
   "recovery.help_contact_recover_description": "Si un contacto perdió su dispositivo, puedes avalar su identidad.",

@@ -1942,6 +1942,8 @@
     "recovery.give_voucher_detail",
     "recovery.give_voucher_instruction",
     "recovery.give_voucher_to_contact",
+    "recovery.guardian_groups_explained",
+    "recovery.guardians_ideally_strangers",
     "recovery.guardians_not_told",
     "recovery.help_contact_recover",
     "recovery.help_contact_recover_description",
