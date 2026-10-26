@@ -258,6 +258,8 @@
   "backup.wizard.replace_warning": "Dies ersetzt deine aktuelle Identität und alle Kontakte dauerhaft.",
   "backup.wizard.restore": "Sicherung wiederherstellen",
   "backup.wizard.restore_failed_title": "Wiederherstellung fehlgeschlagen",
+  "backup.wizard.restore_needs_empty_body": "Eine Sicherung lässt sich nur in eine App ohne Identität wiederherstellen, und dieses Gerät hat bereits eine. Um hier wiederherzustellen, lösche zuerst die Daten dieses Geräts unter Einstellungen › Daten löschen › Notfall-Löschung und wähle dann auf dem Willkommensbildschirm „Aus Sicherung wiederherstellen“.",
+  "backup.wizard.restore_needs_empty_title": "Wiederherstellung braucht eine leere App",
   "backup.wizard.restored_title": "Sicherung wiederhergestellt",
   "backup.wizard.restoring_detail": "Deine Sicherung wird entschlüsselt. Große Sicherungen können auf älteren Geräten mehrere Minuten dauern.",
   "backup.wizard.restoring_title": "Sicherung wird wiederhergestellt …",

@@ -259,6 +259,8 @@
     "backup.wizard.replace_warning",
     "backup.wizard.restore",
     "backup.wizard.restore_failed_title",
+    "backup.wizard.restore_needs_empty_body",
+    "backup.wizard.restore_needs_empty_title",
     "backup.wizard.restored_title",
     "backup.wizard.restoring_detail",
     "backup.wizard.restoring_title",

@@ -258,6 +258,8 @@
   "backup.wizard.replace_warning": "Cela remplacera définitivement votre identité actuelle et tous vos contacts.",
   "backup.wizard.restore": "Restaurer une sauvegarde",
   "backup.wizard.restore_failed_title": "Échec de la restauration",
+  "backup.wizard.restore_needs_empty_body": "Une sauvegarde ne peut être restaurée que dans une application sans identité, et cet appareil en a déjà une. Pour restaurer ici, effacez d'abord les données de cet appareil dans Paramètres › Effacer les données › Suppression d'urgence, puis choisissez « Restaurer depuis une sauvegarde » sur l'écran d'accueil.",
+  "backup.wizard.restore_needs_empty_title": "La restauration nécessite une application vide",
   "backup.wizard.restored_title": "Sauvegarde restaurée",
   "backup.wizard.restoring_detail": "Déchiffrement de votre sauvegarde. Les sauvegardes volumineuses peuvent prendre plusieurs minutes sur les appareils plus anciens.",
   "backup.wizard.restoring_title": "Restauration de la sauvegarde…",
