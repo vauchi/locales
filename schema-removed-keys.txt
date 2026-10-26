@@ -8,4 +8,9 @@
 #   settings.legacy_title  # the screen was removed in core#1700
 #
 # An entry matters only in the MR that drops the key; clear the list freely.
-settings.danger_zone  # renamed to settings.erase_data; core reads the new key since core!1842 (private#655)
+backup.replace_confirm  # core!2011 removed the Restore wizard's replace step, its only reader (private#819)
+backup.replace_button  # core!2011 removed the Restore wizard's replace step, its only reader (private#819)
+backup.wizard.replace_warning  # core!2011 removed the Restore wizard's replace step, its only reader (private#819)
+backup.wizard.replace_a11y  # core!2011 removed the Restore wizard's replace step, its only reader (private#819)
+backup.replace_warning  # no consumer reads it; it described the replace that never worked (private#819)
+backup.restore_body  # no consumer reads it; it described the replace that never worked (private#819)
