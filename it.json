@@ -1153,7 +1153,7 @@
   "exchange.weak_signal": "Segnale debole",
   "exchange.your_qr": "Il tuo codice QR",
   "faq.block_contact": "Come blocco un contatto?",
-  "faq.block_contact.answer": "Sì. Bloccare un contatto:\n\n1. Lo rimuove dalla lista contatti\n2. Interrompe l'invio dei tuoi aggiornamenti\n3. Ignora qualsiasi aggiornamento da parte loro\n\nPer bloccare: tocca il contatto > Menu > Blocca contatto\n\nNon saranno avvisati del blocco.",
+  "faq.block_contact.answer": "Presto. Bloccare un contatto interrompe l'invio dei tuoi aggiornamenti e ignora qualsiasi aggiornamento da parte loro. Non saranno avvisati del blocco.\n\nIl blocco non è ancora disponibile nell'app; arriverà in un prossimo aggiornamento.",
   "faq.block_contact.question": "Posso bloccare qualcuno?",
   "faq.data_storage": "Dove sono archiviati i miei dati?",
   "faq.data_storage.answer": "I tuoi dati risiedono in tre luoghi:\n\n**Sul tuo dispositivo:**\n- La tua identità (chiavi private)\n- La tua scheda di contatto\n- Le schede dei tuoi contatti\n- Tutte le impostazioni\n\n**Sul server relay (crittografati):**\n- Messaggi in attesa di consegna\n- Mai leggibili da noi\n\n**In nessun altro luogo.**\n\nNon abbiamo mai accesso ai tuoi dati non crittografati.",

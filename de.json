@@ -1153,7 +1153,7 @@
   "exchange.weak_signal": "Schwaches Signal",
   "exchange.your_qr": "Dein QR-Code",
   "faq.block_contact": "Wie blockiere ich einen Kontakt?",
-  "faq.block_contact.answer": "Ja. Einen Kontakt blockieren:\n\n1. Entfernt ihn aus deiner Kontaktliste\n2. Stoppt den Versand deiner Updates\n3. Ignoriert alle Updates von ihm\n\nZum Blockieren: Kontakt antippen > Menü > Kontakt blockieren\n\nEr wird nicht benachrichtigt.",
+  "faq.block_contact.answer": "Bald. Einen Kontakt zu blockieren stoppt den Versand deiner Updates an ihn und ignoriert alle Updates von ihm. Er wird nicht benachrichtigt.\n\nBlockieren ist in der App noch nicht verfügbar; es kommt mit einem künftigen Update.",
   "faq.block_contact.question": "Kann ich jemanden blockieren?",
   "faq.data_storage": "Wo werden meine Daten gespeichert?",
   "faq.data_storage.answer": "Deine Daten befinden sich an drei Orten:\n\n**Auf deinem Gerät:**\n- Deine Identität (private Schlüssel)\n- Deine Kontaktkarte\n- Die Karten deiner Kontakte\n- Alle Einstellungen\n\n**Auf dem Relay-Server (verschlüsselt):**\n- Nachrichten, die auf Zustellung warten\n- Für uns nie lesbar\n\n**Nirgendwo sonst.**\n\nWir haben niemals Zugriff auf deine unverschlüsselten Daten.",
