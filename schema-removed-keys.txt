@@ -15,3 +15,6 @@ backup.wizard.replace_a11y  # core!2011 removed the Restore wizard's replace ste
 backup.replace_warning  # no consumer reads it; it described the replace that never worked (private#819)
 backup.restore_body  # no consumer reads it; it described the replace that never worked (private#819)
 recovery.old_fingerprint_label  # core!2014 moved the verify screen to recovery.new_fingerprint_label, its only reader (private#829)
+settings.delivery_receipts  # core!2055 removed the Delivery Receipts toggle, its only reader; no receipt was ever sent (private#882)
+settings.delivery_receipts_a11y  # core!2055 removed the Delivery Receipts toggle, its only reader; no receipt was ever sent (private#882)
+settings.delivery_receipts_hint  # core!2055 removed the Delivery Receipts toggle, its only reader; no receipt was ever sent (private#882)
