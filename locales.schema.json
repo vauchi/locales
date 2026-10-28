@@ -2549,6 +2549,7 @@
     "validation.relay_anchor_format",
     "validation.relay_anchor_required",
     "validation.relay_ohttp_route_missing",
+    "validation.relay_url_https",
     "validation.required",
     "validation.too_long",
     "validation.too_short",
