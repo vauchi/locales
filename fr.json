@@ -1535,7 +1535,7 @@
   "link_responder.failure_contact_limit": "Vous avez atteint votre limite de contacts. Supprimez un contact avant d'en ajouter un autre.",
   "link_responder.failure_decrypt_error": "La carte reçue n'a pas pu être déchiffrée. Veuillez réessayer.",
   "link_responder.failure_generic": "Une erreur s'est produite lors de la réception de la carte de contact. Veuillez réessayer.",
-  "link_responder.failure_link_already_used": "Quelqu'un d'autre a déjà ouvert ce lien. Demandez à l'expéditeur d'en partager un nouveau.",
+  "link_responder.failure_link_already_used": "Ce lien a déjà été utilisé. Demandez à l'expéditeur d'en partager un nouveau.",
   "link_responder.failure_rejected": "Le relais a rejeté l'échange. Veuillez repartager le lien.",
   "link_responder.failure_self_exchange": "Ce lien est le vôtre. Demandez à l'autre personne de partager le sien.",
   "link_responder.failure_timed_out": "L'autre appareil n'a pas répondu à temps. Demandez-lui de repartager le lien.",

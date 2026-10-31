@@ -1535,7 +1535,7 @@
   "link_responder.failure_contact_limit": "Hai raggiunto il limite di contatti. Rimuovi un contatto prima di aggiungerne un altro.",
   "link_responder.failure_decrypt_error": "Impossibile decrittografare la scheda ricevuta. Riprova.",
   "link_responder.failure_generic": "Si è verificato un problema durante la ricezione della scheda contatto. Riprova.",
-  "link_responder.failure_link_already_used": "Qualcun altro ha già aperto questo link. Chiedi a chi te l'ha inviato di condividerne uno nuovo.",
+  "link_responder.failure_link_already_used": "Questo link è già stato usato. Chiedi a chi te l'ha inviato di condividerne uno nuovo.",
   "link_responder.failure_rejected": "Il relay ha rifiutato lo scambio. Prova a condividere nuovamente il link.",
   "link_responder.failure_self_exchange": "Questo link è il tuo. Chiedi all'altra persona di condividere il suo.",
   "link_responder.failure_timed_out": "L'altro dispositivo non ha risposto in tempo. Chiedi di condividere nuovamente il link.",

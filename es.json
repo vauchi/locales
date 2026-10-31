@@ -1535,7 +1535,7 @@
   "link_responder.failure_contact_limit": "Has alcanzado tu límite de contactos. Elimina un contacto antes de añadir otro.",
   "link_responder.failure_decrypt_error": "No se pudo descifrar la tarjeta recibida. Inténtalo de nuevo.",
   "link_responder.failure_generic": "Ocurrió un error al recibir la tarjeta de contacto. Inténtalo de nuevo.",
-  "link_responder.failure_link_already_used": "Otra persona ya abrió este enlace. Pide a quien lo envió que comparta uno nuevo.",
+  "link_responder.failure_link_already_used": "Este enlace ya se ha usado. Pide a quien lo envió que comparta uno nuevo.",
   "link_responder.failure_rejected": "El relay rechazó el intercambio. Intenta compartir el enlace de nuevo.",
   "link_responder.failure_self_exchange": "Este enlace es el tuyo. Pide a la otra persona que comparta el suyo.",
   "link_responder.failure_timed_out": "El otro dispositivo no respondió a tiempo. Pídale que comparta el enlace nuevamente.",
