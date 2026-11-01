@@ -1191,7 +1191,7 @@
   "exchange.waiting_peer": "In attesa del contatto...",
   "exchange.weak_signal": "Segnale debole",
   "exchange.your_qr": "Il tuo codice QR",
-  "faq.add_contact.answer": "Incontratevi di persona e aprite Scambio. Mostra il tuo codice QR o usa il Bluetooth per condividere il tuo biglietto. Entrambi dovete essere presenti: Vauchi non scambia mai contatti a distanza.",
+  "faq.add_contact.answer": "Incontratevi di persona e aprite Scambio. Mostra il tuo codice QR o usa il Bluetooth per condividere il tuo biglietto. Solo se non potete vedervi, usa Condividi link e invia il link solo alla persona giusta: chi lo apre per primo riceve il tuo biglietto.",
   "faq.add_contact.question": "Come aggiungo un contatto?",
   "faq.block_contact": "Come blocco un contatto?",
   "faq.block_contact.answer": "Apri il contatto e tocca «Blocca contatto». Bloccare interrompe l'invio dei tuoi aggiornamenti a quella persona e ignora tutti i suoi. Non verrà avvisata. Quando blocchi, puoi anche scegliere di rimuovere le tue informazioni dal suo dispositivo.",

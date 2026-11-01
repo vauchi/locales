@@ -1191,7 +1191,7 @@
   "exchange.waiting_peer": "Warte auf Gegenstelle...",
   "exchange.weak_signal": "Schwaches Signal",
   "exchange.your_qr": "Dein QR-Code",
-  "faq.add_contact.answer": "Trefft euch persönlich und öffnet „Austausch“. Zeige deinen QR-Code oder nutze Bluetooth, um deine Kontaktkarte zu teilen. Beide müssen anwesend sein – Vauchi tauscht Kontakte nie aus der Ferne aus.",
+  "faq.add_contact.answer": "Trefft euch persönlich und öffnet „Austausch“. Zeige deinen QR-Code oder nutze Bluetooth, um deine Kontaktkarte zu teilen. Nur wenn ihr euch nicht treffen könnt, nutze „Link teilen“ und schick den Link nur an die Person, die du meinst: Wer ihn zuerst öffnet, bekommt deine Karte.",
   "faq.add_contact.question": "Wie füge ich einen Kontakt hinzu?",
   "faq.block_contact": "Wie blockiere ich einen Kontakt?",
   "faq.block_contact.answer": "Öffne den Kontakt und tippe auf „Kontakt blockieren“. Blockieren stoppt den Versand deiner Updates an die Person und ignoriert alle Updates von ihr. Sie wird nicht benachrichtigt. Beim Blockieren kannst du auch wählen, deine Infos von ihrem Gerät zu entfernen.",
