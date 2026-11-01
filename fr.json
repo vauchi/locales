@@ -600,7 +600,7 @@
   "contacts.their_fingerprint": "Son empreinte",
   "contacts.title": "Contacts",
   "contacts.toast_archived": "Contact archivé",
-  "contacts.toast_blocked": "{name} bloqué",
+  "contacts.toast_blocked": "{name} bloqué.",
   "contacts.toast_blocked_wipe_failed": "{name} bloqué. Vos infos n'ont pas pu être retirées de son appareil.",
   "contacts.toast_blocked_wiped": "{name} bloqué. Vos infos seront retirées de son appareil.",
   "contacts.toast_deleted": "Contact supprimé",
