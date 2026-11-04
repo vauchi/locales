@@ -732,7 +732,6 @@
   "delivery_status.help_body": "When you change your card, Vauchi sends the update through the relay to each device of every contact who can see the changed entries. It counts as delivered once a device has received it. Pending updates are retried automatically; failed ones you can retry here.",
   "delivery_status.help_label": "What a delivery is",
   "delivery_status.max_attempts_exceeded": "Max attempts ({max}) exceeded",
-  "delivery_status.nothing_waiting": "Changes you make are sent the next time Vauchi syncs.",
   "delivery_status.nothing_waiting_title": "Nothing waiting to send",
   "delivery_status.pending_retries_section": "Pending Retries",
   "delivery_status.recent_section": "Recent",

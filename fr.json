@@ -732,7 +732,6 @@
   "delivery_status.help_body": "Lorsque vous modifiez votre carte, Vauchi envoie la mise à jour, via le relais, à chaque appareil de chaque contact qui peut voir les entrées modifiées. Elle est livrée dès qu'un appareil l'a reçue. Les mises à jour en attente sont réessayées automatiquement ; vous pouvez réessayer ici celles qui ont échoué.",
   "delivery_status.help_label": "Qu'est-ce qu'une livraison",
   "delivery_status.max_attempts_exceeded": "Nombre maximal de tentatives ({max}) dépassé",
-  "delivery_status.nothing_waiting": "Vos modifications sont envoyées lors de la prochaine synchronisation de Vauchi.",
   "delivery_status.nothing_waiting_title": "Rien en attente d'envoi",
   "delivery_status.pending_retries_section": "Nouvelles tentatives en attente",
   "delivery_status.recent_section": "Récent",

@@ -732,7 +732,6 @@
   "delivery_status.help_body": "Quando cambi la tua scheda, Vauchi invia l'aggiornamento tramite il relay a ogni dispositivo di ogni contatto che può vedere le voci cambiate. È consegnato quando un dispositivo lo ha ricevuto. Gli aggiornamenti in attesa vengono ritentati automaticamente; quelli non riusciti puoi riprovarli qui.",
   "delivery_status.help_label": "Cos'è una consegna",
   "delivery_status.max_attempts_exceeded": "Numero massimo di tentativi ({max}) superato",
-  "delivery_status.nothing_waiting": "Le tue modifiche vengono inviate alla prossima sincronizzazione di Vauchi.",
   "delivery_status.nothing_waiting_title": "Niente in attesa di invio",
   "delivery_status.pending_retries_section": "Nuovi tentativi in sospeso",
   "delivery_status.recent_section": "Recente",

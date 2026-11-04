@@ -733,7 +733,6 @@
     "delivery_status.help_body",
     "delivery_status.help_label",
     "delivery_status.max_attempts_exceeded",
-    "delivery_status.nothing_waiting",
     "delivery_status.nothing_waiting_title",
     "delivery_status.pending_retries_section",
     "delivery_status.recent_section",

@@ -732,7 +732,6 @@
   "delivery_status.help_body": "Cuando cambias tu tarjeta, Vauchi envía el cambio a través del relay a cada dispositivo de cada contacto que puede ver las entradas cambiadas. Cuenta como entregado cuando un dispositivo lo ha recibido. Los cambios pendientes se reintentan automáticamente; los fallidos puedes reintentarlos aquí.",
   "delivery_status.help_label": "Qué es una entrega",
   "delivery_status.max_attempts_exceeded": "Se superó el máximo de intentos ({max})",
-  "delivery_status.nothing_waiting": "Tus cambios se envían la próxima vez que Vauchi se sincronice.",
   "delivery_status.nothing_waiting_title": "Nada pendiente de envío",
   "delivery_status.pending_retries_section": "Reintentos pendientes",
   "delivery_status.recent_section": "Reciente",

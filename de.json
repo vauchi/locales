@@ -732,7 +732,6 @@
   "delivery_status.help_body": "Wenn du deine Karte änderst, sendet Vauchi die Änderung über das Relay an jedes Gerät aller Kontakte, die die geänderten Einträge sehen können. Sie gilt als zugestellt, sobald ein Gerät sie erhalten hat. Ausstehende Änderungen werden automatisch wiederholt; fehlgeschlagene kannst du hier wiederholen.",
   "delivery_status.help_label": "Was eine Zustellung ist",
   "delivery_status.max_attempts_exceeded": "Maximale Versuche ({max}) überschritten",
-  "delivery_status.nothing_waiting": "Deine Änderungen werden bei der nächsten Synchronisierung von Vauchi gesendet.",
   "delivery_status.nothing_waiting_title": "Nichts wartet auf den Versand",
   "delivery_status.pending_retries_section": "Ausstehende Wiederholungen",
   "delivery_status.recent_section": "Kürzlich",
