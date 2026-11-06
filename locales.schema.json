@@ -1363,6 +1363,7 @@
     "hardware.error_title_generic",
     "hardware.permission_denied",
     "hardware.permission_denied_generic",
+    "hardware.permission_settings_guidance",
     "hardware.unavailable",
     "hardware.unavailable_generic",
     "heirloom.document_title",

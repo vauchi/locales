@@ -1362,6 +1362,7 @@
   "hardware.error_title_generic": "Error de hardware",
   "hardware.permission_denied": "Se denegó el acceso a {name}",
   "hardware.permission_denied_generic": "Se denegó el acceso",
+  "hardware.permission_settings_guidance": "Este sistema no pudo abrir una solicitud de permiso. Revisa el acceso de la aplicación en los ajustes del sistema e inténtalo de nuevo. Si el dispositivo está administrado, pide ayuda a su administrador.",
   "hardware.unavailable": "{name} no está disponible en este dispositivo",
   "hardware.unavailable_generic": "Esta función no está disponible en este dispositivo",
   "heirloom.document_title": "Contactos de",

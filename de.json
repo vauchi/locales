@@ -1362,6 +1362,7 @@
   "hardware.error_title_generic": "Hardwarefehler",
   "hardware.permission_denied": "Zugriff auf {name} wurde verweigert",
   "hardware.permission_denied_generic": "Zugriff wurde verweigert",
+  "hardware.permission_settings_guidance": "Dieses System konnte keine Berechtigungsabfrage öffnen. Prüfe in den Systemeinstellungen, ob die App Zugriff hat, und versuche es erneut. Wende dich bei einem verwalteten Gerät an die Administration.",
   "hardware.unavailable": "{name} ist auf diesem Gerät nicht verfügbar",
   "hardware.unavailable_generic": "Diese Funktion ist auf diesem Gerät nicht verfügbar",
   "heirloom.document_title": "Kontakte von",

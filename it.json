@@ -1362,6 +1362,7 @@
   "hardware.error_title_generic": "Errore hardware",
   "hardware.permission_denied": "Accesso a {name} negato",
   "hardware.permission_denied_generic": "Accesso negato",
+  "hardware.permission_settings_guidance": "Il sistema non ha potuto aprire una richiesta di autorizzazione. Controlla l’accesso dell’app nelle impostazioni di sistema, poi riprova. Se il dispositivo è gestito, chiedi aiuto all’amministratore.",
   "hardware.unavailable": "{name} non è disponibile su questo dispositivo",
   "hardware.unavailable_generic": "Questa funzione non è disponibile su questo dispositivo",
   "heirloom.document_title": "Contatti di",
