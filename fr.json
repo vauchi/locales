@@ -2595,6 +2595,7 @@
   "sync.last_sync": "Dernière synchronisation",
   "sync.last_synced": "Dernière synchro {time}",
   "sync.message_format": "Synchronise : {cards_updated} cartes mises à jour, {updates_sent} envoyées",
+  "sync.missed_while_locked": "Impossible de vérifier les mises à jour pendant que votre téléphone était verrouillé ({time})",
   "sync.no_changes": "Aucun changement",
   "sync.offline_banner": "Vous êtes hors ligne",
   "sync.offline_detail": "Les modifications seront synchronisées automatiquement une fois connecté. Vérifiez votre connexion Internet.",

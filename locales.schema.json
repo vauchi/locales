@@ -2596,6 +2596,7 @@
     "sync.last_sync",
     "sync.last_synced",
     "sync.message_format",
+    "sync.missed_while_locked",
     "sync.no_changes",
     "sync.offline_banner",
     "sync.offline_detail",

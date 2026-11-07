@@ -2595,6 +2595,7 @@
   "sync.last_sync": "Letzte Synchronisation",
   "sync.last_synced": "Zuletzt synchronisiert {time}",
   "sync.message_format": "Synchronisiert: {cards_updated} Karten aktualisiert, {updates_sent} gesendet",
+  "sync.missed_while_locked": "Konnte nicht nach Aktualisierungen suchen, während dein Telefon gesperrt war ({time})",
   "sync.no_changes": "Keine Änderungen",
   "sync.offline_banner": "Du bist offline",
   "sync.offline_detail": "Änderungen werden automatisch synchronisiert, sobald eine Verbindung besteht. Überprüfe deine Internetverbindung.",

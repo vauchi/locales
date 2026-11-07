@@ -2595,6 +2595,7 @@
   "sync.last_sync": "Última sincronización",
   "sync.last_synced": "Última sincronización {time}",
   "sync.message_format": "Sincronizado: {cards_updated} tarjetas actualizadas, {updates_sent} enviadas",
+  "sync.missed_while_locked": "No se pudieron buscar actualizaciones mientras tu teléfono estaba bloqueado ({time})",
   "sync.no_changes": "Sin cambios",
   "sync.offline_banner": "Estás sin conexión",
   "sync.offline_detail": "Los cambios se sincronizarán automáticamente cuando te conectes. Comprueba tu conexión a Internet.",
