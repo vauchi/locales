@@ -2245,6 +2245,7 @@
   "resistance.duress.error_empty": "Introduce un PIN",
   "resistance.duress.error_mismatch": "Los PIN no coinciden",
   "resistance.duress.error_too_short": "El PIN debe tener al menos {min} caracteres",
+  "resistance.duress.forensic_note": "Un PIN de coacción engaña a quien te observa mientras desbloqueas la app. No protege tus contactos de quien extraiga el almacenamiento y las claves de tu dispositivo con herramientas forenses.",
   "resistance.duress.how_it_looks_body": "El PIN de coacción abre Vauchi con tus contactos señuelo en lugar de los reales y no envía nada a nadie. En ese modo, estos ajustes parecen no haberse configurado nunca.",
   "resistance.duress.how_it_looks_button": "Cómo se ve el modo coacción",
   "resistance.duress.not_set": "No establecido",

@@ -2245,6 +2245,7 @@
   "resistance.duress.error_empty": "Inserisci un PIN",
   "resistance.duress.error_mismatch": "I PIN non corrispondono",
   "resistance.duress.error_too_short": "Il PIN deve contenere almeno {min} caratteri",
+  "resistance.duress.forensic_note": "Un PIN di coercizione inganna chi ti osserva mentre sblocchi l'app. Non protegge i tuoi contatti da chi estrae la memoria e le chiavi del tuo dispositivo con strumenti forensi.",
   "resistance.duress.how_it_looks_body": "Il PIN di coercizione apre Vauchi con i tuoi contatti esca invece di quelli veri e non invia nulla a nessuno. In quella modalità queste impostazioni sembrano non essere mai state configurate.",
   "resistance.duress.how_it_looks_button": "Come appare la modalità coercizione",
   "resistance.duress.not_set": "Non impostato",

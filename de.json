@@ -2245,6 +2245,7 @@
   "resistance.duress.error_empty": "Bitte gib eine PIN ein",
   "resistance.duress.error_mismatch": "PINs stimmen nicht überein",
   "resistance.duress.error_too_short": "PIN muss mindestens {min} Zeichen lang sein",
+  "resistance.duress.forensic_note": "Eine Zwangs-PIN täuscht jemanden, der dir beim Entsperren der App zusieht. Vor jemandem, der mit forensischen Werkzeugen den Speicher und die Schlüssel deines Geräts ausliest, schützt sie deine Kontakte nicht.",
   "resistance.duress.how_it_looks_body": "Die Zwangs-PIN öffnet Vauchi mit deinen Tarnkontakten statt deiner echten und sendet niemandem etwas. In diesem Modus sehen diese Einstellungen aus, als wäre nie eine Zwangs-PIN eingerichtet worden.",
   "resistance.duress.how_it_looks_button": "So sieht der Zwangsmodus aus",
   "resistance.duress.not_set": "Nicht festgelegt",

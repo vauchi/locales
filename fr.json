@@ -2245,6 +2245,7 @@
   "resistance.duress.error_empty": "Veuillez saisir un code PIN",
   "resistance.duress.error_mismatch": "Les codes PIN ne correspondent pas",
   "resistance.duress.error_too_short": "Le code PIN doit comporter au moins {min} caractères",
+  "resistance.duress.forensic_note": "Un code de contrainte trompe quelqu'un qui vous regarde déverrouiller l'app. Il ne protège pas vos contacts de quelqu'un qui extrait le stockage et les clés de votre appareil avec des outils forensiques.",
   "resistance.duress.how_it_looks_body": "Le code de contrainte ouvre Vauchi avec vos contacts leurres au lieu des vrais et n'envoie rien à personne. Dans ce mode, ces réglages semblent n'avoir jamais été configurés.",
   "resistance.duress.how_it_looks_button": "À quoi ressemble le mode contrainte",
   "resistance.duress.not_set": "Non défini",

@@ -2246,6 +2246,7 @@
     "resistance.duress.error_empty",
     "resistance.duress.error_mismatch",
     "resistance.duress.error_too_short",
+    "resistance.duress.forensic_note",
     "resistance.duress.how_it_looks_body",
     "resistance.duress.how_it_looks_button",
     "resistance.duress.not_set",
