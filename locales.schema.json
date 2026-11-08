@@ -1294,6 +1294,7 @@
     "form.edit_relay_url_title",
     "form.editing_field_content",
     "form.enter_new_value_placeholder",
+    "form.entry_label_hint",
     "form.field_type_select_hint",
     "form.group_name_input_a11y",
     "form.group_name_label",
