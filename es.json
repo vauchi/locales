@@ -1660,6 +1660,7 @@
   "my_info.avatar_a11y_label": "Tu avatar",
   "my_info.empty_entries": "Aún no hay entradas. Añade tu primera entrada para compartirla con tus contactos.\n\nPuedes añadir números de teléfono, direcciones de correo, sitios web, perfiles sociales y más. Toca \"Añadir entrada\" para empezar.",
   "my_info.empty_groups": "No has creado ningún grupo. Crea grupos para controlar la visibilidad de los campos.",
+  "my_info.entry_a11y_label": "{label}: {value}",
   "my_info.entry_view_button": "Vista de entradas",
   "my_info.exchange_now_button": "Intercambiar ahora",
   "my_info.exchange_prompt_a11y_label": "¿Listo para intercambiar?",

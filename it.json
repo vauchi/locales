@@ -1660,6 +1660,7 @@
   "my_info.avatar_a11y_label": "Il tuo avatar",
   "my_info.empty_entries": "Ancora nessuna voce. Aggiungi la tua prima voce per condividerla con i contatti.\n\nPuoi aggiungere numeri di telefono, indirizzi e-mail, siti web, profili social e altro. Tocca «Aggiungi voce» per iniziare.",
   "my_info.empty_groups": "Nessun gruppo creato. Crea gruppi per controllare la visibilità dei campi.",
+  "my_info.entry_a11y_label": "{label}: {value}",
   "my_info.entry_view_button": "Vista voci",
   "my_info.exchange_now_button": "Scambia ora",
   "my_info.exchange_prompt_a11y_label": "Pronto a scambiare?",

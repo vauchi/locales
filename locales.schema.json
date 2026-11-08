@@ -1661,6 +1661,7 @@
     "my_info.avatar_a11y_label",
     "my_info.empty_entries",
     "my_info.empty_groups",
+    "my_info.entry_a11y_label",
     "my_info.entry_view_button",
     "my_info.exchange_now_button",
     "my_info.exchange_prompt_a11y_label",

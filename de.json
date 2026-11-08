@@ -1660,6 +1660,7 @@
   "my_info.avatar_a11y_label": "Dein Profilbild",
   "my_info.empty_entries": "Noch keine Einträge. Füge deinen ersten Eintrag hinzu, um ihn mit Kontakten zu teilen.\n\nDu kannst Telefonnummern, E-Mail-Adressen, Websites, Social-Media-Profile und mehr hinzufügen. Tippe auf \"Eintrag hinzufügen\", um zu beginnen.",
   "my_info.empty_groups": "Noch keine Gruppen erstellt. Erstelle Gruppen, um die Feldsichtbarkeit zu steuern.",
+  "my_info.entry_a11y_label": "{label}: {value}",
   "my_info.entry_view_button": "Eintragsansicht",
   "my_info.exchange_now_button": "Jetzt austauschen",
   "my_info.exchange_prompt_a11y_label": "Bereit zum Austausch?",
