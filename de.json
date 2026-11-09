@@ -166,6 +166,7 @@
   "backup.authenticating": "Authentifizierung...",
   "backup.choose_file": "Datei wählen",
   "backup.confirm_password": "Passwort bestätigen",
+  "backup.confirm_password_hint": "Gib dein Passwort ein, um ein Backup zu exportieren.",
   "backup.confirm_password_placeholder": "Passwort bestätigen",
   "backup.copy_button": "In die Zwischenablage kopieren",
   "backup.data": "Backup-Daten",

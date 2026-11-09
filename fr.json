@@ -166,6 +166,7 @@
   "backup.authenticating": "Authentification en cours...",
   "backup.choose_file": "Choisir un fichier",
   "backup.confirm_password": "Confirmer le mot de passe",
+  "backup.confirm_password_hint": "Saisissez votre mot de passe pour exporter une sauvegarde.",
   "backup.confirm_password_placeholder": "Confirmez le mot de passe",
   "backup.copy_button": "Copier dans le presse-papiers",
   "backup.data": "Données de sauvegarde",

@@ -167,6 +167,7 @@
     "backup.authenticating",
     "backup.choose_file",
     "backup.confirm_password",
+    "backup.confirm_password_hint",
     "backup.confirm_password_placeholder",
     "backup.copy_button",
     "backup.data",
