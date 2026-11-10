@@ -2289,6 +2289,8 @@
   "resistance.duress.forensic_note": "A duress PIN fools someone watching you unlock the app. It can't protect your contacts from someone with forensic tools who extracts your device's storage and keys.",
   "resistance.duress.how_it_looks_body": "The duress PIN opens Vauchi with your decoy contacts instead of your real ones and sends nothing to anyone. In that mode these settings look as if no duress PIN was ever set up.",
   "resistance.duress.how_it_looks_button": "How duress mode looks",
+  "resistance.duress.move_to_passwords": "Use Two Passwords",
+  "resistance.duress.no_biometric_check": "This device no longer has biometric unlock, so nothing is checked before your 6-digit duress PIN. Move to two real passwords to keep duress mode hard to break.",
   "resistance.duress.not_set": "Not set",
   "resistance.duress.not_set_up": "Duress PIN not set up",
   "resistance.duress.options": "Options",

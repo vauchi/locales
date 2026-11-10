@@ -2290,6 +2290,8 @@
     "resistance.duress.forensic_note",
     "resistance.duress.how_it_looks_body",
     "resistance.duress.how_it_looks_button",
+    "resistance.duress.move_to_passwords",
+    "resistance.duress.no_biometric_check",
     "resistance.duress.not_set",
     "resistance.duress.not_set_up",
     "resistance.duress.options",

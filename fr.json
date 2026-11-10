@@ -2289,6 +2289,8 @@
   "resistance.duress.forensic_note": "Un code de contrainte trompe quelqu'un qui vous regarde déverrouiller l'app. Il ne protège pas vos contacts de quelqu'un qui extrait le stockage et les clés de votre appareil avec des outils forensiques.",
   "resistance.duress.how_it_looks_body": "Le code de contrainte ouvre Vauchi avec vos contacts leurres au lieu des vrais et n'envoie rien à personne. Dans ce mode, ces réglages semblent n'avoir jamais été configurés.",
   "resistance.duress.how_it_looks_button": "À quoi ressemble le mode contrainte",
+  "resistance.duress.move_to_passwords": "Utiliser deux mots de passe",
+  "resistance.duress.no_biometric_check": "Cet appareil n'a plus de déverrouillage biométrique : rien n'est donc vérifié avant votre code de contrainte à 6 chiffres. Passez à deux vrais mots de passe pour que le mode contrainte reste difficile à casser.",
   "resistance.duress.not_set": "Non défini",
   "resistance.duress.not_set_up": "Code de contrainte non configuré",
   "resistance.duress.options": "Options",
