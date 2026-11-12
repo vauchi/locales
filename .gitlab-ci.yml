@@ -10,6 +10,8 @@ workflow:
     - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS
       when: never
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      auto_cancel:
+        on_new_commit: none
     - if: $CI_COMMIT_TAG
     - if: $CI_PIPELINE_SOURCE == "schedule"
 
@@ -18,14 +20,14 @@ default:
 
 include:
   - project: 'vauchi/scripts'
-    ref: ci-templates-v2026.10.05
+    ref: ci-templates-v2026.11.17
     file:
       - '/ci-templates/reuse.yml'
       - '/ci-templates/badges.yml'
       - '/ci-templates/github-mirror.yml'
 
 variables:
-  VAUCHI_SCRIPTS_REF: "ci-templates-v2026.10.05"
+  VAUCHI_SCRIPTS_REF: "ci-templates-v2026.11.17"
 
 stages:
   - lint
