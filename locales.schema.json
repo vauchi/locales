@@ -2501,6 +2501,8 @@
     "settings.new_name",
     "settings.new_relay",
     "settings.notifications_group",
+    "settings.offline",
+    "settings.offline_hint",
     "settings.options",
     "settings.pending_updates_hint",
     "settings.privacy",
