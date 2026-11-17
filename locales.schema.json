@@ -223,6 +223,8 @@
     "backup.reminder_toast",
     "backup.restore_error_title",
     "backup.restore_identity",
+    "backup.safeguard_action",
+    "backup.safeguard_prompt",
     "backup.save_title",
     "backup.select_file_instruction",
     "backup.share_chooser_title",
