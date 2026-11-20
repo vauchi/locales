@@ -1150,6 +1150,8 @@
     "exchange.reconnect.kept_by_you",
     "exchange.reconnect.link_needs_meeting",
     "exchange.reconnect.question",
+    "exchange.reconnect.question_text",
+    "exchange.reconnect.question_title",
     "exchange.reconnect.reconnected",
     "exchange.reconnect.timed_out",
     "exchange.reconnect.title",
