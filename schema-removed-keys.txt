@@ -44,3 +44,6 @@ social_graph.trust_cautious  # core 5bb9e91b4 deleted the orphan SocialGraph scr
 social_graph.trust_high  # core 5bb9e91b4 deleted the orphan SocialGraph screen (2026-07-11); no app names the key since (private#1229)
 social_graph.trust_standard  # core 5bb9e91b4 deleted the orphan SocialGraph screen (2026-07-11); no app names the key since (private#1229)
 social_graph.trusted_label  # core 5bb9e91b4 deleted the orphan SocialGraph screen (2026-07-11); no app names the key since (private#1229)
+exchange.reconnect.body  # core 37fa9f7fc asks the reconnect question with question_title and question_text; no app names the key since (private#1304)
+exchange.reconnect.question  # core 37fa9f7fc asks the reconnect question with question_title and question_text; no app names the key since (private#1304)
+exchange.reconnect.title  # core 37fa9f7fc asks the reconnect question with question_title and question_text; no app names the key since (private#1304)
