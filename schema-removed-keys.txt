@@ -47,3 +47,7 @@ social_graph.trusted_label  # core 5bb9e91b4 deleted the orphan SocialGraph scre
 exchange.reconnect.body  # core 37fa9f7fc asks the reconnect question with question_title and question_text; no app names the key since (private#1304)
 exchange.reconnect.question  # core 37fa9f7fc asks the reconnect question with question_title and question_text; no app names the key since (private#1304)
 exchange.reconnect.title  # core 37fa9f7fc asks the reconnect question with question_title and question_text; no app names the key since (private#1304)
+exchange.reconnect.question_title  # Core 0.108.0 (core!2403) asks the reconnect question with exchange.reconnect.ask, yes and no, and every consumer pins Core 0.108.0 (private#1304)
+exchange.reconnect.question_text  # Core 0.108.0 (core!2403) asks the reconnect question with exchange.reconnect.ask, yes and no, and every consumer pins Core 0.108.0 (private#1304)
+exchange.reconnect.accept  # Core 0.108.0 (core!2403) asks the reconnect question with exchange.reconnect.ask, yes and no, and every consumer pins Core 0.108.0 (private#1304)
+exchange.reconnect.decline  # Core 0.108.0 (core!2403) asks the reconnect question with exchange.reconnect.ask, yes and no, and every consumer pins Core 0.108.0 (private#1304)
